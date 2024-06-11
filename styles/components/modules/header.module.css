@@ -1,0 +1,118 @@
+.header{
+    padding: 10px 0;
+    margin-top: 15px;
+    float: left;
+    width: 100%;
+    position: sticky;
+    background-color: #0f172a!important;
+}
+.headerContainer{
+    width: 100%;
+}
+.mainHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    padding: 5px 0;
+}
+.headerLogo{
+    max-width: 150px;
+    width: 100%;
+}
+.headerNav{
+    display: inline-block;
+    width: 65%;
+    text-align: center;
+}
+.navMainMenu{
+    width: auto;
+    padding: 0;
+    float: none;
+}
+.headerMainMenu{
+    display: flex;
+    justify-content: center;
+    padding-top: 3px;
+    list-style: none;
+    /* margin-bottom: 0; */
+}
+.headerMainMenu li{
+    float: left;
+    position: relative;
+    text-align: left;
+}
+.headerMainMenu li a{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    display: block;
+    padding: 13px 22px;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.3s ease 0s;
+    color: #94a9c9;
+}
+
+.headerRight{
+    max-width: 225px;
+    width: 100%;
+}
+
+.headerMainMenu li a:hover{
+    color: #1cc2e7; 
+}
+.headerMainMenu li a.active{
+    color: #1cc2e7;
+}
+.btnSearch{
+    height: 42px;
+    width: 42px;
+    background: url(/images/components/modules/icon-search.48d1803e.svg) no-repeat 50%;
+}
+@media (min-width: 576px){
+.headerContainer{
+    max-width: 540px;
+}
+}
+@media (min-width: 768px){
+    .headerContainer{
+        max-width: 720px;
+    }
+    }
+@media (min-width: 992px){
+    .headerContainer{
+        max-width: 930px;
+    }
+    }
+@media (min-width: 1200px){
+    .headerContainer{
+        max-width: 1140px;
+    }
+    }
+
+@media (min-width: 1400px){
+    .headerContainer{
+        max-width: 1365px;
+    }
+    }
+
+    @media (max-width: 1199.98px){
+        .headerNav{
+            display: none !important;
+        }
+    }
+    @media (max-width: 575.98px){
+        .headerRight{
+            padding-right: 25px;
+        }
+    }
+    @media (max-width: 1199.98px){
+        .headerRight{
+            max-width: 285px;
+            padding-right: 35px;
+        }
+    }
+    

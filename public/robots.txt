@@ -1,0 +1,14 @@
+User-Agent: *
+Allow: /
+Allow: /weblog
+Allow: /templates
+Allow: /about
+Allow: /call
+Allow: /templates/html
+Allow: /templates/bootstrap
+Disallow: /admin-panel-1381-4548-lbf
+Disallow: /admin-panel-1381-4548-lbf/dashboard
+Disallow: /admin-panel-1381-4548-lbf/articleadd
+Disallow: /admin-panel-1381-4548-lbf/templateadd
+
+Sitemap: https://codinglbf.ir/sitemap.xml

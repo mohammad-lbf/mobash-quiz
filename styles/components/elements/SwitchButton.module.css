@@ -1,0 +1,27 @@
+.switch-button {
+    display: inline-block;
+    padding: 0 15px 0 5px
+}
+.switch-button .form-switch {
+    padding-left: 0;
+    display: inline-block;
+    vertical-align: middle
+}
+.switch-button .form-switch .form-check-input {
+    width: 40px;
+    height: 22px;
+    margin-left: 0;
+    background-image: url(/_next/static/media/mode.eb881a73.svg);
+    background-position: left 2px center;
+    background-color: #7f92b0;
+    border-color: #7f92b0;
+    background-size: 18px
+}
+.switch-button .form-check-input:checked {
+    background-color: #222f43;
+    border-color: #222f43
+}
+.switch-button .form-switch .form-check-input:checked {
+    background-position: right 2px center;
+    background-image: url(/_next/static/media/mode.eb881a73.svg)
+}
