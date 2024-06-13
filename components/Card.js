@@ -5,7 +5,7 @@ import Link from 'next/link';
 const Card = ({image , title , duration , slug}) => {
     return (
         <Link href={`/weblog/${slug}`}>
-            <div className='lbf-card border-gray-800 mb-2 mb-lg-0 bg-gray-850'>
+            <div className='lbf-card border-gray-800 bg-gray-850'>
             <div className='lbf-card-image-article'>
                 <Image
                  className='w-100'

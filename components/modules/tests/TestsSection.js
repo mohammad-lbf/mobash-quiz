@@ -8,7 +8,7 @@ const TestsSection = () => {
             <div style={{width:"110px"}} className="lbf-after-card-img mx-lg-0 mb-4 mt-0 mx-auto"></div>
             <div className="container px-0">
                 <div className="row article-vertical row-cols-xl-3 row-cols-lg-2 row-cols-sm-1 row-cols-md-2 row-cols-xs-1">
-                    <div className='col-sm'>
+                    <div className='col-sm mb-3 mb-lg-0'>
                     <Card
                      slug={`grammar`}
                      title={`تعیین سطح گرامر`}
