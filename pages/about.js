@@ -6,14 +6,16 @@ const about = () => {
     return (
         <div className='page-padding-tops'>
             <Head>
-              <meta name="description" content=" من برنامه نویس وب (Fullstack - next js) هستم که نزدیک به دو سالی میشه که به این کار مشغولم و همچنین به یادگیری فناوری و تکنولوژی های جدید ، بسیار علاقه مندم" />
+              <meta name="description" content="سلام دوستان، من امیرحسین مبشری هستم و اینجا هم سایت شخصی منه که در اصل برای شماست :)
+من در اینجا ضمن معرفی خودم، آموخته هام از زبان انگلیسی رو باهاتون به اشتراک می‌ذارم" />
               <meta name="robots" content="index, follow" />
               <meta name="googlebot" content="index, follow" />
 
-              <meta name="og:title" content="Codinglbf | درباره من" />
-              <meta name="og:description" content=" من برنامه نویس وب (Fullstack - next js) هستم که نزدیک به دو سالی میشه که به این کار مشغولم و همچنین به یادگیری فناوری و تکنولوژی های جدید ، بسیار علاقه مندم" />
+              <meta name="og:title" content="English With Mobash | درباره من" />
+              <meta name="og:description" content="سلام دوستان، من امیرحسین مبشری هستم و اینجا هم سایت شخصی منه که در اصل برای شماست :)
+من در اینجا ضمن معرفی خودم، آموخته هام از زبان انگلیسی رو باهاتون به اشتراک می‌ذارم" />
 
-              <title>Codinglbf | درباره من</title>
+              <title>English With Mobash | درباره من</title>
             </Head>
             <div className='pt-4'>
                 <About />

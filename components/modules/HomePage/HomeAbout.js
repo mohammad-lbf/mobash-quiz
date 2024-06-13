@@ -17,32 +17,32 @@ const HomeAbout = () => {
                     درباره من
                 </span>
                 <span className='fw-bold color-linear fs-2 py-3 mb-2 mt-4'>
-                    محمد لبافی
+                    امیرحسین مبشری
                 </span>
                 <span className='fw-bold color-linear fs-3 py-3 mb-4'>
-                    برنامه نویس ارشد وب
+                    مدرس تخصصی زبان انگلیسی
                 </span>
             </div>
             <p className='homeabout-intro text-center text-lg-end' style={{lineHeight:"27px" , fontSize:"15px"}}>
-                من برنامه نویس وب (Fullstack - next js) هستم که نزدیک به دو سالی میشه که به این کار مشغولم و همچنین به یادگیری فناوری و تکنولوژی های جدید ، بسیار علاقه مندم
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
             </p>
             <p className='homeabout-intro text-center text-lg-end mt-3' style={{lineHeight:"27px" , fontSize:"15px"}}>
-                از طریق &quot;دانلود رزومه&quot;، میتونید رزومه ی من رو مشاهده کنید. در ضمن، در صورت تمایل به همکاری از طریق فرم &quot;ارسال پیام&quot; در صفحه ی تماس با ما، میتونید درخواست خودتون رو مطرح کنید تا در اولین فرصت باهاتون تماس گرفته بشه
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
             </p>
             <div className="personal-details row mb-3">
               <div className="col-md-6">
                 <ul className="personal-info text-center text-lg-end">
                   <li>
                     <h4>نام و نام خانوادگی</h4>
-                    <p>محمد لبافی</p>
+                    <p>امیرحسین مبشری</p>
                   </li>
                   <li>
                     <h4>ایمیل</h4>
-                    <p>labbaf2016@gmail.com</p>
+                    <p>example@gmail.com</p>
                   </li>
                   <li>
                     <h4>سن</h4>
-                    <p>21 سال</p>
+                    <p>23 سال</p>
                   </li>
                 </ul>
               </div>
@@ -54,13 +54,13 @@ const HomeAbout = () => {
                   </li>
                   <li>
                     <h4>شغل</h4>
-                    <p>فریلنسر</p>
+                    <p>دبیر</p>
                   </li>
                 </ul>
               </div>
             </div>
             <div className='text-center mb-3 text-lg-end'>
-                <a className="btn-org-1 text-white rounded px-3 py-2" href="/documents/Resume3.pdf" download >دانلود رزومه</a>
+                <a className="btn-org-1 text-white rounded px-3 py-2" href="" download >دانلود رزومه</a>
             </div>
           </div>
         </div>

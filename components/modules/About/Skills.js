@@ -8,7 +8,7 @@ const Skills = () => {
                 <h4 className="color-linear text-center text-lg-end px-0">مهارت ها</h4>
                 <div style={{width:"170px"}} className="lbf-after-card-img mx-lg-0 mx-auto"></div>
                 </div>
-                <Skill skill={"HTML"} image={"/images/components/modules/skills/html.png"} />
+                {/* <Skill skill={"HTML"} image={"/images/components/modules/skills/html.png"} />
                 <Skill skill={"CSS"} image={"/images/components/modules/skills/css.png"} />
                 <Skill skill={"Java Script"} image={"/images/components/modules/skills/js.png"} />
                 <Skill skill={"React Js"} image={"/images/components/modules/skills/react.png"} />
@@ -19,7 +19,7 @@ const Skills = () => {
                 <Skill skill={"Graph QL"} image={"/images/components/modules/skills/graphql.png"} />
                 <Skill skill={"Rest Api"} image={"/images/components/modules/skills/api.png"} />
                 <Skill skill={"Redux"} image={"/images/components/modules/skills/redux.webp"} />
-                <Skill skill={"Mongo DB"} image={"/images/components/modules/skills/mongodb.png"} />
+                <Skill skill={"Mongo DB"} image={"/images/components/modules/skills/mongodb.png"} /> */}
             </div>
         </div>
     );
