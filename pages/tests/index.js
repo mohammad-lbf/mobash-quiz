@@ -1,23 +1,21 @@
-import React from 'react';
-import TestsSection from '../../components/modules/tests/TestsSection';
+import TestsPage from '../../components/templates/TestsPage';
+import Head from 'next/head';
 
-import Authors from '../../components/modules/tests/Authors';
-import FirstBanner from '../../components/modules/tests/FirstBanner';
 
 const Tests = () => {
     return (
         <div className='page-padding-tops pb-4'>
-            <FirstBanner />
-            <div style={{paddingTop:"30px"}} className='container'>
-                <div className='row flex-lg-row-reverse'>
-                    <div className='col-12 col-lg-9 weblog__articles'>
-                        <TestsSection />
-                    </div>
-                    <div className='col-12 col-lg-3 mt-4 mb-4 mb-lg-0 mt-lg-0 weblog__authors'>
-                        <Authors />
-                    </div>
-                </div>
-            </div>
+            <Head>
+              <meta name="description" content="اینجا،میتونید سطح خودتون رو با استفاده از آزمون های تعیین سطح English With Mobash پیدا کنید! برای شرکت در آزمون فقط کافیه نام و نام خانوادگی خودتون رو وارد کنید." />
+              <meta name="robots" content="index, follow" />
+              <meta name="googlebot" content="index, follow" />
+
+              <meta name="og:title" content="English With Mobash | آزمون ها" />
+              <meta name="og:description" content="اینجا،میتونید سطح خودتون رو با استفاده از آزمون های تعیین سطح English With Mobash پیدا کنید! برای شرکت در آزمون فقط کافیه نام و نام خانوادگی خودتون رو وارد کنید." />
+
+              <title>English With Mobash | آزمون ها</title>
+            </Head>
+            <TestsPage />
         </div>
     );
 };
