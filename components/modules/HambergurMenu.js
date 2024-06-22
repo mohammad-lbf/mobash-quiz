@@ -27,10 +27,32 @@ function HambergurMenu({show , handleClose , theme}) {
                 <li className={`p-3 ${theme == "theme-day" && "border-bottom"}`} style={{borderBottom: `${theme == "theme-night" && "1px solid #222f43"}`}}><Link onClick={()=>handleClose()} className={`p-0 ${theme == "theme-night" ? "color-gray-200" : "color-gray-800"}`} style={{fontSize:"16px"}} href={"/"}>صفحه اصلی</Link></li>
 
                 <li className={`p-3 ${theme == "theme-day" && "border-bottom"}`} style={{borderBottom: `${theme == "theme-night" && "1px solid #222f43"}`}}><Link onClick={()=>handleClose()} className={`p-0 ${theme == "theme-night" ? "color-gray-200" : "color-gray-800"}`} style={{fontSize:"16px"}} href={"/tests"}>آزمون ها</Link></li>
-                <li className={`p-3 ${theme == "theme-day" && "border-bottom"}`} style={{borderBottom: `${theme == "theme-night" && "1px solid #222f43"}`}}><Link onClick={()=>handleClose()} className={`p-0 ${theme == "theme-night" ? "color-gray-200" : "color-gray-800"}`} style={{fontSize:"16px"}} href={"/call"}>تماس با ما</Link></li>
+                <li className={`p-3 ${theme == "theme-day" && "border-bottom"}`} style={{borderBottom: `${theme == "theme-night" && "1px solid #222f43"}`}}><Link onClick={()=>handleClose()} className={`p-0 ${theme == "theme-night" ? "color-gray-200" : "color-gray-800"}`} style={{fontSize:"16px"}} href={"/articles"}>مقالات</Link></li>
+                <li className={`p-3 ${theme == "theme-day" && "border-bottom"}`} style={{borderBottom: `${theme == "theme-night" && "1px solid #222f43"}`}}><Link onClick={()=>handleClose()} className={`p-0 ${theme == "theme-night" ? "color-gray-200" : "color-gray-800"}`} style={{fontSize:"16px"}} href={"/courses"}>دوره ها و کلاسهای آموزشی</Link></li>
+                <li className={`p-3 ${theme == "theme-day" && "border-bottom"}`} style={{borderBottom: `${theme == "theme-night" && "1px solid #222f43"}`}}><Link onClick={()=>handleClose()} className={`p-0 ${theme == "theme-night" ? "color-gray-200" : "color-gray-800"}`} style={{fontSize:"16px"}} href={"/call"}>تماس با من</Link></li>
                 </ul>
               </nav>
             </div>
+            <div className='d-flex flex-row-reverse align-items-center justify-content-end mb-4'>
+                                            <div className='d-flex ms-4 justify-content-center mx-lg-3 my-3'>
+                                                <a rel='noreferrer' href='' className='social-link d-flex align-items-center'>
+                                                    {/* <span>youtube</span> */}
+                                                    <i class="bi bi-youtube fs-4"></i>
+                                                </a>
+                                            </div>
+                                            <div className='d-flex ms-4 justify-content-center mx-lg-3 my-3'>
+                                            <a rel='noreferrer' href='mailto:' className='social-link d-flex align-items-center'>
+                                                    {/* <span>Email</span> */}
+                                                    <i class="bi bi-envelope-fill fs-4"></i>
+                                                </a>
+                                            </div>
+                                            <div className='d-flex ms-4 me-3 justify-content-center mx-lg-3 my-3'>
+                                            <a rel='noreferrer' href='' className='social-link d-flex align-items-center'>
+                                                    {/* <span>instagram</span> */}
+                                                    <i class="bi bi-instagram fs-4"></i>
+                                                </a>
+                                            </div>
+                                        </div>
         </Offcanvas.Body>
       </Offcanvas>
     </div>

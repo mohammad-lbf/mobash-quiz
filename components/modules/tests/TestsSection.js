@@ -17,8 +17,8 @@ const TestsSection = () => {
                     </div>
                     <div className='col-sm'>
                     <Card
-                     slug={`vocabulary`}
-                     title={`تعیین سطح لغات`}
+                     slug={`general`}
+                     title={`تعیین سطح عمومی`}
                      caption={`لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است`}
                      />
                     </div>

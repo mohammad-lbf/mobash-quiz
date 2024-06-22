@@ -18039,7 +18039,7 @@ input {
     top: calc(100% + 9px);
     left: 0;
     z-index: 999999;
-    min-width: 180px;
+    min-width: 185px;
     border-radius: 0 0 4px 4px;
     padding: 8px 0;
     background: #131c31;

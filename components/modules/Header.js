@@ -40,13 +40,15 @@ const Header = ({theme , setTheme}) => {
                                                 </Link>
                                             </li>
                                             <li>
-                                            <Link className='text-end' href='/tests/vocabulary'>
-                                                    <span>آزمون تعیین سطح لغات</span>
+                                            <Link className='text-end' href='/tests/general'>
+                                                    <span>آزمون تعیین سطح عمومی</span>
                                                     {/* <span className='me-1'>Vocabulary</span> */}
                                                 </Link>
                                             </li>
                                         </ul>
                                         </li>
+                                        <li className='m-3'><Link className={`p-0 ${pathname == "/call" ? "active" : "color-gray-500"}`} href={"/articles"}>مقالات</Link></li>
+                                    <li className='m-3'><Link className={`p-0 ${pathname == "/call" ? "active" : "color-gray-500"}`} href={"/courses"}>دوره ها و کلاس های آموزشی</Link></li>
                                     <li className='m-3'><Link className={`p-0 ${pathname == "/call" ? "active" : "color-gray-500"}`} href={"/call"}>تماس با من</Link></li>
                                     
                                 </ul>

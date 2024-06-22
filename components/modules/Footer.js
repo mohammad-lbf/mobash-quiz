@@ -37,8 +37,8 @@ const Footer = ({theme}) => {
                                                     </Link>
                                                 </li>
                                                 <li>
-                                                    <Link className='color-gray-500 mb-4' href={`/tests/vocabulary`}>
-                                                    <span> آزمون تعیین سطح لغات</span>
+                                                    <Link className='color-gray-500 mb-4' href={`/tests/general`}>
+                                                    <span> آزمون تعیین سطح عمومی</span>
                                                     <span className='me-1'></span>
                                                     </Link>
                                                 </li>
@@ -61,6 +61,16 @@ const Footer = ({theme}) => {
                                                 <li>
                                                     <Link className='color-gray-500 mb-3' href={`/tests`}>
                                                         آزمون ها
+                                                    </Link>
+                                                </li>
+                                                <li>
+                                                    <Link className='color-gray-500 mb-3' href={`/articles`}>
+                                                        مقالات
+                                                    </Link>
+                                                </li>
+                                                <li>
+                                                    <Link className='color-gray-500 mb-3' href={`/courses`}>
+                                                        دوره ها و کلاس‌های آموزشی
                                                     </Link>
                                                 </li>
                                                 <li>

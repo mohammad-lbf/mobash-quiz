@@ -3,8 +3,7 @@ import Link from 'next/link';
 
 const Card = ({title , caption, slug}) => {
     return (
-        <Link className='mb-3' href={`/tests/${slug}`}>
-            <div className='lbf-card border-gray-800 bg-gray-850 mb-0'>
+            <div className='lbf-card border-gray-800 bg-gray-850 mb-3'>
             <div className='lbf-card-image-article'>
                 <Image
                  className='w-100'
@@ -33,7 +32,6 @@ const Card = ({title , caption, slug}) => {
             </div>
             <Link style={{borderRadius:"0"}} className="btn btn-linear d-inline-block hover-shadow w-100" href={`/tests/${slug}`}>شرکت در آزمون</Link>
         </div>
-        </Link>
     );
 };
 
