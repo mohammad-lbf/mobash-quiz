@@ -1,9 +1,13 @@
-import React from 'react';
+import React , {useEffect} from 'react';
 import GrammarMainSection from '../modules/grammar/GrammarMainSection'
 import GrammarAsideSection from '../modules/grammar/GrammarAsideSection'
+import { useDispatch } from 'react-redux';
 
 const GrammarPage = () => {
-    
+    const dispatch = useDispatch()
+    useEffect(()=>{
+        dispatch({type:"RESET"})
+    } , [])
     return (
         <div className='page-padding-tops'>
             <div className='pt-4'>

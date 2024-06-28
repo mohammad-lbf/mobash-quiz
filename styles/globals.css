@@ -110,6 +110,9 @@ body {
 }
 .header{
     z-index: 100;
+    box-shadow: 0px 0px 10px 0px rgba(222.7, 222.7, 222.7, 0.5) inset;
+    margin-top: 11px;
+    border-radius: 35px;
 }
 .page-padding-tops{
     padding-top: 50px;
@@ -307,7 +310,6 @@ body {
     position: relative;
   }
   .lead{
-    font-size: 15px !important;
     line-height: 27px;
   }
   .theme-day .lead{

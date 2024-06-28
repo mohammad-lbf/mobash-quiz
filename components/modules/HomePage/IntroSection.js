@@ -2,23 +2,20 @@ import React from 'react';
 
 const IntroSection = () => {
   return (
-    <section className="intro-section section-block py-4">
+    <section className="intro-section section-block">
       <div className="container">
-        <div className="section-title text-center ff-vazir">
-          <h2 style={{width:"fit-content"}} className='d-flex flex-column flex-md-row justify-content-center my-3 py-1 mx-auto color-linear'>
-            <span>به</span>
-            <span className='mx-2 my-3 my-md-0'>English With Mobash</span>
-            <span>خوش آمدید</span>
-          </h2>
-          
-          <p className="lead mb-4">
-          سلام دوستان، من امیرحسین مبشری هستم و اینجا هم سایت شخصی منه که در اصل برای شماست :)
-            <br />
-             من در اینجا ضمن معرفی خودم، آموخته هام از زبان انگلیسی رو باهاتون به اشتراک میذارم :)
+        <div className='row align-items-start justify-content-center'>
+              <div className='col-12 col-lg-6'>
+              <div className="text-center text-lg-end ff-vazir">
+          <h2 style={{width:"fit-content"}} className='text-center text-lg-end my-3 py-1 w-100 color-linear'>
+            <span className='my-3 my-md-0 w-100 text-center text-lg-end'>Mobash Academy</span>
+          </h2> 
+          <p className="lead lh-lg fs-4 fw-bold mb-4 ">
+          مبش اینجاست تا با جدیدترین متدهای روز دنیا، زبان انگلیسی را به صورت کاربردی در کوتاه‌ترین زمان و به راحتی بیاموزید.
           </p>
         </div>
-        <div className='row justify-content-center'>
-            <div className='col-12 col-md-6 '>
+              </div>
+              <div className='col-12 col-md-6 '>
             <video className='rounded w-100' controls>
               <source src="/videos/InShot_۲۰۲۳۰۸۰۲_۲۰۵۷۲۵۷۰۶.mp4" type="video/mp4" />
         </video>

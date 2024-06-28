@@ -18013,6 +18013,7 @@ input {
     padding: 13px 17px;
     text-decoration: none;
     position: relative;
+    width: max-content;
 }
 
 .header .main-menu li a.active,.header .main-menu li a:hover {
@@ -18028,7 +18029,7 @@ input {
     font-size: 12px;
     margin-right: 8px;
     opacity: .38;
-    transition: .2s
+    transition: .2s;
 }
 
 .header .main-menu li ul {

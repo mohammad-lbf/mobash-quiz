@@ -12,7 +12,7 @@ const userData ={
             B2:{userStatus:"not-passed" , userMark:"0"},
             C1:{userStatus:"not-passed" , userMark:"0"}
         },
-        vocabulary:{}
+        general:{}
     }
 }
 const GrammerTestLevels = () => {
