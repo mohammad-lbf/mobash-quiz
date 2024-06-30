@@ -4,11 +4,23 @@ import { useSelector , useDispatch } from 'react-redux'
 import Test from '../../../components/modules/Test/Test';
 import testData from '../../../assets/Tests/Grammar/A1Level';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 import TestAuthor from '../../../components/modules/grammar/TestAuthor'
 const A1Level = () => {
     const{testName , testLevel , userStatus , passPoint , testTime , questions , categoryInp} = testData
     const dispatch = useDispatch();
+    const router = useRouter();
+    
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+          const storedUserName = localStorage.getItem('userName');
+          if (!storedUserName) {
+            router.push('/signup'); // جایگزین '/signup' با مسیر صفحه ثبت نام خود کنید
+          }
+        }
+      }, []);
+
     return (
         <div className='page-padding-tops'>
             <div className='pt-4 container'>

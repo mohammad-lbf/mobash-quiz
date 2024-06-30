@@ -89,9 +89,6 @@ body {
     font-weight: 400;
     position: relative;
 }
-.layout main{
-    min-height: 100vh;
-}
 .layout.theme-night{
     background-color: #0f172a;
 }

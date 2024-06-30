@@ -1,22 +1,23 @@
 import React from 'react';
+import { useEffect, useState } from 'react';
 
 import GrammarTestLevel from './GrammarTestLevel';
-const userData ={
-    userName:"" ,
-    userTests:{
-        grammer:{
-            A1:{userStatus:"not-passed" , userMark:"0"},
-            A2:{userStatus:"not-passed" , userMark:"0"},
-            B1:{userStatus:"not-passed" , userMark:"0"},
-            B1Plus:{userStatus:"not-passed" , userMark:"0"},
-            B2:{userStatus:"not-passed" , userMark:"0"},
-            C1:{userStatus:"not-passed" , userMark:"0"}
-        },
-        general:{}
-    }
-}
 const GrammerTestLevels = () => {
-  const  {A1 , A2 , B1 , B1Plus , B2  , C1 } = userData.userTests.grammer
+    const [userData, setUserData] = useState(null);
+    
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+            const storedUserData = localStorage.getItem('userData');
+            if (storedUserData) {
+                setUserData(JSON.parse(storedUserData));
+            }
+        }
+        userData && console.log(userData)
+    }, []);
+    if (!userData) {
+        return <div>Loading...</div>;
+      }
+    const  {A1 , A2 , B1 , B1Plus , B2  , C1 } = userData.userTests.grammar;
     return (
         <div>
             <h5 className='article-subTitle text-center text-xl-end'>سطوح آزمون تعیین سطح گرامر:</h5>

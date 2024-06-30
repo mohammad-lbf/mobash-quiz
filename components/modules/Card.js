@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import isUserNameInLocalStorage from '../../assets/functions/localStorageChecker';
 
 const Card = ({title , caption, slug}) => {
     return (
@@ -30,7 +31,7 @@ const Card = ({title , caption, slug}) => {
                     </div>
                 </div>
             </div>
-            <Link style={{borderRadius:"0"}} className="btn btn-linear d-inline-block hover-shadow w-100" href={`/tests/${slug}`}>شرکت در آزمون</Link>
+            <Link style={{borderRadius:"0"}} className="btn btn-linear d-inline-block hover-shadow w-100" href={`${isUserNameInLocalStorage() ? `/tests/${slug}` : '/signup'}`} >شرکت در آزمون</Link>
         </div>
     );
 };

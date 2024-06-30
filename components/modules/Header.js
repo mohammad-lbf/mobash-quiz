@@ -2,10 +2,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
-import HambergurMenu from './HambergurMenu'
+import HambergurMenu from './HambergurMenu';
+import isUserNameInLocalStorage from '../../assets/functions/localStorageChecker';
+
 const Header = () => {
     const {pathname} = useRouter();
-
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
@@ -35,7 +36,7 @@ const Header = () => {
                                                 </Link>
                                             </li>
                                             <li>
-                                                <Link className='text-end' href='/tests/grammar'>
+                                                <Link className='text-end' href={`${isUserNameInLocalStorage() ? '/tests/grammar' : '/signup'}`}>
                                                     <span>آزمون تعیین سطح گرامر</span>
                                                 </Link>
                                             </li>

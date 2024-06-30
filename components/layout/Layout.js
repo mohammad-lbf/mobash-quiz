@@ -5,6 +5,9 @@ import Header from '../modules/Header';
 const Layout = ({children , theme , setTheme}) => {
     return (
         <div className={`layout ${theme == "theme-night" ? "theme-night" : "theme-day"}`}>
+            {/* <div className='w-100' style={{ background:"#151D3B" , position:"fixed" , zIndex:"90" , height:"120px"}}>
+,
+            </div> */}
             <Header theme={theme} setTheme={setTheme} />
                 <main>
                     {children}

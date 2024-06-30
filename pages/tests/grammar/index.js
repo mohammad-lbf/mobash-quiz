@@ -1,8 +1,22 @@
 import React from 'react';
 import Head from 'next/head';
 import GrammarPage from '../../../components/templates/GrammarPage';
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
 
 const Grammar = () => {
+
+    const router = useRouter();
+
+    useEffect(() => {
+      if (typeof window !== 'undefined') {
+        const storedUserName = localStorage.getItem('userName');
+        if (!storedUserName) {
+          router.push('/signup'); // جایگزین '/signup' با مسیر صفحه ثبت نام خود کنید
+        }
+      }
+    }, []);
+    
     return (
         <div>
         <div className='pb-4'>

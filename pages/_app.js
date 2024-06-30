@@ -3,6 +3,7 @@ import { useState } from 'react'
 import Layout from '../components/layout/Layout'
 import '../styles/index.css';
 import '../styles/globals.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { Provider } from 'react-redux';
 import store from '../Redux/store';
 
