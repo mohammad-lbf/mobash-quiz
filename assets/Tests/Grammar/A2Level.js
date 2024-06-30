@@ -3,7 +3,8 @@ const testData = {
     testLevel:"A2",
     category:"grammar",
     categoryInp:"آزمون تعیین سطح گرامر",
-    userStatus:"not-passed",
+    nextLevel:"B1Level",
+    nextLevelName:"B1",
     passPoint:62.5,
     testTime:12,
     questions:[

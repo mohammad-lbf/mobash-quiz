@@ -64,7 +64,7 @@ const GrammerTestLevels = () => {
                 <GrammarTestLevel
                  level={"C1"}
                  pastLevel={"B2"}
-                 pastLevelStatus={B1Plus.userStatus}
+                 pastLevelStatus={B2.userStatus}
                  name={"سطح پیشرفته (Advance) - C1"}
                  userStatus={C1.userStatus}
                  userMark={C1.userMark}

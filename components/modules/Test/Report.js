@@ -6,7 +6,7 @@ import { useRouter } from 'next/router';
 
 const Report = (props) => {
     const { questions, noAnswers, corrects, incorrects } = useSelector(state => state);
-    const { testName, testLevel, userStatus, passPoint, testTime, categoryInp, category } = props.testData;
+    const { testLevel, passPoint, categoryInp, category , nextLevel , nextLevelName } = props.testData;
     const pointPercent = (corrects.length / questions.length) * 100;
     const router = useRouter()
     useEffect(() => {
@@ -19,19 +19,28 @@ const Report = (props) => {
             } else {
                 // اگر userData وجود ندارد، یک شیء جدید ایجاد کنید
                 userData = {
-                    userName: '',
+                    userName,
                     userTests: {
-                        grammar: {
-                            A1: { userStatus: 'not-passed', userMark: '0' },
-                            A2: { userStatus: 'not-passed', userMark: '0' },
-                            B1: { userStatus: 'not-passed', userMark: '0' },
-                            B1Plus: { userStatus: 'not-passed', userMark: '0' },
-                            B2: { userStatus: 'not-passed', userMark: '0' },
-                            C1: { userStatus: 'not-passed', userMark: '0' },
-                        },
-                        public: {},
+                      grammar: {
+                        A1: { userStatus: 'not-passed', userMark: '0' },
+                        A2: { userStatus: 'not-passed', userMark: '0' },
+                        B1: { userStatus: 'not-passed', userMark: '0' },
+                        B1Plus: { userStatus: 'not-passed', userMark: '0' },
+                        B2: { userStatus: 'not-passed', userMark: '0' },
+                        C1: { userStatus: 'not-passed', userMark: '0' },
+                      },
+                      public: {
+                         A1Low: { userStatus: 'not-passed', userMark: '0' },
+                          A1High: { userStatus: 'not-passed', userMark: '0' },
+                           B1low: { userStatus: 'not-passed', userMark: '0' },
+                            B2High: { userStatus: 'not-passed', userMark: '0' },
+                             C1Low: { userStatus: 'not-passed', userMark: '0' },
+                              C1High: { userStatus: 'not-passed', userMark: '0' },
+                               C2Low: { userStatus: 'not-passed', userMark: '0' },
+                                C2High: { userStatus: 'not-passed', userMark: '0' }
+                      },
                     },
-                };
+                  };
             }
 
             const newUserStatus = pointPercent < passPoint ? 'failed' : 'passed';
@@ -59,9 +68,13 @@ const Report = (props) => {
                 <p className="mt-3"> وضعیت  : {pointPercent < passPoint ? "مردود" : "قبول"}</p>
             </div>
             {
+                nextLevel ?
                 pointPercent < passPoint ?
-                    <p style={{ fontSize: "15px" }} className="fw-bold my-3">متاسفیم، شما نمی‌توانید به آزمون سطح بعد بروید</p> :
-                    <p style={{ fontSize: "15px" }} className="fw-bold my-3">تبریک، شما می‌توانید در آزمون سطح بعد شرکت کنید</p>
+                    <p style={{ fontSize: "15px" }} className="fw-bold my-3">{`متاسفیم، شما نمی‌توانید به آزمون سطح بعد (${nextLevelName}) بروید`}</p> :
+                <p style={{ fontSize: "15px" }} className="fw-bold my-3">{`تبریک، شما می‌توانید در آزمون سطح بعد(${nextLevelName}) شرکت کنید`}</p> :
+                pointPercent < passPoint ?
+                <p style={{ fontSize: "15px" }} className="fw-bold my-3">{`متاسفیم، شما در آزمون این سطح مردود شده اید`}</p> :
+                <p style={{ fontSize: "15px" }} className="fw-bold my-3">{`تبریک! شما تمامی سطوح ${categoryInp} را با موفقیت پشت سر گذاشتید`}</p>
             }
             <div className="text-center fs-15 w-100 d-flex  justify-content-center align-items-center flex-column">
                 <p style={{ width: "250px", height: "40px", direction: "ltr", paddingTop: "13px" }} className="my-1 mx-1 mx-sm-2 px-3 rounded bg-light text-dark border"> {questions.length} : تعداد کل سوالات</p>

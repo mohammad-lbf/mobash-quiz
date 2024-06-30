@@ -2,12 +2,12 @@ import React from 'react';
 import {useState , useEffect} from 'react';
 import { useSelector , useDispatch } from 'react-redux'
 import Test from '../../../components/modules/Test/Test';
-import testData from '../../../assets/Tests/Grammar/C1Level';
+import testData from '../../../assets/Tests/Grammar/B2Level';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 import TestAuthor from '../../../components/modules/grammar/TestAuthor'
-const C1Level = () => {
+const B2Level = () => {
     const{testName , testLevel , userStatus , passPoint , testTime , questions , categoryInp} = testData
     const dispatch = useDispatch();
     const router = useRouter();
@@ -40,7 +40,7 @@ const C1Level = () => {
                                 <p className='text-black lh-lg my-2'>
                                 2.	حداقل نمره قبولی در این مرحله 60 از 100 میباشد که معادل 6 پاسخ صحیح از مجموع 9 سوال میباشد.
                                 </p>
-                                {/* <p className='text-black lh-lg my-2'>3.	با کسب نمره قبولی در این مرحله می‌توانید آزمون را در سطح بالاتر  (B2) ادامه دهید.</p> */}
+                                <p className='text-black lh-lg my-2'>3.	با کسب نمره قبولی در این مرحله می‌توانید آزمون را در سطح بالاتر  (C1) ادامه دهید.</p>
                             </div> 
                         </div>
                     </div>
@@ -50,4 +50,4 @@ const C1Level = () => {
     );
 };
 
-export default C1Level;
+export default B2Level;

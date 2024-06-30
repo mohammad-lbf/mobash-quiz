@@ -8,7 +8,7 @@ const GrammarMainSection = () => {
     return (
         <div className='pt-4 pt-sm-0'>
             <GrammerBreadCrumb />
-            <h3 className='article-section__title mb-3'>آزمون تعیین سطح گرامر</h3>
+            <h3 style={{fontFamily:"Vazirmatn"}} className='article-section__title mb-3'>آزمون تعیین سطح گرامر</h3>
             {/* Duration */}
             <div className='d-flex justify-content-between align-items-center'>
                 <TestAuthor />

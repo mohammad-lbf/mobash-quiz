@@ -53,7 +53,7 @@
 
 
 *{
-  font-family: 'YekanBakh' , 'IRANSansWeb' , 'Vazirmatn' , Noto Sans,sans-serif !important ;
+  font-family: 'YekanBakh' , 'IRANSansWeb' , 'Vazirmatn' , Noto Sans,sans-serif ;
 }
 
 
@@ -153,8 +153,8 @@ body {
 }
 .carousel-control-prev-icon:hover{
     background-image: url(/images/components/modules/customSlider/prev-active.3dd426ed.svg) !important;
-}h1,h2,h3,h4,h5,h6,p{
-  font-family: 'YekanBakh' , 'IRANSansWeb' , 'Vazirmatn' , Noto Sans,sans-serif !important ;
+}h1,h2,h3,h4,h5,h6{
+  font-family: 'YekanBakh' , 'IRANSansWeb' , 'Vazirmatn' , Noto Sans,sans-serif ;
 }
 /* card */
 

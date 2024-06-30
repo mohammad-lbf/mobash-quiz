@@ -52,7 +52,7 @@ const Test = (props) => {
                             <p className="text-end text-black fs-13 fw-200 lh-lg" >بعد از آزمون، حتما پاسخ های خود را تحلیل کرده و اشتباهات خود را بررسی کنید</p>
                         <p className="text-end text-black fs-13 my-2 fw-200">زمان دریافت کارنامه: بلافاصله پس از آزمون</p>
                         <p className="text-end text-black fs-13 fw-200 text-success fw-bold">موفق باشید</p>
-                            <button style={{backgroundColor:"#151D3B"}} onClick={()=>setTestStarted(true)} className="text-light w-100 rounded border-0 p-3 fs-15 mt-3">شروع آزمون</button>
+                            <button style={{backgroundColor:"#151D3B" , fontFamily:"Vazirmatn"}} onClick={()=>setTestStarted(true)} className="text-light w-100 rounded mb-4 border-0 p-3 fs-15 mt-3">شروع آزمون</button>
                             </div>}
                         {
                             data && testStarted && !testFinished &&
