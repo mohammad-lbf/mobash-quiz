@@ -18,7 +18,7 @@ const Header = () => {
                     <div className='d-flex align-items-center'>
                     <div className={`text-end d-flex justfy-content-end align-items-center`}>
                             <Link style={{height:"47px"}} className='d-none d-xl-block' href={"/"}>
-                                <Image style={{width:"146px" , height:"47px"}} alt='logo' width={1000} height={300} src={'/images/components/modules/main-logo.jpg'} />
+                                <Image style={{width:"146px" , height:"47px"}} alt='logo' width={1000} height={300} src={'/images/components/modules/logo-dark.png'} />
                             </Link>
                         </div>
                         <div className={`header-nav`}>
