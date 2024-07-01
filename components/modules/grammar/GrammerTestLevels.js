@@ -20,7 +20,6 @@ const GrammerTestLevels = () => {
     const  {A1 , A2 , B1 , B1Plus , B2  , C1 } = userData.userTests.grammar;
     return (
         <div>
-            <h5 className='article-subTitle text-center text-xl-end'>سطوح آزمون تعیین سطح گرامر:</h5>
             <GrammarTestLevel
                  level={"A1"}
                  pastLevel={""}

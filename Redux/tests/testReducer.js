@@ -10,7 +10,9 @@ switch(action.type){
         return{
             ...state,
             questions:[...action.payload.map(item => {return {...item , status:"no-answer" , clientAnswer:"0"}} )],
-            noAnswers:[...action.payload]
+            noAnswers:[...action.payload],
+            corrects:[],
+            incorrects:[]
         }
         case "TRUE_ANSWER":
             if(!state.corrects.find(item => item.id == action.payload.id)){

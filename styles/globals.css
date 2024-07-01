@@ -1,4 +1,41 @@
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+@font-face {
+  font-display: swap;
+  font-family: 'KalamehWeb-Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-display: auto;
+  src: url('/fonts/KalamehWeb-Bold.woff2') format('woff2'),url('/fonts/KalamehWeb-Bold.woff') format('woff')
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'KalamehWeb-Regular';
+  font-style: normal;
+  font-weight: 400;
+  font-display: auto;
+  src: url('/fonts/KalamehWeb-Regular.woff2') format('woff2'),url('/fonts/KalamehWeb-Regular.woff') format('woff')
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'KalamehWeb-Medium';
+  font-style: normal;
+  font-weight: 500;
+  font-display: auto;
+  src: url('/fonts/KalamehWeb-Medium.woff2') format('woff2'),url('/fonts/KalamehWeb-Medium.woff') format('woff')
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'KalamehWeb-SemiBold';
+  font-style: normal;
+  font-weight: 600;
+  font-display: auto;
+  src: url('/fonts/KalamehWeb-SemiBold.woff2') format('woff2'),url('/fonts/KalamehWeb-SemiBold.woff') format('woff')
+}
+
 
 
 @font-face {
@@ -44,11 +81,13 @@
   src: url(/fonts/IRANSansWeb-Medium.114fdbd1.woff) format("woff")
 }
 
+/* @import url(https://db.onlinewebfonts.com/c/c56ea8aca8b3b1f84bcb7365c6ae4af0?family=Kalameh+Bold); */
+
 @font-face {
   font-family: IRANSansWeb;
   font-style: normal;
   font-weight: 800;
-  src: url(/fonts/IRANSansWeb-Bold.c8a953cc.woff) format("woff")
+  src: url(/fonts/IRANSansWeb-Bold.c8a953cc.woff) format("woff");
 }
 
 
@@ -59,16 +98,38 @@
 
 a{
     text-decoration: none !important;
-    font-family: 'YekanBakh' , 'IRANSansWeb' , 'Vazirmatn' , Noto Sans, sans-serif !important ;
+    font-family: 'YekanBakh' , 'IRANSansWeb' , 'Vazirmatn' , Noto Sans, sans-serif  ;
 }
 a:hover{
     color: #1cc2e7 ; 
+}
+.btn-main-2{
+    
+  display: inline-block;
+  outline: 0;
+  cursor: pointer;
+  border: none;
+  padding: 0 56px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 7px;
+  background-color: #0070f3;
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+  box-shadow: 0 4px 14px 0 rgb(0 118 255 / 39%);
+  transition: background 0.2s ease,color 0.2s ease,box-shadow 0.2s ease;
+  
+}
+.btn-main-2:hover{
+      background: rgba(0,118,255,0.9);
+      box-shadow: 0 6px 20px rgb(0 118 255 / 23%);
 }
 .active{
     color: #1cc2e7 !important;
 }
 h5 , h6{
-  font-family: 'YekanBakh' , 'IRANSansWeb' , 'Vazirmatn' , Noto Sans,sans-serif !important ;
+  font-family: 'YekanBakh' , 'IRANSansWeb' , 'Vazirmatn' , Noto Sans,sans-serif ;
 }
 .typed-cursor{
     font-size: 44px;

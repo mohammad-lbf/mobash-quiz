@@ -1,5 +1,5 @@
 const testData = {
-    testName:"سطح متوسط (Advance) - C1",
+    testName:"سطح پیشرفته (Advance) - C1",
     testLevel:"C1",
     category:"grammar",
     categoryInp:"آزمون تعیین سطح گرامر",

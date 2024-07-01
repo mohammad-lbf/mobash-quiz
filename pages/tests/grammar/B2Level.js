@@ -26,21 +26,49 @@ const B2Level = () => {
             <div className='pt-4 container'>
                     <div className='row pt-3 justify-content-center'>
                         <div className='col-12 pt-4 col-lg-8'>
-                        <p className="article-section__title mb-3 text-center">{categoryInp}</p>
-                        <p id="#test-title" className="article-section__title fs-3 fw-bold mt-3 text-center">{testName}</p>
+                        <p 
+                        style={{fontSize:"15px" , 
+                                    color:"#474d52" ,lineHeight:"2em" , 
+                                    textAlign:"center" , 
+                                    fontFamily:"KalamehWeb-Medium"}} 
+                            className='border-bottom pb-2 mb-2'>{categoryInp}</p>
+                        <h3 id="#test-title"
+                        style={{fontFamily:"KalamehWeb-Bold" , color: "#03004e" , fontSize: "24px"}}
+                        className='text-center border-bottom py-3'>
+                        {testName}
+                        </h3>
                             <div className='d-flex justify-content-between align-items-center mt-3 border-bottom pb-3'>
                                 <TestAuthor />
                                 <span className='fw-bold gray-text-color'>30 خرداد 1403</span>
                             </div>
                             <div className='text-end'>
-                                <h5 className='mt-3'>
+                            <h5 style={{fontSize:"24px",color:"#464749" , 
+                                    fontFamily:"KalamehWeb-Bold" , }} 
+                                    className='text-end my-4'>
                                     نکات آزمون:
                                 </h5>
-                                <p className='text-black lh-lg my-2'>1.	تعداد سوالات این بخش در هر سطح ۱۰  سوال و حداکثر مدت زمان پاسخگویی ۱۵ دقیقه خواهد بود.</p>
-                                <p className='text-black lh-lg my-2'>
-                                2.	حداقل نمره قبولی در این مرحله 60 از 100 میباشد که معادل 6 پاسخ صحیح از مجموع 9 سوال میباشد.
+                                                                <p 
+                                style={{fontSize:"15px" , 
+                                color:"#474d52" ,lineHeight:"2em" , 
+                                textAlign:"justify" , 
+                                fontFamily:"KalamehWeb-Medium"}} 
+                                className='border-bottom pb-2 mb-2'>
+                                    1.	تعداد سوالات این بخش در هر سطح ۱۰  سوال و حداکثر مدت زمان پاسخگویی ۱۵ دقیقه خواهد بود.</p>
+                                                                <p 
+                                style={{fontSize:"15px" , 
+                                color:"#474d52" ,lineHeight:"2em" , 
+                                textAlign:"justify" , 
+                                fontFamily:"KalamehWeb-Medium"}} 
+                                className='border-bottom pb-2 mb-2'>
+                                2.	حداقل نمره قبولی در این مرحله 60 از 100 میباشد که معادل 6 پاسخ صحیح از مجموع 10 سوال میباشد.
                                 </p>
-                                <p className='text-black lh-lg my-2'>3.	با کسب نمره قبولی در این مرحله می‌توانید آزمون را در سطح بالاتر  (C1) ادامه دهید.</p>
+                                                                <p 
+                                style={{fontSize:"15px" , 
+                                color:"#474d52" ,lineHeight:"2em" , 
+                                textAlign:"justify" , 
+                                fontFamily:"KalamehWeb-Medium"}} 
+                                className='border-bottom pb-2 mb-2'>
+                                    3.	با کسب نمره قبولی در این مرحله می‌توانید آزمون را در سطح بالاتر  (C1) ادامه دهید.</p>
                             </div> 
                         </div>
                     </div>

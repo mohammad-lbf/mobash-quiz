@@ -62,36 +62,118 @@ const Report = (props) => {
 
     return (
         <div className="d-flex flex-column align-items-center text-dark w-100 mt-3">
-            <div style={{ width: "300px", backgroundColor: "#151d38", fontSize: "16px" }} className="text-dark text-center py-3 text-white rounded">
-                <p>آزمون پایان یافت</p>
-                <p className="mt-3">نمره شما {pointPercent.toFixed(2)} از 100</p>
-                <p className="mt-3"> وضعیت  : {pointPercent < passPoint ? "مردود" : "قبول"}</p>
+                        <h5 style={{fontSize:"24px",color:"#464749" , 
+                                    fontFamily:"KalamehWeb-Bold" , }} 
+                                    className='text-center mb-4'>
+                                    نتیجه آزمون:
+            </h5>
+            <div style={{ width: "300px", backgroundColor: "#151d38", fontSize: "16px" }} className="text-center py-3 rounded">
+                <p  style={{fontSize:"15px" , 
+                    lineHeight:"2em" , 
+                    textAlign:"justify" , 
+                    fontFamily:"KalamehWeb-Medium"}}
+                    className="text-light text-center"
+                    >آزمون پایان یافت</p>
+                <p 
+                style={{fontSize:"15px" , 
+                    lineHeight:"2em" , 
+                    textAlign:"justify" , 
+                    fontFamily:"KalamehWeb-Medium"}}
+                    className="text-light text-center mt-2"
+                >نمره شما {pointPercent.toFixed(2)} از 100</p>
+                <p 
+                style={{fontSize:"15px" , 
+                    lineHeight:"2em" , 
+                    textAlign:"justify" , 
+                    fontFamily:"KalamehWeb-Medium"}}
+                    className="text-light text-center mt-2"
+                > وضعیت  : {pointPercent < passPoint ? "مردود" : "قبول"}</p>
             </div>
             {
                 nextLevel ?
                 pointPercent < passPoint ?
-                    <p style={{ fontSize: "15px" }} className="fw-bold my-3">{`متاسفیم، شما نمی‌توانید به آزمون سطح بعد (${nextLevelName}) بروید`}</p> :
-                <p style={{ fontSize: "15px" }} className="fw-bold my-3">{`تبریک، شما می‌توانید در آزمون سطح بعد(${nextLevelName}) شرکت کنید`}</p> :
+                    <p  
+                    style={{fontSize:"15px" , 
+                    color:"#474d52" ,lineHeight:"2em" , 
+                    textAlign:"justify" , 
+                    fontFamily:"KalamehWeb-Medium"}} 
+                    className="my-3">{`متاسفیم، شما نمی‌توانید به آزمون سطح بعد (${nextLevelName}) بروید`}</p> :
+                    <p  
+                    style={{fontSize:"15px" , 
+                    color:"#474d52" ,lineHeight:"2em" , 
+                    textAlign:"justify" , 
+                    fontFamily:"KalamehWeb-Medium"}} 
+                    className="my-3">{`تبریک، شما می‌توانید در آزمون سطح بعد(${nextLevelName}) شرکت کنید`}</p> :
                 pointPercent < passPoint ?
-                <p style={{ fontSize: "15px" }} className="fw-bold my-3">{`متاسفیم، شما در آزمون این سطح مردود شده اید`}</p> :
-                <p style={{ fontSize: "15px" }} className="fw-bold my-3">{`تبریک! شما تمامی سطوح ${categoryInp} را با موفقیت پشت سر گذاشتید`}</p>
+                <p 
+                style={{fontSize:"15px" , 
+                color:"#474d52" ,lineHeight:"2em" , 
+                textAlign:"justify" , 
+                fontFamily:"KalamehWeb-Medium"}} 
+                className="my-3">{`متاسفیم، شما در آزمون این سطح مردود شده اید`}</p> :
+                <p 
+                style={{fontSize:"15px" , 
+                color:"#474d52" ,lineHeight:"2em" , 
+                textAlign:"justify" , 
+                fontFamily:"KalamehWeb-Medium"}} 
+                className="my-3">{`تبریک! شما تمامی سطوح ${categoryInp} را با موفقیت پشت سر گذاشتید`}</p>
             }
             <div className="text-center fs-15 w-100 d-flex  justify-content-center align-items-center flex-column">
-                <p style={{ width: "250px", height: "40px", direction: "ltr", paddingTop: "13px" }} className="my-1 mx-1 mx-sm-2 px-3 rounded bg-light text-dark border"> {questions.length} : تعداد کل سوالات</p>
-                <p style={{ width: "250px", height: "40px", direction: "ltr", paddingTop: "13px" }} className="my-1 mx-1 mx-sm-2 px-3 rounded bg-success text-white">{corrects.length} : تعداد پاسخ های درست</p>
-                <p style={{ width: "250px", height: "40px", direction: "ltr", paddingTop: "13px" }} className="my-1 mx-1 mx-sm-2 px-3 rounded bg-danger  text-white">{incorrects.length} : تعداد پاسخ های نادرست</p>
-                <p style={{ width: "250px", height: "40px", direction: "ltr", paddingTop: "13px" }} className="my-1 mx-1 mx-sm-2 px-3 rounded bg-warning text-main-1">{noAnswers.length} : تعداد سوالات بدون پاسخ</p>
+                <p style={{ width: "250px", height: "40px", direction: "ltr", paddingTop: "13px" , fontFamily:"KalamehWeb-Medium" }} className="my-1 mx-1 mx-sm-2 px-3 rounded bg-light text-dark border"> {questions.length} : تعداد کل سوالات</p>
+                <p style={{ width: "250px", height: "40px", direction: "ltr", paddingTop: "13px" , fontFamily:"KalamehWeb-Medium" }} className="my-1 mx-1 mx-sm-2 px-3 rounded bg-success text-white">{corrects.length} : تعداد پاسخ های درست</p>
+                <p style={{ width: "250px", height: "40px", direction: "ltr", paddingTop: "13px" , fontFamily:"KalamehWeb-Medium" }} className="my-1 mx-1 mx-sm-2 px-3 rounded bg-danger  text-white">{incorrects.length} : تعداد پاسخ های نادرست</p>
+                <p style={{ width: "250px", height: "40px", direction: "ltr", paddingTop: "13px" , fontFamily:"KalamehWeb-Medium" }} className="my-1 mx-1 mx-sm-2 px-3 rounded bg-warning text-main-1">{noAnswers.length} : تعداد سوالات بدون پاسخ</p>
             </div>
-            <button style={{ backgroundColor: "#151d38" }} className="text-decoration-none text-white mt-4 text-dark py-2 px-3 rounded" onClick={handleBack}>
-                {`بازگشت به ${categoryInp}`}
-            </button>
+            <Link 
+            href={
+            
+                    nextLevel ?
+                    pointPercent < passPoint ? `/tests/${category}` :
+                    `/tests/${category}/${nextLevel}`:
+                    pointPercent < passPoint ? `/tests/${category}` :
+                    `/tests/${category}`
+                }
+            
+            style={{fontSize:"15px" , fontFamily:'KalamehWeb-SemiBold'}} 
+            className="btn-main-2 text-decoration-none text-white mt-4 text-dark px-3 rounded" 
+            >
+                {
+                    nextLevel ?
+                    pointPercent < passPoint ? `بازگشت به صفحه ${categoryInp}` :
+                    `ورود به آزمون سطح بعد (${nextLevelName})`:
+                    pointPercent < passPoint ? `بازگشت به صفحه ${categoryInp}` :
+                    `بازگشت به صفحه ${categoryInp}`
+                }
+            </Link>
             <div className="w-100 text-end mt-3">
-                <p className="fw-200 text-center w-100 fs-4 py-3 border-bottom border-top ">پاسخنامه سوالات:</p>
+            <h5 style={{fontSize:"24px",color:"#464749" , 
+                                    fontFamily:"KalamehWeb-Bold" , }} 
+                                    className='text-center border-bottom py-4 mb-2 mt-3 border-top'>
+                                    پاسخنامه سوالات:
+            </h5>
                 {questions.map(item => <ReportQuestion key={item.id} {...item} />)}
             </div>
-            <button style={{ backgroundColor: "#151d38" }} className="text-decoration-none text-white mt-2 text-dark py-2 px-3 rounded" onClick={handleBack}>
-                {`بازگشت به ${categoryInp}`}
-            </button>
+            <Link 
+            href={
+            
+                    nextLevel ?
+                    pointPercent < passPoint ? `/tests/${category}` :
+                    `/tests/${category}/${nextLevel}`:
+                    pointPercent < passPoint ? `/tests/${category}` :
+                    `/tests/${category}`
+                }
+            
+            style={{fontSize:"15px" , fontFamily:'KalamehWeb-SemiBold'}} 
+            className="btn-main-2 text-decoration-none text-white mt-1 mb-4 text-dark px-3 rounded" 
+            >
+                {
+                    nextLevel ?
+                    pointPercent < passPoint ? `بازگشت به صفحه ${categoryInp}` :
+                    `ورود به آزمون سطح بعد (${nextLevelName})`:
+                    pointPercent < passPoint ? `بازگشت به صفحه ${categoryInp}` :
+                    `بازگشت به صفحه ${categoryInp}`
+                }
+            </Link>
         </div>
     );
 };

@@ -26,7 +26,7 @@ const Test = (props) => {
     useEffect(()=>{
         const scrollCenter = ()=>{
             window.scrollTo({
-                top:300,
+                top:400,
                 left:0,
                 behavior:'smooth'
             })
@@ -47,12 +47,34 @@ const Test = (props) => {
         <div style={{paddingBottom:"0.65rem"}}>
 
                 <div className="row justify-content-center gy-2 gy-xl-0">
-                    <div className="col-12 col-lg-8" style={{minHeight:"40vh"}}>
+                    <div className="col-12 col-lg-8">
                         {!testStarted && <div>
-                            <p className="text-end text-black fs-13 fw-200 lh-lg" >بعد از آزمون، حتما پاسخ های خود را تحلیل کرده و اشتباهات خود را بررسی کنید</p>
-                        <p className="text-end text-black fs-13 my-2 fw-200">زمان دریافت کارنامه: بلافاصله پس از آزمون</p>
-                        <p className="text-end text-black fs-13 fw-200 text-success fw-bold">موفق باشید</p>
-                            <button style={{backgroundColor:"#151D3B" , fontFamily:"Vazirmatn"}} onClick={()=>setTestStarted(true)} className="text-light w-100 rounded mb-4 border-0 p-3 fs-15 mt-3">شروع آزمون</button>
+                            <p 
+                                style={{fontSize:"15px" , 
+                                color:"#474d52" ,lineHeight:"2em" , 
+                                textAlign:"justify" , 
+                                fontFamily:"KalamehWeb-Medium"}} 
+                                className='border-bottom pb-2 mb-2'>بعد از آزمون، حتما پاسخ های خود را تحلیل کرده و اشتباهات خود را بررسی کنید</p>
+                        <p 
+                                style={{fontSize:"15px" , 
+                                color:"#474d52" ,lineHeight:"2em" , 
+                                textAlign:"justify" , 
+                                fontFamily:"KalamehWeb-Medium"}} 
+                                className='border-bottom pb-2 mb-2 text-center'>زمان دریافت کارنامه: بلافاصله پس از آزمون</p>
+                        <p 
+                                style={{fontSize:"15px" , 
+                                color:"#474d52" ,lineHeight:"2em" , 
+                                textAlign:"justify" , 
+                                fontFamily:"KalamehWeb-Medium"}} 
+                                className='border-bottom pb-2 mb-2 text-center text-success'>موفق باشید</p>
+                            <div className='text-center'>
+                            <button
+                            style={{fontSize:"15px" , fontFamily:'KalamehWeb-SemiBold'}} 
+                            onClick={()=>setTestStarted(true)} 
+                            className="btn-main-2 w-50 text-center rounded mb-4 border-0 fs-15 mt-3">
+                                شروع آزمون
+                            </button>
+                            </div>
                             </div>}
                         {
                             data && testStarted && !testFinished &&
@@ -75,7 +97,12 @@ const Test = (props) => {
                         {
                             data && testStarted && !testFinished &&
                             <div className="justify-content-center d-flex border-bottom pb-2 pt-0 mb-2">
-                                <button style={{backgroundColor:"#151D3B"}} onClick={()=>setTestFinished(true)} className="mt-0 btn-main-1 border-0 py-2 px-3 rounded text-light w-50">پایان آزمون</button>
+                                <button
+                                style={{fontSize:"15px" , fontFamily:'KalamehWeb-SemiBold'}} 
+                                className="btn-main-2 w-50 text-center rounded mb-2 border-0 fs-15 mt-1"       
+                                onClick={()=>setTestFinished(true)} >
+                                    پایان آزمون
+                                </button>
                             </div>
                         }
                         
@@ -85,7 +112,12 @@ const Test = (props) => {
                         {
                             data && testStarted && !testFinished &&
                             <div className="text-black w-100 d-flex flex-column align-items-center">
-                                <button style={{backgroundColor:"#151D3B"}} onClick={()=>setTestFinished(true)} className="btn-main-1 border-0 py-2 px-3 my-2 rounded text-white w-50">پایان آزمون</button>
+                                <button
+                                    style={{fontSize:"15px" , fontFamily:'KalamehWeb-SemiBold'}} 
+                                    className="btn-main-2 w-50 text-center rounded mb-2 border-0 fs-15 mt-1"       
+                                    onClick={()=>setTestFinished(true)} >
+                                        پایان آزمون
+                                </button>
 
                             </div>
                         }

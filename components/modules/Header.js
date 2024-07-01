@@ -24,9 +24,9 @@ const Header = () => {
                         <div className={`header-nav`}>
                             <nav className={`d-none d-xl-block`}>
                                 <ul className={`main-menu me-4 d-flex justify-content-start align-items-center`}>
-                                    <li className='m-3'><Link className={`p-0 ${pathname == "/" ? "active" : "text-dark"}`} href={"/"}>صفحه اصلی</Link></li>
+                                    <li className='m-3'><Link style={{fontFamily:"KalamehWeb-Bold" , }} className={`p-0 ${pathname == "/" ? "active" : "text-dark"}`} href={"/"}>صفحه اصلی</Link></li>
                                     <li className='has-children m-3'>
-                                        <Link className={`p-0 ${pathname == "/tests" ? "active" : "text-dark"}`}  href={"/tests"}>
+                                        <Link style={{fontFamily:"KalamehWeb-Bold" , }} className={`p-0 ${pathname == "/tests" ? "active" : "text-dark"}`}  href={"/tests"}>
                                         آزمون ها
                                         </Link>
                                         <ul className="sub-menu shadow-sm ">
@@ -47,8 +47,8 @@ const Header = () => {
                                             </li>
                                         </ul>
                                         </li>
-                                        <li className='m-3'><Link className={`p-0 ${pathname == "/articles" ? "active" : "text-dark"}`} href={"/articles"}>مقالات</Link></li>
-                                    <li className='m-3'><Link className={`p-0 ${pathname == "/courses" ? "active" : "text-dark"}`} href={"/courses"}>دوره ها و کلاس های آموزشی</Link></li>
+                                        <li className='m-3'><Link style={{fontFamily:"KalamehWeb-Bold" , }} className={`p-0 ${pathname == "/articles" ? "active" : "text-dark"}`} href={"/articles"}>مقالات</Link></li>
+                                    <li className='m-3'><Link style={{fontFamily:"KalamehWeb-Bold" , }} className={`p-0 ${pathname == "/courses" ? "active" : "text-dark"}`} href={"/courses"}>دوره ها و کلاس های آموزشی</Link></li>
                                     
                                 </ul>
                             </nav>
@@ -58,9 +58,9 @@ const Header = () => {
                     </div>
 
                         <div className={`d-flex align-items-center`}>
-                            <Link class="btn btn-linear d-none d-sm-inline-block ms-1 hover-up hover-shadow" href="/about">درباره من</Link>
+                            <Link style={{fontFamily:"KalamehWeb-Bold" , }} className="btn btn-linear d-none d-sm-inline-block ms-1 hover-up hover-shadow" href="/about">درباره من</Link>
                         <Link style={{height:"47px"}} className='d-xl-none' href={"/"}>
-                                <Image style={{width:"146px" , height:"47px"}} alt='logo' width={1000} height={300} src={'/images/components/modules/main-logo.jpg'} />
+                                <Image style={{width:"146px" , height:"47px"}} alt='logo' width={1000} height={300} src={'/images/components/modules/logo-dark.png'} />
                             </Link>
                         </div>
                 </div>

@@ -41,19 +41,19 @@ const Question = (props) => {
                 </div>
             </div>
             <div className='w-100'>
-                <label htmlFor={`option1${props.number}`} style={{border:`2px solid ${answer=="1" ? "#007bff" : "#728188"}`}} className={` d-flex align-items-center w-100 py-3 ps-2 rounded mb-2 flex-row-reverse`}>
+                <label htmlFor={`option1${props.number}`} style={{cursor:"pointer" , border:`2px solid ${answer=="1" ? "#007bff" : "#728188"}`}} className={` d-flex align-items-center w-100 py-3 ps-2 rounded mb-2 flex-row-reverse`}>
                     <input className="cur-poin me-2" onChange={changeHandler} type="radio" id={`option1${props.number}`} value={1}  name={`option${props.number}`}/>
                     <label style={{direction:"ltr"}} className="fw-200 me-1 cur-poin fs-13 fs-sm-15" htmlFor={`option1${props.number}`}>{props.option1}</label>
                 </label>
-                <label htmlFor={`option2${props.number}`} style={{border:`2px solid ${answer=="2" ? "#007bff" : "#728188"}`}} className={` d-flex align-items-center w-100 py-3 ps-2 rounded mb-2 flex-row-reverse`}>
+                <label htmlFor={`option2${props.number}`} style={{cursor:"pointer" , border:`2px solid ${answer=="2" ? "#007bff" : "#728188"}`}} className={` d-flex align-items-center w-100 py-3 ps-2 rounded mb-2 flex-row-reverse`}>
                     <input className="cur-poin me-2" onChange={changeHandler} type="radio" value={2} id={`option2${props.number}`}  name={`option${props.number}`}/>
                     <label style={{direction:"ltr"}} className="fw-200 me-1 cur-poin fs-13 fs-sm-15" htmlFor={`option2${props.number}`}>{props.option2}</label>
                 </label>
-                <label htmlFor={`option3${props.number}`} style={{border:`2px solid ${answer=="3" ? "#007bff" : "#728188"}`}} className={` d-flex align-items-center w-100 py-3 ps-2 rounded mb-2 flex-row-reverse`} >
+                <label htmlFor={`option3${props.number}`} style={{cursor:"pointer" , border:`2px solid ${answer=="3" ? "#007bff" : "#728188"}`}} className={` d-flex align-items-center w-100 py-3 ps-2 rounded mb-2 flex-row-reverse`} >
                     <input className="cur-poin me-2" onChange={changeHandler} type="radio" id={`option3${props.number}`} value={3} name={`option${props.number}`} />
                     <label style={{direction:"ltr"}} className="fw-200 me-1 cur-poin fs-13 fs-sm-15" htmlFor={`option3${props.number}`}>{props.option3}</label>
                 </label>
-                <label htmlFor={`option4${props.number}`} style={{border:`2px solid ${answer=="4" ? "#007bff" : "#728188"}`}} className={` d-flex align-items-center w-100 py-3 ps-2 rounded mb-2 flex-row-reverse`} >
+                <label htmlFor={`option4${props.number}`} style={{cursor:"pointer" , border:`2px solid ${answer=="4" ? "#007bff" : "#728188"}`}} className={` d-flex align-items-center w-100 py-3 ps-2 rounded mb-2 flex-row-reverse`} >
                     <input className="cur-poin me-2" onChange={changeHandler} type="radio" id={`option4${props.number}`} value={4} name={`option${props.number}`} />
                     <label style={{direction:"ltr"}} className="fw-200 me-1 cur-poin fs-13 fs-sm-15" htmlFor={`option4${props.number}`}>{props.option4}</label>
                 </label>
