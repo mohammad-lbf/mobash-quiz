@@ -5,8 +5,9 @@ import Test from '../../../components/modules/Test/Test';
 import testData from '../../../assets/Tests/Grammar/A2Level';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-
 import TestAuthor from '../../../components/modules/grammar/TestAuthor'
+import Signup from '../../../components/templates/Signup';
+
 const A2Level = () => {
     const{testName , testLevel , userStatus , passPoint , testTime , questions , categoryInp} = testData
     const dispatch = useDispatch();
