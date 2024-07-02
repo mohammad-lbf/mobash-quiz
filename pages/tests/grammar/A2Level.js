@@ -11,17 +11,32 @@ const A2Level = () => {
     const{testName , testLevel , userStatus , passPoint , testTime , questions , categoryInp} = testData
     const dispatch = useDispatch();
     const router = useRouter();
+    const [localSign, setLocalSign] = useState(false);
+    const [isChecking, setIsChecking] = useState(true); // حالت اولیه برای بررسی
     
     useEffect(() => {
         if (typeof window !== 'undefined') {
-          const storedUserName = localStorage.getItem('userName');
-          if (!storedUserName) {
-            router.push('/signup'); // جایگزین '/signup' با مسیر صفحه ثبت نام خود کنید
-          }
+            const storedUserName = localStorage.getItem('userName');
+            if (storedUserName) {
+                setLocalSign(true);
+            }
+            setIsChecking(false); // بعد از بررسی وضعیت، مقدار حالت را به false تغییر می‌دهیم
         }
-      }, []);
+    }, []);
+    if (isChecking) {
+        return (
+            <div className="d-flex justify-content-center align-items-center" style={{ height: '100vh' }}>
+                <div className="spinner-border" role="status">
+                    <span className="sr-only"></span>
+                </div>
+            </div>
+        );
+    }
 
     return (
+
+        <>
+        {localSign ?
         <div className='page-padding-tops'>
             <div className='pt-4 container'>
                     <div className='row pt-3 justify-content-center'>
@@ -74,6 +89,8 @@ const A2Level = () => {
                 <Test testData={testData}  />
             </div>
         </div>
+        :   <Signup localSign={localSign} setLocalSign={setLocalSign} />}    
+        </>
     );
 };
 

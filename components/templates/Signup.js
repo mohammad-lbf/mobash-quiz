@@ -2,7 +2,7 @@ import { useState , useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { Button, Form } from 'react-bootstrap';
 
-const Signup = () => {
+const Signup = ({setLocalSign}) => {
   const [userName, setUserName] = useState('');
   const [Err , setErr] = useState(false)
   const router = useRouter();
@@ -10,7 +10,7 @@ const Signup = () => {
     if (typeof window !== 'undefined') {
       const storedUserName = localStorage.getItem('userName');
       if (storedUserName) {
-        router.push('/tests'); // جایگزین '/destination' با مسیر مقصد خود کنید
+        // router.push(`/tests`); // جایگزین '/destination' با مسیر مقصد خود کنید
       }
     }
   }, []);
@@ -21,6 +21,7 @@ const Signup = () => {
     }
     else{
       e.preventDefault();
+      setLocalSign(true)
       const initialData = {
         userName,
         userTests: {
@@ -48,7 +49,7 @@ const Signup = () => {
         localStorage.setItem('userName', userName);
         localStorage.setItem('userData', JSON.stringify(initialData));
       }
-      router.push('/tests'); // جایگزین '/destination' با مسیر مقصد خود کنید
+      // router.push(`/tests/`); // جایگزین '/destination' با مسیر مقصد خود کنید
     }
   };
 
@@ -58,15 +59,15 @@ const Signup = () => {
             <div className='col-12 col-sm-10 col-md-7 col-lg-5 py-4 border my-4 rounded bg-light'>
             <h5 style={{fontSize:"24px",color:"#464749" , 
                 fontFamily:"KalamehWeb-Bold"}} 
-                className='text-end my-4'>
+                className='text-center my-4'>
                 ثبت نام
             </h5>
             <p 
               style={{fontSize:"15px" , 
               color:"#474d52" ,lineHeight:"2em" , 
-              textAlign:"justify" , 
+              textAlign:"center" , 
               fontFamily:"KalamehWeb-Medium"}} 
-              className='border-bottom pb-2 mb-2'>
+              className=' pb-2 mb-2'>
                 برای شرکت در آزمونهای سایت، می‌بایست نام و نام خانوادگی خود را وارد کنید.</p>
       <Form onSubmit={handleFormSubmit}>
         <Form.Group>
@@ -75,6 +76,7 @@ const Signup = () => {
             value={userName}
             onChange={(e) => setUserName(e.target.value)}
             required
+            className='text-center'
             placeholder='نام و نام خانوادگی'
           />
         </Form.Group>
@@ -84,7 +86,7 @@ const Signup = () => {
               style={{fontSize:"15px" ,  
               textAlign:"justify" , 
               fontFamily:"KalamehWeb-Medium"}} 
-              className='mt-3 text-danger'>
+              className='mt-3 text-danger text-center'>
                حداقل 3 کاراکتر وارد کنید
           </p>
         }

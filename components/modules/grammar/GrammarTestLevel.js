@@ -15,7 +15,7 @@ const GrammarTestLevel = ({level , pastLevel ,name , userStatus , userMark , pas
                 }
                 {
                     userStatus=="not-passed" && level!=="A1" && pastLevelStatus =="passed" ? `برای شرکت در آزمون، روی "ورود به آزمون" کلیک کنید` : 
-                    userStatus=="not-passed" && level!=="A1" && pastLevelStatus =="not-passed" || pastLevelStatus=="failed" ? `برای شرکت در این آزمون، باید در آزمون سطح ${pastLevel} نموه قبولی را کسب نمایید ` : 
+                    userStatus=="not-passed" && level!=="A1" && pastLevelStatus =="not-passed" || pastLevelStatus=="failed" ? `برای شرکت در این آزمون، باید در آزمون سطح ${pastLevel} نمره قبولی را کسب نمایید ` : 
                     userStatus=="passed" && level!=="A1" ? `شما در این آزمون شرکت کرده اید. نمره شما : ${userMark} از 100` :
                     userStatus=="failed" && level!=="A1" && `شما در این آزمون شرکت کرده و مردود شده اید. نمره شما : ${userMark} از 100`
                 }

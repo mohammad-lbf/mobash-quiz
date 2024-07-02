@@ -36,12 +36,12 @@ const Header = () => {
                                                 </Link>
                                             </li>
                                             <li>
-                                                <Link className='text-end' href={`${isUserNameInLocalStorage() ? '/tests/grammar' : '/signup'}`}>
+                                                <Link className='text-end' href={'/tests/grammar'}>
                                                     <span>آزمون تعیین سطح گرامر</span>
                                                 </Link>
                                             </li>
                                             <li>
-                                            <Link className='text-end' href='/tests/general'>
+                                            <Link className='text-end' href='/tests/public'>
                                                     <span>آزمون تعیین سطح عمومی</span>
                                                 </Link>
                                             </li>

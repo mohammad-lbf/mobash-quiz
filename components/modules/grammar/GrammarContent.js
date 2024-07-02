@@ -67,7 +67,46 @@ const GrammarContent = () => {
             fontFamily:"KalamehWeb-Bold" , }} 
             className='text-center mt-4 pt-2 mb-4 pb-2'>سطوح آزمون تعیین سطح گرامر:</h5>
             <GrammerTestLevels />
-
+            <h5
+            style={{fontSize:"24px",color:"#464749" , 
+            fontFamily:"KalamehWeb-Bold" , }} 
+            className='text-center mt-4 pt-2 mb-4 pb-2'>چرا تعیین سطح مبش آکادمی؟</h5>
+            <p 
+            style={{fontSize:"15px" , 
+            color:"#474d52" ,lineHeight:"2em" , 
+            textAlign:"justify" , 
+            fontFamily:"KalamehWeb-Medium"}} 
+            className='border-bottom pb-2 mb-2'>
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+            </p>
+            <p 
+            style={{fontSize:"15px" , 
+            color:"#474d52" ,lineHeight:"2em" , 
+            textAlign:"justify" , 
+            fontFamily:"KalamehWeb-Medium"}} 
+            className='border-bottom pb-2 mb-2'>
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+            </p>
+            <h5
+            style={{fontSize:"24px",color:"#464749" , 
+            fontFamily:"KalamehWeb-Bold" , }} 
+            className='text-center mt-4 pt-2 mb-4 pb-2'>بعد از انجام آزمون...</h5>
+            <p 
+            style={{fontSize:"15px" , 
+            color:"#474d52" ,lineHeight:"2em" , 
+            textAlign:"justify" , 
+            fontFamily:"KalamehWeb-Medium"}} 
+            className='border-bottom pb-2 mb-2'>
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+            </p>
+            <p 
+            style={{fontSize:"15px" , 
+            color:"#474d52" ,lineHeight:"2em" , 
+            textAlign:"justify" , 
+            fontFamily:"KalamehWeb-Medium"}} 
+            className='border-bottom pb-2 mb-2'>
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+            </p>
             <ShareSecton/>
         </div>
     );

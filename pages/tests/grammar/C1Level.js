@@ -9,17 +9,6 @@ import { useRouter } from 'next/router';
 import TestAuthor from '../../../components/modules/grammar/TestAuthor'
 const C1Level = () => {
     const{testName , testLevel , userStatus , passPoint , testTime , questions , categoryInp} = testData
-    const dispatch = useDispatch();
-    const router = useRouter();
-    
-    useEffect(() => {
-        if (typeof window !== 'undefined') {
-          const storedUserName = localStorage.getItem('userName');
-          if (!storedUserName) {
-            router.push('/signup'); // جایگزین '/signup' با مسیر صفحه ثبت نام خود کنید
-          }
-        }
-      }, []);
 
     return (
         <div className='page-padding-tops'>
