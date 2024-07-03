@@ -15,8 +15,8 @@ class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
-          <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybBogGz1q58rP1p0i7jL2y0uYw7rxUefF4Ec3B3cwR7r2eK8z" crossOrigin="anonymous"></script>
-          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-ho+pP0RAhpGx8BQCSNxmE8fUJ7ubE41gAPrUbS5d6knrM6QxjvoSXmr73jD8r7iD" crossOrigin="anonymous"></script>
+          {/* <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybBogGz1q58rP1p0i7jL2y0uYw7rxUefF4Ec3B3cwR7r2eK8z" crossOrigin="anonymous"></script> */}
+          {/* <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-ho+pP0RAhpGx8BQCSNxmE8fUJ7ubE41gAPrUbS5d6knrM6QxjvoSXmr73jD8r7iD" crossOrigin="anonymous"></script> */}
         </body>
       </Html>
     );
