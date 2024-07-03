@@ -36,12 +36,15 @@ const Signup = ({setLocalSign}) => {
           public: {
              A1Low: { userStatus: 'not-passed', userMark: '0' },
               A1High: { userStatus: 'not-passed', userMark: '0' },
-               B1low: { userStatus: 'not-passed', userMark: '0' },
+              A2Low: { userStatus: 'not-passed', userMark: '0' },
+              A2High: { userStatus: 'not-passed', userMark: '0' },
+               B1Low: { userStatus: 'not-passed', userMark: '0' },
+               B1High: { userStatus: 'not-passed', userMark: '0' },
+               B2Low: { userStatus: 'not-passed', userMark: '0' },
                 B2High: { userStatus: 'not-passed', userMark: '0' },
                  C1Low: { userStatus: 'not-passed', userMark: '0' },
                   C1High: { userStatus: 'not-passed', userMark: '0' },
-                   C2Low: { userStatus: 'not-passed', userMark: '0' },
-                    C2High: { userStatus: 'not-passed', userMark: '0' }
+                   C2CPE: { userStatus: 'not-passed', userMark: '0' },
           },
         },
       };

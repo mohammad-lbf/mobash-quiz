@@ -32,17 +32,17 @@ const Header = () => {
                                         <ul className="sub-menu shadow-sm ">
                                         <li>
                                             <Link className='text-end' href='/tests'>
-                                                    <span>همه آزمون ها</span>
+                                                    <span style={{fontFamily:"KalamehWeb-Bold" , }}>همه آزمون ها</span>
                                                 </Link>
                                             </li>
                                             <li>
                                                 <Link className='text-end' href={'/tests/grammar'}>
-                                                    <span>آزمون تعیین سطح گرامر</span>
+                                                    <span style={{fontFamily:"KalamehWeb-Bold" , }}>آزمون تعیین سطح گرامر</span>
                                                 </Link>
                                             </li>
                                             <li>
                                             <Link className='text-end' href='/tests/public'>
-                                                    <span>آزمون تعیین سطح عمومی</span>
+                                                    <span style={{fontFamily:"KalamehWeb-Bold" , }}>آزمون تعیین سطح عمومی</span>
                                                 </Link>
                                             </li>
                                         </ul>

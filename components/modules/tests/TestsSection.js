@@ -17,7 +17,7 @@ const TestsSection = () => {
                     </div>
                     <div className='col-sm'>
                     <Card
-                     slug={`general`}
+                     slug={`public`}
                      title={`تعیین سطح عمومی`}
                      caption={`لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است`}
                      />

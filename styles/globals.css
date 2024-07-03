@@ -645,7 +645,7 @@ input , textarea{
   padding: 10px; /* فاصله‌دهی دلخواه برای متن */
 }
 span{
-  font-family: 'YekanBakh' , 'IRANSansWeb' , 'Vazirmatn' , Noto Sans,sans-serif !important ;
+  font-family: 'YekanBakh' , 'IRANSansWeb' , 'Vazirmatn' , Noto Sans,sans-serif ;
 }
 
 pre{
