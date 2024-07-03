@@ -13,7 +13,7 @@ const Test = (props) => {
     const [testFinished , setTestFinished] = useState(false);
     const testState = useSelector(state => state);
     const dispatch = useDispatch();
-    const{testName , testLevel , userStatus , passPoint , testTime , questions , categoryInp} = props.testData
+    const{testName , readingText , listeningSrc , testLevel , passPoint , testTime , questions , categoryInp} = props.testData
     const data = questions;
 
     useEffect(()=>{
@@ -107,7 +107,7 @@ const Test = (props) => {
                         }
                         
                         {data && testStarted && !testFinished &&
-                        <Questions data={data} />
+                        <Questions data={data} reading={readingText} listeningSrc={listeningSrc} />
                         }
                         {
                             data && testStarted && !testFinished &&
