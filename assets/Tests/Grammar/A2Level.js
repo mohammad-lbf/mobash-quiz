@@ -7,8 +7,8 @@ const testData = {
     nextLevelName:"B1",
     passPoint:62.5,
     testTime:12,
-    readingText:null,
-    listeningSrc:null,
+    reading:null,
+    listening:null,
     questions:[
         {
           "id": "q1",

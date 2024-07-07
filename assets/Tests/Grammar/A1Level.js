@@ -5,8 +5,8 @@ const testData = {
     categoryInp:"آزمون تعیین سطح گرامر",
     passPoint:62.5,
     testTime:12,
-    readingText:null,
-    listeningSrc:null,
+    reading:null,
+    listening:null,
     nextLevel:"A2Level",
     nextLevelName:"A2",
     questions:[
