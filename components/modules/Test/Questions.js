@@ -1,7 +1,7 @@
 import React from 'react';
 import Question from './Question'
 import ReadingContainer from './ReadingContainer'
-const Questions = ({data , readingText , listeningSrc}) => {
+const Questions = ({data , reading , listeningSrc}) => {
     const multipleQuestions = data.filter(item => item.type == "multiple");
     const ReadingQuestions = data.filter(item => item.type == "reading");
     const ListeningQuestions = data.filter(item => item.type == "listening");
@@ -12,9 +12,9 @@ const Questions = ({data , readingText , listeningSrc}) => {
                 multipleQuestions.map(item => <Question key={item.id} {...item} />)
             }
             {
-                readingText &&
+                reading &&
                 <>
-                <ReadingContainer reading={readingText} />
+                <ReadingContainer reading={reading} />
                 {ReadingQuestions.map(item => <Question key={item.id} {...item} />)}
                 </>
             }

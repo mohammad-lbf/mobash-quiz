@@ -64,6 +64,18 @@ const Report = (props) => {
     const handleBack = () => {
         router.back();
     };
+    const reportData = {
+        userLocalName,
+        pointPercent,
+        passPoint,
+        questions,
+        corrects,
+        incorrects,
+        noAnswers,
+        testLevel,
+        category,
+        
+    };
 
     return (
         <div className="d-flex flex-column align-items-center text-dark w-100 mt-3">
@@ -137,7 +149,7 @@ const Report = (props) => {
                 fontFamily:"KalamehWeb-Medium"}} 
                 className="my-3">{`تبریک! شما تمامی سطوح ${categoryInp} را با موفقیت پشت سر گذاشتید`}</p>
             }
-            <DownloadPdfButton fileName={`${userLocalName} - ${category} ${testLevel} Test Result - www.mobash.ir`} />
+            <DownloadPdfButton fileName={`${userLocalName} - ${category} ${testLevel} Test Result - www.mobash.ir`} reportData={reportData} />
             <div className="text-center fs-15 w-100 d-flex  justify-content-center align-items-center flex-column">
                 <p style={{ width: "250px", height: "40px", direction: "ltr", paddingTop: "13px" , fontFamily:"KalamehWeb-Medium" }} className="my-1 mx-1 mx-sm-2 px-3 rounded bg-light text-dark border"> {questions.length} : تعداد کل سوالات</p>
                 <p style={{ width: "250px", height: "40px", direction: "ltr", paddingTop: "13px" , fontFamily:"KalamehWeb-Medium" }} className="my-1 mx-1 mx-sm-2 px-3 rounded bg-success text-white">{corrects.length} : تعداد پاسخ های درست</p>

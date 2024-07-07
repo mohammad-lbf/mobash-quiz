@@ -1,56 +1,106 @@
-import React, { useState, useEffect } from 'react';
-import html2canvas from 'html2canvas';
 import jsPDF from 'jspdf';
+import 'jspdf-autotable';
+import VazirFont from '../../../assets/functions/VazirBase64';
+import ImageBase64 from '../../../assets/functions/ImageBase64';
 
-const DownloadPdfButton = ({ fileName }) => {
-  const [isLoading, setIsLoading] = useState(false);
+const DownloadPdfButton = ({ fileName, reportData }) => {
+    const generatePDF = () => {
+        const doc = new jsPDF();
 
-  const downloadPdf = () => {
-    setIsLoading(true);
-    const input = document.getElementById('TEST_REPORT');
+        // Add Persian font
+        doc.addFileToVFS('Vazir.ttf', VazirFont);
+        doc.addFont('Vazir.ttf', 'Vazir', 'normal');
+        doc.setFont('Vazir');
 
-    if (!input) {
-      console.error('Error: The element with id "TEST_REPORT" was not found.');
-      setIsLoading(false);
-      return;
-    }
+        // Set font size for titles and content
+        const fontSize = 12;
+        const lineHeight = fontSize / 0.75;
 
-    const parentElement = input.parentElement;
-    const grandParentElement = parentElement.parentElement;
+        // Add title centered on the page
+        const God = 'In the name of God, the Most Compassionate, the Most Merciful.';
+        const title = 'Mobash Academy';
+        const subHeader = 'The Mobash Academy grammar placement Exam';
+        const titleFontSize = 18;
+        const titleWidth = doc.getStringUnitWidth(title) * titleFontSize / doc.internal.scaleFactor;
+        const pageWidth = doc.internal.pageSize.width;
+        const centerX = (pageWidth - titleWidth) / 2;
+        const subHeaderX = ((pageWidth - titleWidth) / 2) - 14;
+        const subHeaderY = 45;
 
-    html2canvas(grandParentElement, { scale: 2 })  // Increased scale for better quality with smaller size
-      .then((canvas) => {
-        const imgData = canvas.toDataURL('image/jpeg', 0.75);  // Use JPEG format with 75% quality
-        const pdf = new jsPDF('p', 'mm', 'a5');
-        const imgProps = pdf.getImageProperties(imgData);
-        const pdfWidth = pdf.internal.pageSize.getWidth();
-        const pdfHeight = (imgProps.height * pdfWidth) / imgProps.width;
+        doc.setFontSize(10);
+        doc.setFont('Vazir', 'italic');
+        doc.setTextColor('green');
+        doc.text(God, subHeaderX , 20); // Main title
 
-        pdf.addImage(imgData, 'JPEG', 0, 0, pdfWidth, pdfHeight);
-        pdf.save(`${fileName}.pdf`);
-        setTimeout(() => setIsLoading(false), 3000);  // Stop spinner after 3 seconds
-      })
-      .catch((error) => {
-        console.error('Error generating PDF:', error);
-        setIsLoading(false);
-      });
-  };
+        doc.setFontSize(24);
+        doc.setTextColor('black');
+        doc.text(title, centerX, 35); // Main title
 
-  return (
-    <div>
-      <button
-        className='btn-main-2 text-center rounded mb-2 border-0 mt-1 d-flex align-items-center'
-        
-        onClick={downloadPdf}
-        disabled={isLoading}
-      >
-        <p style={{ fontSize: "15px", fontFamily: 'KalamehWeb-SemiBold' }}>دریافت کارنامه به صورت PDF</p>
-        {isLoading && 
-          <span className="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>
+        doc.setFont('Vazir', 'italic');
+        doc.setFontSize(fontSize);
+        doc.setTextColor('red');
+        doc.text(subHeader, subHeaderX, 45);
+
+        // Data for the table
+        const tableData = [
+            ['Examiner Name:', reportData.userLocalName],
+            ['Test Level' , reportData.testLevel],
+            ['Your point', `${reportData.pointPercent.toFixed(2)} Of 100`],
+            ['Status', reportData.pointPercent < reportData.passPoint ? 'Failed' : 'Pass'],
+            ['Questions Number', reportData.questions.length],
+            ['Corrects', reportData.corrects.length],
+            ['Incorrects', reportData.incorrects.length],
+            ['No answers', reportData.noAnswers.length],
+
+        ];
+
+        // Create the table
+        doc.autoTable({
+            startY: 60,
+            head: [['Title', 'َAmount']],
+            body: tableData.map(row => [row[0], row[1]]),
+            headerStyles: { fillColor: '#000', textColor: '#fff', fontStyle: 'italic' },
+            bodyStyles: { fillColor: '#fff' },
+            margin: { top: 20 },
+            styles: { font: 'Vazir', fontSize: 10, cellPadding: 5, halign: 'left' },
+            theme: 'grid',
+            pageBreak: 'auto',
+            direction: 'rtl'
+        });
+
+        // Add border with style
+        const pageCount = doc.internal.getNumberOfPages();
+        for (let i = 1; i <= pageCount; i++) {
+            doc.setPage(i);
+            doc.setLineWidth(1);
+            doc.rect(10, 10, pageWidth - 20, doc.internal.pageSize.height - 20, 'S');
         }
-      </button>
-    </div>
-  );
+        const imgWidth = 60; // Set image width
+        const imgHeight = 20; // Set image height
+        const imgX = (pageWidth - imgWidth) / 2; // Center the image horizontally
+        const imgY = doc.internal.pageSize.height - imgHeight - 70; // Position the image 20 units from the bottom
+        doc.addImage(ImageBase64, 'PNG', imgX, imgY, imgWidth, imgHeight);
+
+                // Add text below the image
+                const footerText = 'powered by: Amirhosein Mbasheri - www.mobash.ir';
+                const footerFontSize = 14;
+                const footerTextWidth = doc.getStringUnitWidth(footerText) * footerFontSize / doc.internal.scaleFactor;
+                const footerX = (pageWidth - footerTextWidth) / 2;
+                const footerY = imgY + imgHeight + 10; // Position the text 20 units below the image
+        
+                doc.setFontSize(footerFontSize);
+                doc.text(footerText, footerX, footerY);
+
+        // Save the PDF file
+        doc.save(`${fileName}.pdf`);
+    };
+
+    return (
+        <button onClick={generatePDF} style={{fontSize:"15px" , fontFamily:'KalamehWeb-SemiBold'}} 
+        className="btn-main-2 text-decoration-none text-white mt-2 px-3 rounded" >
+            دانلود کارنامه به صورت PDF
+        </button>
+    );
 };
 
 export default DownloadPdfButton;

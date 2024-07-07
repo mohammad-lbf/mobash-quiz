@@ -5,8 +5,8 @@ const testData = {
     categoryInp:"آزمون تعیین سطح عمومی",
     passPoint:66.6,
     testTime:15,
-    nextLevel:"A1Low",
-    nextLevelName:"A1Low",
+    nextLevel:"A1High",
+    nextLevelName:"A1High",
     readingText:"",
     listeningSrc:"",
     questions: [

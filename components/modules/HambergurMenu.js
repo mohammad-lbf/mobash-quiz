@@ -15,14 +15,14 @@ function HambergurMenu({show , handleClose , theme}) {
           <Offcanvas.Title className='mb-0'>
           <Link className='d-flex' href={"/"}>
           <Image style={{width:"116px" , height:"37px"}} className={`${theme == "theme-night" ? "d-block" : "d-none"}`} alt='logo' width={1000} height={300} src={'/images/components/modules/logo-day1.png'} />
-                                <Image style={{width:"116px" , height:"37px"}} className={`${theme == "theme-day" ? "d-block" : "d-none"}`} alt='logo' width={1000} height={300} src={'/images/components/modules/logo1.png'} />
+          <Image style={{width:"116px" , height:"37px"}} className={`${theme == "theme-day" ? "d-block" : "d-none"}`} alt='logo' width={1000} height={300} src={'/images/components/modules/logo1.png'} />
           </Link>
           </Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body className='pt-0'>
             <div className='mobile-menu-wrap mobile-header-border'>
               <nav>
-                <Link style={{fontFamily:"KalamehWeb-Bold" , }} className="btn btn-linear w-100 my-3 d-inline-block hover-up hover-shadow" onClick={()=>handleClose()} href="about">درباره من</Link>
+                <Link style={{fontFamily:"KalamehWeb-Bold" , }} className="btn btn-linear w-100 my-3 d-inline-block hover-up hover-shadow" onClick={()=>handleClose()} href="/about">درباره من</Link>
                 <ul className='mobile-menu font-heading'>
                 <li className={`p-3 ${theme == "theme-day" && "border-bottom"}`} style={{borderBottom: `${theme == "theme-night" && "1px solid #222f43"}`}}><Link onClick={()=>handleClose()} className={`p-0 ${theme == "theme-night" ? "color-gray-200" : "color-gray-800"}`} style={{fontSize:"16px" , fontFamily:"KalamehWeb-Bold"}} href={"/"}>صفحه اصلی</Link></li>
 
