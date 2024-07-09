@@ -23,13 +23,13 @@ const GrammarTestLevel = ({level , pastLevel ,name , userStatus , userMark , pas
         </div>
         {
             level == "A1Low" && userStatus == "not-passed" ? 
-            <Link className="btn btn-linear d-inline-block hover-up hover-shadow mt-3 mt-sm-0 d-flex align-items-center justify-content-center" style={{fontFamily:'KalamehWeb-Regular',  width:"175px" , height:"40px"}} href={`/tests/public/${level}Level`}>ورود به آزمون</Link> :
+            <Link className="btn btn-linear d-inline-block hover-up hover-shadow mt-3 mt-sm-0 d-flex align-items-center justify-content-center" style={{fontFamily:'KalamehWeb-Regular',  width:"175px" , height:"40px"}} href={`/tests/public/${level}`}>ورود به آزمون</Link> :
             userStatus == "not-passed" && pastLevelStatus == "passed" ?
-            <Link className="btn btn-linear d-inline-block hover-up hover-shadow mt-3 mt-sm-0 d-flex align-items-center justify-content-center" style={{fontFamily:'KalamehWeb-Regular',  width:"165px" , height:"40px"}} href={`/tests/public/${level}Level`}>ورود به آزمون</Link> :
+            <Link className="btn btn-linear d-inline-block hover-up hover-shadow mt-3 mt-sm-0 d-flex align-items-center justify-content-center" style={{fontFamily:'KalamehWeb-Regular',  width:"165px" , height:"40px"}} href={`/tests/public/${level}`}>ورود به آزمون</Link> :
             userStatus == "not-passed" && pastLevelStatus !=="passed" ?
-            <Link className="btn btn-linear d-inline-block hover-up hover-shadow disabled mt-3 mt-sm-0 d-flex align-items-center justify-content-center" style={{fontFamily:'KalamehWeb-Regular',  width:"175px" , height:"40px"}} href={`/tests/public/${level}Level`}>ورود به آزمون<i className="bi bi-lock-fill me-1 pt-1"></i></Link> :
-            userStatus =="passed" ? <Link className="btn btn-linear disabled d-inline-block hover-up hover-shadow mt-3 mt-sm-0 d-flex align-items-center justify-content-center" style={{fontFamily:'KalamehWeb-Regular',  width:"165px" , height:"50px"}} href={`/tests/public/${level}Level`}>شما در این آزمون شرکت کرده اید</Link> :
-            userStatus =="failed" && <Link className="btn btn-danger text-white d-inline-block text-white mt-3 mt-sm-0 d-flex align-items-center justify-content-center" style={{fontFamily:'KalamehWeb-Regular',  width:"165px" , height:"40px"}} href={`/tests/public/${level}Level`}>آزمون مجدد</Link>
+            <Link className="btn btn-linear d-inline-block hover-up hover-shadow disabled mt-3 mt-sm-0 d-flex align-items-center justify-content-center" style={{fontFamily:'KalamehWeb-Regular',  width:"175px" , height:"40px"}} href={`/tests/public/${level}`}>ورود به آزمون<i className="bi bi-lock-fill me-1 pt-1"></i></Link> :
+            userStatus =="passed" ? <Link className="btn btn-linear disabled d-inline-block hover-up hover-shadow mt-3 mt-sm-0 d-flex align-items-center justify-content-center" style={{fontFamily:'KalamehWeb-Regular',  width:"165px" , height:"50px"}} href={`/tests/public/${level}`}>شما در این آزمون شرکت کرده اید</Link> :
+            userStatus =="failed" && <Link className="btn btn-danger text-white d-inline-block text-white mt-3 mt-sm-0 d-flex align-items-center justify-content-center" style={{fontFamily:'KalamehWeb-Regular',  width:"165px" , height:"40px"}} href={`/tests/public/${level}`}>آزمون مجدد</Link>
         }
         </div>
     </div>

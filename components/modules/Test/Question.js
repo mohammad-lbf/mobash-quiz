@@ -37,7 +37,8 @@ const Question = (props) => {
             <div className="d-flex flex-column align-items-end mb-3">
                 <div className="d-flex align-items-start mt-2">
                     <p style={{ direction: "ltr", lineHeight: "25px" }} className="me-1 mb-0 mt-1">{props.question}</p>
-                    <p className="text-end me-1 bg-primary text-white p-2 pb-1 rounded lh-0">{props.number}</p>
+                    <p className="text-center me-1 bg-primary text-white p-2 pb-1 rounded lh-0" style={{direction:"ltr"}}>{props.number}</p>
+                    {props.type=="reading" ? <i class="bi bi-book-half pt-2 me-1 rounded text-primary" style={{fontSize:"14px"}}></i> : props.type=="listening" ? <i class="bi bi-earbuds pt-2 me-1 rounded text-primary" style={{fontSize:"14px"}}></i> : null}
                 </div>
             </div>
             <div className='w-100'>

@@ -8,7 +8,7 @@ import ReportQuestions from './ReportQuestions';
 
 const Report = (props) => {
     const { questions, noAnswers, corrects, incorrects } = useSelector(state => state);
-    const { testLevel, passPoint, categoryInp, category , nextLevel , nextLevelName , reading , listeningSrc } = props.testData;
+    const { testLevel, passPoint, categoryInp, category , nextLevel , nextLevelName , reading , listening } = props.testData;
     const [userLocalName , setUserLocalName] = useState("")
     const pointPercent = (corrects.length / questions.length) * 100;
     const router = useRouter()
@@ -184,7 +184,7 @@ const Report = (props) => {
                                     className='text-center border-bottom py-4 mb-2 mt-3 border-top'>
                                     پاسخنامه سوالات:
             </h5>
-                <ReportQuestions data={questions} reading={reading} listeningSrc={listeningSrc} />
+                <ReportQuestions data={questions} reading={reading} listening={listening} />
             </div>
             <Link 
             href={

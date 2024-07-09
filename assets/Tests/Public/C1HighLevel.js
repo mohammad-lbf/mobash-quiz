@@ -4,10 +4,10 @@ const testData = {
     category:"public",
     categoryInp:"آزمون تعیین سطح عمومی",
     passPoint:66.6,
-    testTime:15,
+    testTime:20,
     nextLevel:"C2CPE",
-    nextLevelName:"C2CPE",
-    readingText:[
+    nextLevelName:"C2-CPE",
+    reading:[
         {
             "type": "mainTitle",
             "content": "The state of the world"
@@ -46,14 +46,198 @@ const testData = {
         }
     ]
     ,
-    listening:true,
+    listening:'/audios/tests/public/C1High/sound.mp3',
     questions: [
-        
-    ]
-  
-      
-    
-  
+        {
+          "id": "q1",
+          "number": 1,
+          "type": "multiple",
+          "question": "A: The bottom of my shirt has fallen off. Will you mend it, please?\nB: Sure, but I need a needle and ........",
+          "options": [
+            "thread",
+            "bead",
+            "warp",
+            "weft"
+          ],
+          "correctanswer": 1
+        },
+        {
+          "id": "q2",
+          "number": 2,
+          "type": "multiple",
+          "question": "A: Excuse me, Sir, were people able to read and write in that age?\nB: Actually, among the ruins there are inscriptions, ........... some degree of literacy even in the 9th century BC.",
+          "options": [
+            "multiplying",
+            "applying",
+            "implying",
+            "complying"
+          ],
+          "correctanswer": 3
+        },
+        {
+          "id": "q3",
+          "number": 3,
+          "type": "multiple",
+          "question": "A: What do you like the most about winter?\nB: Oh, my most cherished activity is stepping through ............ deep snow, listening to its sound crushing under my feet.",
+          "options": [
+            "timid",
+            "stark",
+            "faint",
+            "crisp"
+          ],
+          "correctanswer": 4
+        },
+        {
+          "id": "q4",
+          "number": 4,
+          "type": "multiple",
+          "question": "A: I will never do ...............\nB: Come on, it'll be fun.",
+          "options": [
+            "a thing such",
+            "as such thing",
+            "such thing",
+            "such a thing"
+          ],
+          "correctanswer": 4
+        },
+        {
+          "id": "q5",
+          "number": 5,
+          "type": "multiple",
+          "question": "A: He went to work .............. he felt sick.\nB: But why? He should have seen a doctor.",
+          "options": [
+            "since",
+            "due to",
+            "even though",
+            "as"
+          ],
+          "correctanswer": 3
+        },
+        {
+          "id": "q6",
+          "number": 6,
+          "type": "multiple",
+          "question": "A: I think she's much happier nowadays.\nB: Many a time ............. but it's much less common nowadays.",
+          "options": [
+            "did I see her cry",
+            "her I did see cry",
+            "cry I see her did",
+            "cry I did see her"
+          ],
+          "correctanswer": 1
+        },
+        {
+          "id": "q7",
+          "number": 7,
+          "type": "multiple",
+          "question": "A: Some people resort to the destruction of public property when they protest something like a new legislation but I think it's a theft.\nB: ..................., but I don't think it's as bad as destroying private property.",
+          "options": [
+            "You must be kidding",
+            "I suppose you have got a point",
+            "I couldn't agree more",
+            "How can you say that"
+          ],
+          "correctanswer": 2
+        },
+        {
+          "id": "q8",
+          "number": 8,
+          "type": "multiple",
+          "question": "A: The best advice was to eat the Frog first. The \"Frog\" is the thing we most avoid like doing a project we are meant to do.\nB: ............... . When you see it through, you can stop worrying.",
+          "options": [
+            "Makes sense",
+            "On the other hand",
+            "You know",
+            "Looking at it another way"
+          ],
+          "correctanswer": 1
+        },
+        {
+          "id": "q9",
+          "number": 9,
+          "type": "multiple",
+          "question": "A: Honestly, I'm only giving a general overview here but I'm ready to ............... afterward in the debate.\nB: Okay, go ahead.",
+          "options": [
+            "get in touch",
+            "get back to you",
+            "go into more details",
+            "give you an answer"
+          ],
+          "correctanswer": 3
+        },
+        {
+          "id": "q10",
+          "number": 10,
+          "type": "reading",
+          "question": "Which statement about population levels is correct?",
+          "options": [
+            "About two hundred years ago, the child mortality rate dropped significantly.",
+            "The rate is growing steadily now.",
+            "The rate will start to drop in the year 2100."
+          ],
+          "correctanswer": 1
+        },
+        {
+          "id": "q11",
+          "number": 11,
+          "type": "reading",
+          "question": "People are more likely to be killed ……",
+          "options": [
+            "soldiers by.",
+            "politicians by.",
+            "criminals by."
+          ],
+          "correctanswer": 3
+        },
+        {
+          "id": "q12",
+          "number": 12,
+          "type": "reading",
+          "question": "There is reason to be optimistic because ……",
+          "options": [
+            "you might win the lottery.",
+            "there are some positives despite what the newspapers report.",
+            "we’re making progress with environmental problems."
+          ],
+          "correctanswer": 2
+        },
+        {
+          "id": "q13",
+          "number": 13,
+          "type": "listening",
+          "question": "How many countries touch the Amazon Forest?",
+          "options": [
+            "two",
+            "Five",
+            "Nine"
+          ],
+          "correctanswer": 3
+        },
+        {
+          "id": "q14",
+          "number": 14,
+          "type": "listening",
+          "question": "How many kinds of fish are there officially?",
+          "options": [
+            "2000",
+            "3000",
+            "5000"
+          ],
+          "correctanswer": 2
+        },
+        {
+          "id": "q15",
+          "number": 15,
+          "type": "listening",
+          "question": "What animal group has the most species?",
+          "options": [
+            "Mammals",
+            "Amphibians",
+            "Reptiles"
+          ],
+          "correctanswer": 2
+        }
+      ]
       
 }
 export default testData;

@@ -665,3 +665,7 @@ pre{
     width: 100% !important;
 }
 
+.accordion-button{
+  background-color: #d2e9ff !important;
+  /* color: #fff; */
+}

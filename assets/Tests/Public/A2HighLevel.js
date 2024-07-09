@@ -6,8 +6,8 @@ const testData = {
     passPoint:66.6,
     testTime:15,
     nextLevel:"B1Low",
-    nextLevelName:"B1Low",
-    readingText:[
+    nextLevelName:"B1-Low",
+    reading:[
         {
             "type": "mainTitle",
             "content": "How to be a safe and smart searcher?"
@@ -54,14 +54,192 @@ const testData = {
         }
     ]
     ,
-    listening:true,
+    listening:'/audios/tests/public/A2High/sound.mp3',
     questions: [
-        
-    ]
-  
-      
-    
-  
-      
+        {
+          "id": "q1",
+          "number": 1,
+          "type": "multiple",
+          "question": "A: Excuse me, how far is it to the beach?\nB: Not much. You can walk there. It's only five minutes ....... from here.",
+          "options": [
+            "around",
+            "away",
+            "along",
+            "across"
+          ],
+          "correctanswer": 2
+        },
+        {
+          "id": "q2",
+          "number": 2,
+          "type": "multiple",
+          "question": "A: What's that ......... noise downstairs?\nB: I don't know but I'm scared.",
+          "options": [
+            "strange",
+            "straight",
+            "surprised",
+            "strength"
+          ],
+          "correctanswer": 1
+        },
+        {
+          "id": "q3",
+          "number": 3,
+          "type": "multiple",
+          "question": "Tap water doesn't look clean here.\nB: Yes, we should drink ........ water instead.",
+          "options": [
+            "natural",
+            "pipe",
+            "wild",
+            "mineral"
+          ],
+          "correctanswer": 4
+        },
+        {
+          "id": "q4",
+          "number": 4,
+          "type": "multiple",
+          "question": "A: I'll never forget ......... to the music at that concert.\nB: Yes. It was absolutely beautiful.",
+          "options": [
+            "to listen",
+            "listening",
+            "have listened",
+            "listened"
+          ],
+          "correctanswer": 2
+        },
+        {
+          "id": "q5",
+          "number": 5,
+          "type": "multiple",
+          "question": "A: She has ........ pencils than me.\nB: Yes, but you have ......... books.",
+          "options": [
+            "less - more",
+            "more - less",
+            "more - more",
+            "less - less"
+          ],
+          "correctanswer": 1
+        },
+        {
+          "id": "q6",
+          "number": 6,
+          "type": "multiple",
+          "question": "A: Kate, would you please ........... me your pen?\nB: Sure, but please give it back to me soon.",
+          "options": [
+            "borrow",
+            "let",
+            "lend",
+            "take"
+          ],
+          "correctanswer": 3
+        },
+        {
+          "id": "q7",
+          "number": 7,
+          "type": "multiple",
+          "question": "A: How about going out for dinner?\nB: That's ............",
+          "options": [
+            "sounds interesting",
+            "a good idea",
+            "look is good",
+            "idea is not bad"
+          ],
+          "correctanswer": 2
+        },
+        {
+          "id": "q8",
+          "number": 8,
+          "type": "multiple",
+          "question": "A: What would you like to do?\nB: .......................",
+          "options": [
+            "How about walk?",
+            "Going for walking",
+            "Just to walk.",
+            "Let's go walking."
+          ],
+          "correctanswer": 4
+        },
+        {
+          "id": "q9",
+          "number": 9,
+          "type": "multiple",
+          "question": "A: Michael, your room is very untidy. You should ......... your clothes and toys before you go to bed.\nB: Oh Mom, please. I'm tired now.",
+          "options": [
+            "put on",
+            "pick up",
+            "look after",
+            "take off"
+          ],
+          "correctanswer": 2
+        },
+        {
+          "id": "q10",
+          "number": 10,
+          "type": "reading",
+          "question": "You should only use one keyword in a single search.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctanswer": 2
+        },
+        {
+          "id": "q11",
+          "number": 11,
+          "type": "reading",
+          "question": "Words like “an” are unhelpful in a search.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctanswer": 1
+        },
+        {
+          "id": "q12",
+          "number": 12,
+          "type": "reading",
+          "question": "Some search engines give different results to different people.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctanswer": 1
+        },
+        {
+          "id": "q13",
+          "number": 13,
+          "type": "listening",
+          "question": "The shop has the T-shirt only in Black and red colors.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctanswer": 2
+        },
+        {
+          "id": "q14",
+          "number": 14,
+          "type": "listening",
+          "question": "The customer pays with a credit card",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctanswer": 2
+        },
+        {
+          "id": "q15",
+          "number": 15,
+          "type": "listening",
+          "question": "The T-shirt costs £10.95.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctanswer": 1
+        }
+      ]      
 }
+
 export default testData;

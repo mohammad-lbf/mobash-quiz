@@ -19,7 +19,7 @@ const DownloadPdfButton = ({ fileName, reportData }) => {
         // Add title centered on the page
         const God = 'In the name of God, the Most Compassionate, the Most Merciful.';
         const title = 'Mobash Academy';
-        const subHeader = 'The Mobash Academy grammar placement Exam';
+        const subHeader = `The Mobash Academy ${reportData.category} placement Exam`;
         const titleFontSize = 18;
         const titleWidth = doc.getStringUnitWidth(title) * titleFontSize / doc.internal.scaleFactor;
         const pageWidth = doc.internal.pageSize.width;
@@ -82,7 +82,7 @@ const DownloadPdfButton = ({ fileName, reportData }) => {
         doc.addImage(ImageBase64, 'PNG', imgX, imgY, imgWidth, imgHeight);
 
                 // Add text below the image
-                const footerText = 'powered by: Amirhosein Mbasheri - www.mobash.ir';
+                const footerText = 'Powered by: Amirhosein Mobasheri - www.mobash.ir';
                 const footerFontSize = 14;
                 const footerTextWidth = doc.getStringUnitWidth(footerText) * footerFontSize / doc.internal.scaleFactor;
                 const footerX = (pageWidth - footerTextWidth) / 2;
@@ -97,7 +97,7 @@ const DownloadPdfButton = ({ fileName, reportData }) => {
 
     return (
         <button onClick={generatePDF} style={{fontSize:"15px" , fontFamily:'KalamehWeb-SemiBold'}} 
-        className="btn-main-2 text-decoration-none text-white mt-2 px-3 rounded" >
+        className="btn-main-2 text-decoration-none text-white mt-2 mb-2 px-3 rounded" >
             دانلود کارنامه به صورت PDF
         </button>
     );

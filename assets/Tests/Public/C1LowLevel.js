@@ -4,10 +4,10 @@ const testData = {
     category:"public",
     categoryInp:"آزمون تعیین سطح عمومی",
     passPoint:66.6,
-    testTime:15,
+    testTime:20,
     nextLevel:"C1High",
-    nextLevelName:"C1High",
-    readingText:[
+    nextLevelName:"C1-High",
+    reading:[
         {
             "type": "mainTitle",
             "content": "The rise of fake news"
@@ -34,14 +34,198 @@ const testData = {
         }
     ]
     ,
-    listening:true,
+    listening:'/audios/tests/public/C1Low/sound.mp3',
     questions: [
-        
-    ]
-  
-      
-    
-  
-      
+        {
+          "id": "q1",
+          "number": 1,
+          "type": "multiple",
+          "question": "A: If we don’t …… the spread of the disease, it will turn into an epidemic.\nB: So, the best thing to do is to immunize the entire population.",
+          "options": [
+            "compel",
+            "oppress",
+            "curb",
+            "nip"
+          ],
+          "correctanswer": 3
+        },
+        {
+          "id": "q2",
+          "number": 2,
+          "type": "multiple",
+          "question": "A: Doctor, James never hangs out with his classmates when they plan public activities.\nB: In his case, I assume he lacks the confidence to …… into public places.",
+          "options": [
+            "venture",
+            "jeopardize",
+            "menace",
+            "imperil"
+          ],
+          "correctanswer": 1
+        },
+        {
+          "id": "q3",
+          "number": 3,
+          "type": "multiple",
+          "question": "A: The prices of wheat and rice are really low this year.\nB: That’s because last year’s …… harvest was the biggest ever.",
+          "options": [
+            "fertility",
+            "grain",
+            "plow",
+            "seed"
+          ],
+          "correctanswer": 2
+        },
+        {
+          "id": "q4",
+          "number": 4,
+          "type": "multiple",
+          "question": "A: Your son is the youngest ……, right?\nB: Yes, and your sons are the tallest …… .",
+          "options": [
+            "ones – ones",
+            "ones – one",
+            "one – ones",
+            "one – one"
+          ],
+          "correctanswer": 3
+        },
+        {
+          "id": "q5",
+          "number": 5,
+          "type": "multiple",
+          "question": "A: Before I turn 40, I want …… a book.\nB: So, you should start now.",
+          "options": [
+            "have written",
+            "to writing",
+            "to written",
+            "to have written"
+          ],
+          "correctanswer": 4
+        },
+        {
+          "id": "q6",
+          "number": 6,
+          "type": "multiple",
+          "question": "A: Where did he get the money from?\nB: …… who lent him the money.",
+          "options": [
+            "Mary it is",
+            "It is Mary",
+            "Mary",
+            "Mary is"
+          ],
+          "correctanswer": 2
+        },
+        {
+          "id": "q7",
+          "number": 7,
+          "type": "multiple",
+          "question": "A: There is something mysterious about the portraits in his paintings.\nB: Yeah, they all …… sad.",
+          "options": [
+            "could be",
+            "seem like",
+            "look kind of",
+            "look to me"
+          ],
+          "correctanswer": 3
+        },
+        {
+          "id": "q8",
+          "number": 8,
+          "type": "multiple",
+          "question": "A: Some workers do not deserve to earn any money because they are just physically present at their workplace and don’t work at all.\nB: ……, even if idle workers were paid a living wage, tax revenue would go up.",
+          "options": [
+            "To my expertise",
+            "Frank to be",
+            "It’s real that",
+            "Look at it this way"
+          ],
+          "correctanswer": 4
+        },
+        {
+          "id": "q9",
+          "number": 9,
+          "type": "multiple",
+          "question": "A: What would you do if you committed a crime that no one found out about?\nB: …… and face the consequences than to live with a guilty conscience.",
+          "options": [
+            "Far better to confess",
+            "Confessing is by far and away better",
+            "Confessing is better by far",
+            "To confess is by far and away better"
+          ],
+          "correctanswer": 1
+        },
+        {
+          "id": "q10",
+          "number": 10,
+          "type": "multiple",
+          "question": "Why did Edgar Welch go to the pizzeria?",
+          "options": [
+            "He was trying to commit robbery.",
+            "He hated all supporters of Hillary Clinton.",
+            "He was working as a private investigator and investigating a crime.",
+            "He had become concerned after reading an untrue news story."
+          ],
+          "correctanswer": 4
+        },
+        {
+          "id": "q11",
+          "number": 11,
+          "type": "multiple",
+          "question": "Which type of motivation for the creation of fake news is not given?",
+          "options": [
+            "It’s a way of making money from people who pay to read the stories.",
+            "It’s a way of commenting on current affairs.",
+            "It’s a way of attacking your political opponents.",
+            "It’s a form of entertainment."
+          ],
+          "correctanswer": 1
+        },
+        {
+          "id": "q12",
+          "number": 12,
+          "type": "multiple",
+          "question": "How does the author feel about stopping fake news from spreading?",
+          "options": [
+            "cautiously optimistic",
+            "doubtful",
+            "positive",
+            "pessimistic"
+          ],
+          "correctanswer": 3
+        },
+        {
+          "id": "q13",
+          "number": 13,
+          "type": "multiple",
+          "question": "The speaker thinks only teenagers get obsessed with online communication.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctanswer": 2
+        },
+        {
+          "id": "q14",
+          "number": 14,
+          "type": "multiple",
+          "question": "\"Phubbing\" refers to ignoring someone in favor of a phone.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctanswer": 1
+        },
+        {
+          "id": "q15",
+          "number": 15,
+          "type": "multiple",
+          "question": "People in the speaker's office spend lunchtime on their phones.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctanswer": 1
+        }
+      ]      
 }
+
 export default testData;

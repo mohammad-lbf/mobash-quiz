@@ -9,7 +9,7 @@ const ReportOption = ({ optionText, index, correctanswer, clientAnswer, status }
             style={{ border: `2px solid ${borderColor}` }}
             className={`${bgColor} d-flex align-items-center w-100 py-3 ps-2 rounded mb-2 flex-row-reverse`}>
             <p className="fw-200 me-1 cur-poin fs-13 fs-sm-15">({index + 1})</p>
-            <p className="fw-200 me-1 cur-poin fs-13 fs-sm-15">{optionText}</p>
+            <p style={{direction:"ltr"}} className="fw-200 me-1 cur-poin fs-13 fs-sm-15">{optionText}</p>
         </div>
     );
 };
