@@ -187,9 +187,9 @@ body {
     min-width: 211px;
 }
 }
-.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
-    /* /content: '' !important; */
-}
+/* .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+    /content: '' !important;
+} */
 .card-style-1{
     width:" 197px" !important;
      margin-right: "30px" !important;
