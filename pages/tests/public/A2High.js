@@ -2,7 +2,7 @@ import React from 'react';
 import {useState , useEffect} from 'react';
 import { useSelector , useDispatch } from 'react-redux'
 import Test from '../../../components/modules/Test/Test';
-import testData from '../../../assets/Tests/public/A2HighLevel';
+import testData from '../../../assets/Tests/Public/A2HighLevel';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
