@@ -58,7 +58,7 @@ const Header = () => {
                     </div>
 
                         <div className={`d-flex align-items-center`}>
-                            <Link style={{fontFamily:"KalamehWeb-Bold" , }} className="btn btn-linear d-none d-sm-inline-block ms-1 hover-up hover-shadow" href="/about">درباره من</Link>
+                            <Link style={{fontFamily:"KalamehWeb-Bold"}} className="btn btn-linear d-none d-sm-inline-block ms-1 hover-up hover-shadow" href="/about">درباره من</Link>
                         <Link style={{height:"47px"}} className='d-xl-none' href={"/"}>
                                 <Image style={{width:"146px" , height:"47px"}} alt='logo' width={1000} height={300} src={'/images/components/modules/logo-dark.png'} />
                             </Link>
