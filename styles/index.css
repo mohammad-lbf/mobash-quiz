@@ -17700,7 +17700,6 @@ input {
 
 .header {
     padding: 10px 0;
-    margin-top: 15px;
     float: left;
     width: 100%;
     position: fixed;
@@ -22203,10 +22202,6 @@ iframe.google-map {
 
     .box-banner-4 {
         display: block
-    }
-
-    .box-banner-4 .banner-image {
-        margin-bottom: 30px
     }
 
     .box-features {

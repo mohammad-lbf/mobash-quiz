@@ -12,20 +12,15 @@ const HomePage = () => {
         <div className='cover-home-3'>
             <FirstBanner />
             <div className='container-fluid'>
-                <div className='row'>
-                    <div className='col-xl-1'>
+                <div className='row justify-content-center'>
 
-                    </div>
-                    <div className='col-xl-10 col-lg-12'>
                         <div className='mb-3 mt-3'>
                             <IntroSection />
                             <TestsSection />
                             <CustomSlider />
                             <CoursesSection />
                             <InstagramBanner />
-                            {/* <HomeAbout /> */}
-                        </div>
-                        
+                            {/* <HomeAbout /> */}    
                     </div>
                 </div>
             </div>
