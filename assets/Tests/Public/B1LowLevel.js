@@ -7,6 +7,7 @@ const testData = {
     testTime:18,
     nextLevel:"B1High",
     nextLevelName:"B1-High",
+    readingCaption:null,
     reading:[
         {
             "type": "mainTitle",
@@ -33,11 +34,11 @@ const testData = {
             "content": "Think: Think of an object or gadget you use every day. How could it be improved? Can you think of three improvements?"
         },
         {
-            "type": "paragraph",
+            "type": "subTitle",
             "content": "Problem-solving"
         },
         {
-            "type": "subTitle",
+            "type": "paragraph",
             "content": "Employers will value workers who can see problems before they happen and come up with creative solutions."
         },
         {

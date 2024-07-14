@@ -6,9 +6,9 @@ const Reading = ({reading}) => {
         {reading.map((item, index) => {
             switch (item.type) {
                 case "mainTitle":
-                    return <h1 style={{fontSize:"30px"}} className="mt-2" key={index}>{item.content}</h1>;
+                    return <h1 style={{textAlign:"start"}} className="mt-2 fs-5" key={index}>{item.content}</h1>;
                 case "subTitle":
-                    return <h2 style={{fontSize:"20px"}} className="mb-3 mt-4" key={index}>{item.content}</h2>;
+                    return <h2 style={{fontSize:"18px"  , textAlign:"start"}} className="mb-3 mt-4" key={index}>{item.content}</h2>;
                 case "uList":
                     return (
                         <ul key={index}>
@@ -26,7 +26,7 @@ const Reading = ({reading}) => {
                         </ol>
                     );
                 case "paragraph":
-                    return <p style={{fontSize:"15px" , lineHeight:"22px" , textAlign:"justify"}} className="fw-bold mb-2" key={index}>{item.content}</p>;
+                    return <p style={{fontSize:"15px" , lineHeight:"22px" , textAlign:"start"}} className="fw-bold mb-2" key={index}>{item.content}</p>;
                 default:
                     return null;
             }

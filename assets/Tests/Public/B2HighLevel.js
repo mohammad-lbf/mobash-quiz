@@ -7,6 +7,7 @@ const testData = {
     testTime:18,
     nextLevel:"C1Low",
     nextLevelName:"C1-Low",
+    readingCaption:null,
     reading:[
         {
             "type": "mainTitle",
@@ -168,7 +169,7 @@ const testData = {
         {
           "id": "q10",
           "number": 10,
-          "type": "multiple",
+          "type": "reading",
           "question": "Fear Of Missing Out is ...",
           "options": [
             "anxiety about not having the latest technology.",
@@ -181,7 +182,7 @@ const testData = {
         {
           "id": "q11",
           "number": 11,
-          "type": "multiple",
+          "type": "reading",
           "question": "Research shows that schoolchildren are tired because they ...",
           "options": [
             "are going to bed very late.",
@@ -194,7 +195,7 @@ const testData = {
         {
           "id": "q12",
           "number": 12,
-          "type": "multiple",
+          "type": "reading",
           "question": "Nearly a quarter of 12 to 15-year-olds wake up to use social media ...",
           "options": [
             "once a night, on average.",
@@ -207,7 +208,7 @@ const testData = {
         {
           "id": "q13",
           "number": 13,
-          "type": "multiple",
+          "type": "listening",
           "question": "What is the main idea of the article?",
           "options": [
             "How TV can cause depression.",
@@ -219,7 +220,7 @@ const testData = {
         {
           "id": "q14",
           "number": 14,
-          "type": "multiple",
+          "type": "listening",
           "question": "Depressed teens tended to watch TV ............ then their peers.",
           "options": [
             "22 minutes less",
@@ -231,7 +232,7 @@ const testData = {
         {
           "id": "q15",
           "number": 15,
-          "type": "multiple",
+          "type": "listening",
           "question": "According to the article, in 1995 teens spent ........... listening to music as they did watching TV.",
           "options": [
             "more time",

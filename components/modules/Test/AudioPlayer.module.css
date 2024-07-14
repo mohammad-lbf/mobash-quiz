@@ -1,67 +1,25 @@
 .audioPlayer {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    padding: 10px;
-    background-color: #363636;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.controls {
-    display: flex;
     align-items: center;
-    justify-content: space-between;
+    margin: 10px 0;
     width: 100%;
 }
 
-.playButton {
-    background-color: #563cff;
-    width: 40px;
-    height: 40px;
-    border: none;
-    color: white;
-    /* padding: 10px 20px; */
-    padding-top: 3px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+.audioElement {
+    width: 100%;
+    margin: auto;
+    max-width: 600px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.playButton:hover {
-    background-color: #005bb5;
+/* مخفی کردن دکمه قطع صدا */
+.audioElement::-webkit-media-controls-mute-button {
+    display: none;
 }
 
-.progressContainer {
-    flex: 1;
-    height: 8px;
-    background: #ddd;
-    cursor: pointer;
-    margin: 0 20px;
-    position: relative;
-    border-radius: 5px;
-    transform: rotateX('180deg')
-}
 
-.progressBar {
-    height: 100%;
-    background: #0070f3;
-    width: 0;
-    border-radius: 5px;
 
-}
-
-.time {
-    font-size: 14px;
-    width: 65px;
-    color: rgb(221, 221, 221);
-}

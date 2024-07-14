@@ -7,6 +7,7 @@ const testData = {
     testTime:15,
     nextLevel:"A2High",
     nextLevelName:"A2-High",
+    readingCaption:null,
     reading:[
         {type:"mainTitle" , content:"My Town – Newquay"},
         {type:"paragraph" , content:"By Alex Howarth, 14"},
@@ -129,7 +130,7 @@ const testData = {
             "No, it's fine really.",
             "No, really, it's fine.",
             "No, it's really fine.",
-            "No, really, it's fine."
+            "Really? No, it's fine."
           ],
           "correctanswer": 2
         },

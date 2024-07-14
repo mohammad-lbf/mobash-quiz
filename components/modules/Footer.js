@@ -17,14 +17,14 @@ const Footer = () => {
                             <div className={`text-center text-lg-end`}>
                                 <p className="fs-10 mt-3 text-warning" style={{fontFamily:"KalamehWeb-Bold" , fontSize:"20px"}}>Mobash Academy</p>
                                 <p className="fs-10 mt-3 text-warning" style={{fontFamily:"KalamehWeb-Bold"  , fontSize:"14px"}}>
-                                    آموزش زبان انگلیسی مبش
+                                    آکادمی زبان انگلیسی مبش
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div className='d-flex justify-content-center justify-content-lg-start w-100'>
                         <p style={{fontFamily:"KalamehWeb-Medium" , fontSize:"14px" , width:"400px"}} className={`lh-lg mt-3 mb-3 ${styles.textColorMilky}`} >
-                        مبش اینجاست تا با جدیدترین متدهای روز دنیا، زبان انگلیسی را به صورت کاربردی در کوتاه‌ترین زمان و به راحتی بیاموزید.
+                        آکادمی مبش اینجاست تا با جدیدترین متدهای روز دنیا، زبان انگلیسی را بصورت کاربردی در کوتاه‌ترین زمان ممکن بیاموزید.
                             </p>
                     </div>
                 </div>

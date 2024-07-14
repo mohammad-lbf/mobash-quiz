@@ -7,6 +7,7 @@ const testData = {
     testTime:20,
     nextLevel:"C2CPE",
     nextLevelName:"C2-CPE",
+    readingCaption:null,
     reading:[
         {
             "type": "mainTitle",

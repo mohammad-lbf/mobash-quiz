@@ -7,6 +7,7 @@ const testData = {
     testTime:15,
     nextLevel:"A2Low",
     nextLevelName:"A2-Low",
+    readingCaption:"Read about Maria's plans to shop",
     reading:[
         {type:"mainTitle" , content:"Where are you going to shop?"},
         {type:"paragraph" , content:"Hi Karen, thanks for your message. Welcome to the neighborhood! Of course, I can help you find the shops you need, it’s not a problem!"},

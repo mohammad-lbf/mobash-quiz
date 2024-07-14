@@ -7,6 +7,7 @@ const testData = {
     testTime:15,
     nextLevel:"A1High",
     nextLevelName:"A1-High",
+    readingCaption:null,
     reading:[
         {type:"mainTitle" , content:"The Maine School Library"},
         {type:"subTitle" , content:"Opening hours"},
@@ -86,14 +87,14 @@ const testData = {
           "id": "q6",
           "number": 6,
           "type": "multiple",
-          "question": "A: When was the last time you saw her?\nB: I think I last saw her ..... Christmas.",
+          "question": "A: When was the last time you saw her?\nB: I think I last saw her ..... Christmas Day.",
           "options": [
             "at",
             "on",
             "in",
             "from"
           ],
-          "correctanswer": 1
+          "correctanswer": 2
         },
         {
           "id": "q7",

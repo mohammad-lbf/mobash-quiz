@@ -7,6 +7,7 @@ const testData = {
     testTime:18,
     nextLevel:"B2Low",
     nextLevelName:"B2-Low",
+    readingCaption:null,
     reading:[
         {
             "type": "mainTitle",

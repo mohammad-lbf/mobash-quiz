@@ -13,7 +13,7 @@ const Test = (props) => {
     const [testFinished , setTestFinished] = useState(false);
     const testState = useSelector(state => state);
     const dispatch = useDispatch();
-    const{testName , reading , listening , testLevel ,  passPoint , testTime , questions , categoryInp} = props.testData
+    const{testName , reading ,readingCaption , listening , testLevel ,  passPoint , testTime , questions , categoryInp} = props.testData
     const data = questions;
 
     useEffect(()=>{
@@ -54,7 +54,7 @@ const Test = (props) => {
                                 color:"#474d52" ,lineHeight:"2em" , 
                                 textAlign:"justify" , 
                                 fontFamily:"KalamehWeb-Medium"}} 
-                                className='border-bottom pb-2 mb-2'>بعد از آزمون، حتما پاسخ های خود را تحلیل کرده و اشتباهات خود را بررسی کنید</p>
+                                className='border-bottom pb-2 mb-2'>پس از اتمام آزمون، می‌توانید پاسخ صحیح سوالات را مشاهده کنید.</p>
                         <p 
                                 style={{fontSize:"15px" , 
                                 color:"#474d52" ,lineHeight:"2em" , 
@@ -107,7 +107,7 @@ const Test = (props) => {
                         }
                         
                         {data && testStarted && !testFinished &&
-                        <Questions data={data} reading={reading} listening={listening} />
+                        <Questions data={data} reading={reading} readingCaption={readingCaption} listening={listening} />
                         }
                         {
                             data && testStarted && !testFinished &&

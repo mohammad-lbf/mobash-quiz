@@ -36,9 +36,9 @@ const Question = (props) => {
         <div style={{ fontSize: "17px" }} className="text-black fw-bold d-flex flex-column align-items-end w-100 border-bottom border-primary pb-3 mb-2">
             <div className="d-flex flex-column align-items-end mb-3">
                 <div className="d-flex align-items-start mt-2">
-                    <p style={{ direction: "ltr", lineHeight: "25px" }} className="me-1 mb-0 mt-1">{props.question}</p>
+                    <div style={{ direction: "ltr", lineHeight: "25px" }} className="me-1 mb-0 mt-1" dangerouslySetInnerHTML={{ __html: props.question.replace(/\n/g, '<br />') }} />
                     <p className="text-center me-1 bg-primary text-white p-2 pb-1 rounded lh-0" style={{direction:"ltr"}}>{props.number}</p>
-                    {props.type=="reading" ? <i class="bi bi-book-half pt-2 me-1 rounded text-primary" style={{fontSize:"14px"}}></i> : props.type=="listening" ? <i class="bi bi-earbuds pt-2 me-1 rounded text-primary" style={{fontSize:"14px"}}></i> : null}
+                    {props.type=="reading" ? <i className="bi bi-book-half pt-2 me-1 rounded text-primary" style={{fontSize:"14px"}}></i> : props.type=="listening" ? <i className="bi bi-earbuds pt-2 me-1 rounded text-primary" style={{fontSize:"14px"}}></i> : null}
                 </div>
             </div>
             <div className='w-100'>

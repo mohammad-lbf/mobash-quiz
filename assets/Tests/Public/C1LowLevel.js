@@ -7,6 +7,7 @@ const testData = {
     testTime:20,
     nextLevel:"C1High",
     nextLevelName:"C1-High",
+    readingCaption:null,
     reading:[
         {
             "type": "mainTitle",
@@ -156,7 +157,7 @@ const testData = {
         {
           "id": "q10",
           "number": 10,
-          "type": "multiple",
+          "type": "reading",
           "question": "Why did Edgar Welch go to the pizzeria?",
           "options": [
             "He was trying to commit robbery.",
@@ -169,7 +170,7 @@ const testData = {
         {
           "id": "q11",
           "number": 11,
-          "type": "multiple",
+          "type": "reading",
           "question": "Which type of motivation for the creation of fake news is not given?",
           "options": [
             "It’s a way of making money from people who pay to read the stories.",
@@ -182,7 +183,7 @@ const testData = {
         {
           "id": "q12",
           "number": 12,
-          "type": "multiple",
+          "type": "reading",
           "question": "How does the author feel about stopping fake news from spreading?",
           "options": [
             "cautiously optimistic",
@@ -195,7 +196,7 @@ const testData = {
         {
           "id": "q13",
           "number": 13,
-          "type": "multiple",
+          "type": "listening",
           "question": "The speaker thinks only teenagers get obsessed with online communication.",
           "options": [
             "True",
@@ -206,7 +207,7 @@ const testData = {
         {
           "id": "q14",
           "number": 14,
-          "type": "multiple",
+          "type": "listening",
           "question": "\"Phubbing\" refers to ignoring someone in favor of a phone.",
           "options": [
             "True",
@@ -217,7 +218,7 @@ const testData = {
         {
           "id": "q15",
           "number": 15,
-          "type": "multiple",
+          "type": "listening",
           "question": "People in the speaker's office spend lunchtime on their phones.",
           "options": [
             "True",

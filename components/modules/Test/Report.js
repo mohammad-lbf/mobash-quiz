@@ -8,7 +8,7 @@ import ReportQuestions from './ReportQuestions';
 
 const Report = (props) => {
     const { questions, noAnswers, corrects, incorrects } = useSelector(state => state);
-    const { testLevel, passPoint, categoryInp, category , nextLevel , nextLevelName , reading , listening } = props.testData;
+    const { testLevel, passPoint, categoryInp, category , nextLevel , nextLevelName , reading ,readingCaption , listening } = props.testData;
     const [userLocalName , setUserLocalName] = useState("")
     const pointPercent = (corrects.length / questions.length) * 100;
     const router = useRouter()
@@ -134,21 +134,38 @@ const Report = (props) => {
                     color:"#474d52" ,lineHeight:"2em" , 
                     textAlign:"center" , 
                     fontFamily:"KalamehWeb-Medium"}} 
-                    className="my-3">{`تبریک، شما می‌توانید در آزمون سطح بعد(${nextLevelName}) شرکت کنید`}</p> :
+                    className="mt-3">{`تبریک، شما می‌توانید در آزمون سطح بعد(${nextLevelName}) شرکت کنید`}</p> :
                 pointPercent < passPoint ?
                 <p 
                 style={{fontSize:"15px" , 
                 color:"#474d52" ,lineHeight:"2em" , 
                 textAlign:"center" , 
                 fontFamily:"KalamehWeb-Medium"}} 
-                className="my-3">{`متاسفیم، شما در آزمون این سطح مردود شده اید`}</p> :
+                className="mt-3">{`متاسفیم، شما در آزمون این سطح مردود شده اید`}</p> :
                 <p 
                 style={{fontSize:"15px" , 
                 color:"#474d52" ,lineHeight:"2em" , 
                 textAlign:"center" , 
                 fontFamily:"KalamehWeb-Medium"}} 
-                className="my-3">{`تبریک! شما تمامی سطوح ${categoryInp} را با موفقیت پشت سر گذاشتید`}</p>
+                className="mt-3">{`تبریک! شما تمامی سطوح ${categoryInp} را با موفقیت پشت سر گذاشتید`}</p>
             }
+                            <h5
+            style={{fontSize:"24px",color:"#464749" , 
+            fontFamily:"KalamehWeb-Bold" , }} 
+            className='text-center mt-2 pt-3 mb-3 border-top w-100'>
+                پس از انجام آزمون...
+            </h5>
+                <p 
+                style={{fontSize:"15px" , 
+                color:"#474d52" ,lineHeight:"3em" , 
+                textAlign:"center" , 
+                fontFamily:"KalamehWeb-Medium"}}>
+                    {/* شما آزمون تعیین سطح خود را به پایان رساندید. */}
+                    {/* <br /> */}
+کارنامه خود را دانلود کرده و برای ما ارسال کنید. 
+<br />
+اساتید مجرب ما، شما را در پروسه یادگیری راهنمایی خواهند کرد و با تحلیل سطح کنونیتان، دوره ها، کلاس های آموزشی و انواع متریال آموزشی (شامل کتاب، پادکست، فیلم و...) را به شما ارائه خواهند کرد.
+                </p>
             <DownloadPdfButton fileName={`${userLocalName} - ${category} ${testLevel} Test Result - www.mobash.ir`} reportData={reportData} />
             <div className="text-center fs-15 w-100 d-flex  justify-content-center align-items-center flex-column">
                 <p style={{ width: "250px", height: "40px", direction: "ltr", paddingTop: "13px" , fontFamily:"KalamehWeb-Medium" }} className="my-1 mx-1 mx-sm-2 px-3 rounded bg-light text-dark border"> {questions.length} : تعداد کل سوالات</p>
@@ -184,7 +201,7 @@ const Report = (props) => {
                                     className='text-center border-bottom py-4 mb-2 mt-3 border-top'>
                                     پاسخنامه سوالات:
             </h5>
-                <ReportQuestions data={questions} reading={reading} listening={listening} />
+                <ReportQuestions data={questions} reading={reading} readingCaption={readingCaption} listening={listening} />
             </div>
             <Link 
             href={

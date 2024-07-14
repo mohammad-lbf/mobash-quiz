@@ -7,6 +7,7 @@ const testData = {
     testTime:15,
     nextLevel:"B1Low",
     nextLevelName:"B1-Low",
+    readingCaption:null,
     reading:[
         {
             "type": "mainTitle",
@@ -119,7 +120,7 @@ const testData = {
             "more - more",
             "less - less"
           ],
-          "correctanswer": 1
+          "correctanswer": 3
         },
         {
           "id": "q6",
