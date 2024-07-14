@@ -6,9 +6,9 @@ const Reading = ({reading}) => {
         {reading.map((item, index) => {
             switch (item.type) {
                 case "mainTitle":
-                    return <h1 style={{textAlign:"start"}} className="mt-2 fs-5" key={index}>{item.content}</h1>;
+                    return <h1 style={{textAlign:"start"  , lineHeight:"2rem" , fontWeight:"900"}} className="mt-2 fs-5" key={index}>{item.content}</h1>;
                 case "subTitle":
-                    return <h2 style={{fontSize:"18px"  , textAlign:"start"}} className="mb-3 mt-4" key={index}>{item.content}</h2>;
+                    return <h2 style={{fontSize:"16px"  , textAlign:"start" , fontWeight:"900"  , lineHeight:"1.5rem"}} className="mb-3 mt-4" key={index}>{item.content}</h2>;
                 case "uList":
                     return (
                         <ul key={index}>

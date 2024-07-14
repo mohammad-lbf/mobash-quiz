@@ -74,7 +74,7 @@ const PublicContent = () => {
             <p 
             style={{fontSize:"15px" , 
             color:"#474d52" ,lineHeight:"2em" , 
-            textAlign:"justify" , 
+            textAlign:"start" , 
             fontFamily:"KalamehWeb-Medium"}} 
             className='border-bottom pb-2 mb-2'>
             انتخاب پلتفرمی مناسب برای تعیین سطح اصولی مهارت های زبان انگلیسی، کاری دشوار و چالش برانگیز بنظر میرسد.<br />
