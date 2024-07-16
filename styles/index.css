@@ -20985,7 +20985,7 @@ input {
 }
 
 .box-socials a {
-    margin-right: 10px;
+    /* margin-right: 10px; */
     transition: all .2s
 }
 
@@ -21037,8 +21037,7 @@ input {
 
 
 .box-banner-4 .banner-image img {
-    border-radius: 50%;
-    /* width: 100%; */
+    border-radius: 10px;
     box-shadow: 0 3px 20px rgba(11,209,209,.2);
     border: 1px solid #0ea5ea
 }

@@ -11,6 +11,7 @@
   "dependencies": {
     "@splidejs/splide": "^4.1.4",
     "bootstrap": "^5.3.1",
+    "framer-motion": "^11.3.2",
     "html2canvas": "^1.4.1",
     "html2pdf.js": "^0.10.2",
     "ityped": "^1.0.3",

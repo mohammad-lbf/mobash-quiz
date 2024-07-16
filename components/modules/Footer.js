@@ -24,7 +24,7 @@ const Footer = () => {
                     </div>
                     <div className='d-flex justify-content-center justify-content-lg-start w-100'>
                         <p style={{fontFamily:"KalamehWeb-Medium" , fontSize:"14px" , width:"400px"}} className={`lh-lg mt-3 mb-3 ${styles.textColorMilky}`} >
-                        آکادمی مبش اینجاست تا با جدیدترین متدهای روز دنیا، زبان انگلیسی را بصورت کاربردی در کم ترین زمان ممکن بیاموزید.
+                        آکادمی مبش اینجاست تا با جدیدترین متدهای روز دنیا، زبان انگلیسی را بصورت کاربردی و در کم ترین زمان ممکن بیاموزید.
                             </p>
                     </div>
                 </div>

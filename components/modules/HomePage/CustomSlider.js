@@ -6,13 +6,13 @@ import { Carousel } from 'react-bootstrap';
 const CustomSlider = () => {
   return (
     <div className='bg-gray-850 rounded border-gray-800 mb-3'>
-          <div className='container py-3'>
+          <div className='container py-4'>
         <div className='row align-items-center'>
             <div className='col-12 col-lg-6'>
               <div className='d-flex flex-column justify-content-center justify-content-lg-end'>
-              <h3 style={{fontFamily:"Vazirmatn"}} className='color-linear fs-1 text-center text-lg-end'>آخرین مقالات</h3>
+              <h3 style={{fontSize:"30px", fontFamily:"KalamehWeb-Bold", color:"#03004e"}} className="fw-bold text-center text-lg-end">آخرین مقالات</h3>
               <div style={{width:"200px"}} className="lbf-after-card-img mx-lg-0 mx-auto mb-3"></div>
-              <p style={{fontSize:"16px"}} className='color-gray-500 mb-3 text-center fs-13 text-lg-end'>به روزترین مقالات زبان انگلیسی را در اینجا ببینید</p>
+              <p style={{fontSize:"16px"}} className='text-black mb-3 text-center fs-13 text-lg-end'>به روزترین مقالات زبان انگلیسی را در اینجا ببینید</p>
               {/* <h3 style={{fontFamily:"Vazirmatn"}} className='color-linear fs-1 mb-3 me-2'></h3> */}
         </div>
             </div>

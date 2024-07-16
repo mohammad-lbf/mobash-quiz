@@ -6,8 +6,8 @@ const LastBlogPosts = ({articles}) => {
   return (
     <div className='container'>
         <div className='mb-3 d-flex flex-column align-items-center align-items-lg-start'>
-          <h3 className='color-linear mb-1'>آخرین مقالات</h3>
-          <div style={{width:"150px"}} className="lbf-after-card-img mx-0"></div>
+
+          {/* <div style={{width:"150px"}} className="lbf-after-card-img mx-0"></div> */}
         </div>
         <div className='row article-vertical row-cols-lg-3 row-cols-sm-1 row-cols-md-2 row-cols-xs-1'>
           {

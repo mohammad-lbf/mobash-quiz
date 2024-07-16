@@ -180,12 +180,12 @@ body {
     }
 }
 
-@media (min-width:500px){
+/* @media (min-width:500px){
     .box-banner-4 .banner-image {
     max-width: 211px;
     min-width: 211px;
 }
-}
+} */
 /* .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
     /content: '' !important;
 } */
@@ -266,8 +266,8 @@ body {
 }
 .theme-day .lbf-after-card-img {
     height: 4px;
-    background: #2e3192;
-    width: 68px;
+    background: rgb(3, 0, 78);
+    /* width: 68px; */
     border-radius: 30px;
     margin: 10px auto;
 }
@@ -363,9 +363,50 @@ body {
 /***********************************************************
   6. Intro Section  
 ************************************************************/
-.intro-section {
+  .intro-section {
     position: relative;
+    background-color: rgb(29, 0, 158); /* رنگ پس زمینه دلخواه */
+    padding-top: 60px; /* فضای کافی برای موج بالایی */
+    padding-bottom: 60px; /* فضای کافی برای موج پایینی */
   }
+  
+  .wave-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+  }
+  
+  .wave-top svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+  }
+  
+  .wave-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotateY(180deg);
+  }
+  
+  .wave-bottom svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+  }
+  
+  .shape-fill {
+    fill: #f0f8ff; /* همان رنگ پس‌زمینه */
+  }
+  
   .lead{
     line-height: 27px;
   }
@@ -382,9 +423,7 @@ body {
     /* z-index: 100;? */
   }
   
-  .theme-day .intro-section .item-wrapper{
-    background: #fff !important;
-  }
+
   .intro-section .item-wrapper::before {
     content: '';
     width: 100%;
