@@ -7,7 +7,7 @@ const HomeAbout = () => {
         <div className="row flex-xl-row-reverse">
         <div className="col-xl-6 image-block aos-init aos-animate" data-aos="fade-right" data-aos-delay="200" data-aos-duration="2000">
             <div className="img-wrapper about-img-wrap" data-tilt="" data-tilt-max="10" style={{ transform: "perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)", willChange: "transform" }}>
-              <img className="about-img-1 rounded img-fluid" src="/images/IMG_۲۰۲۳۰۸۲۷_۲۲۲۰۱۷.jpg" alt="about image" />
+              {/* <img className="about-img-1 rounded img-fluid" src="/images/IMG_۲۰۲۳۰۸۲۷_۲۲۲۰۱۷.jpg" alt="about image" /> */}
               {/* <img className="about-img-2 img-fluid" src="image/about-image-2.png" alt="about image 2" /> */}
             </div>
           </div>

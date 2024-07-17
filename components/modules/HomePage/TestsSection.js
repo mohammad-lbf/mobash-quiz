@@ -16,11 +16,11 @@ const TestsSection = () => {
                         <p className='text-center lh-lg my-3' style={{fontFamily:"KalamehWeb-Medium" , color:"#000" , fontSize:"15px"}}>
 
                         </p>
-                        <Link style={{width:"fit-content"}} href={'/tests'} className="btn-main-2 text-white d-flex align-items-center">
+                        <Link style={{width:"fit-content"}} href={'/tests'} className="btn-main-2 text-white d-flex align-items-center animated-link">
                                 <span style={{fontFamily:"KalamehWeb-Bold"}}>
                                   آزمون های تعیین سطح
                                 </span>
-                                <i class="bi bi-chevron-double-left me-2 pt-2"></i>
+                                <i class="bi bi-chevron-double-left me-2 pt-2 animated-icon"></i>
                         </Link>
                 </div>
                 {/* <div className='col-12 mt-2'>

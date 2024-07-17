@@ -5,22 +5,27 @@ import Link from 'next/link';
 
 const CoursesSection = () => {
     return (
-        <div className='container'>
+        <div className='container pt-4'>
         
         <div className='row align-items-center pt-lg-4'>
-                    <div className='col-12 col-lg-6 text-center text-lg-end'>
-                        <h3 className='color-linear mb-1 mx-auto text-center text-lg-end'>دوره ها و کلاس‌های آموزشی</h3>
-                        <div  className="lbf-after-card-img mx-lg-0 mx-auto"></div>
-                            <p className='templates-intro text-center text-lg-end lh-lg my-3'>
-                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                    <div className='col-12 text-center'>
+                        <h3 style={{fontFamily:"KalamehWeb-Bold" , fontSize:"30px" , color:"#090736" , lineHeight:"40px"}} className='mb-1 mx-auto text-center'>دوره ها و کلاس‌های آموزشی</h3>
+                        <div style={{maxWidth:"330px"}} className="lbf-after-card-img mx-auto"></div>
+                    {/* <Image alt='site-templates' width={320} height={200} src={'/images/components/modules/courses.webp'} /> */}
+                            <p style={{fontFamily:"KalamehWeb-Bold" , fontSize:"17px" , color:"#000"}} className=' text-center lh-lg mb-4'>
+                            یادگیری سریع و عمیق زبان انگلیسی با مبش
                             </p>
-                            <Link href={'/courses'} className="btn btn-linear text-center">
-                                    مشاهده ی دوره ها
-                            </Link>
+                            <Link style={{ width: "fit-content" }} href={'/courses'} className="mx-auto btn-main-2 text-white d-flex align-items-center animated-link">
+    <span style={{ fontFamily: "KalamehWeb-Bold" }}>
+        مشاهده دوره ها
+    </span>
+    <i className="bi bi-chevron-double-left me-2 pt-2 animated-icon"></i>
+</Link>
+
                     </div>
-                    <div className='col-12 col-lg-6 text-center text-lg-start'>
-                    <Image alt='site-templates' width={320} height={200} src={'/images/components/modules/courses.webp'} />
-                    </div>
+                    {/* <div className='col-12 col-lg-6 text-center text-lg-start d-none d-lg-block'>
+                    <Image  alt='site-templates' width={320} height={200} src={'/images/components/modules/courses.webp'} />
+                    </div> */}
                     
                 
         </div>

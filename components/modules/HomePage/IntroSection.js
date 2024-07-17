@@ -2,7 +2,7 @@ import React from 'react';
 
 const IntroSection = () => {
   return (
-    <section className="intro-section section-block">
+    <section className="intro-section section-block mt-4">
       <div className="wave-top">
         <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
           <path d="M0,0V46.29c47.69,22.48,103.74,30.74,157.48,23.93C338,37,417,8,493,8s163,29,240,35,157-13,217-18c30.67-2.57,58.8-.3,87.1,3.57C1098.31,33.92,1149.49,45,1200,45V0Z" opacity=".25" className="shape-fill"></path>

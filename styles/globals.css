@@ -404,7 +404,7 @@ body {
   }
   
   .shape-fill {
-    fill: #f0f8ff; /* همان رنگ پس‌زمینه */
+    fill: #fff; /* همان رنگ پس‌زمینه */
   }
   
   .lead{
@@ -706,4 +706,32 @@ pre{
 .accordion-button{
   background-color: #d2e9ff !important;
   /* color: #fff; */
+}
+
+@keyframes linkBounce {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-5px);
+  }
+}
+
+@keyframes iconBounce {
+  0%, 100% {
+      transform: translateX(0);
+  }
+  50% {
+      transform: translateX(-5px);
+  }
+}
+
+.animated-link {
+  display: inline-block;
+  text-decoration: none;
+  animation: linkBounce 1s infinite;
+}
+
+.animated-icon {
+  animation: iconBounce 1s infinite;
 }
