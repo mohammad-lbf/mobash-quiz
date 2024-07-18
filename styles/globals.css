@@ -225,7 +225,7 @@ body {
     border: 1px solid #657489;
     border-radius: 15px;
     margin-bottom: 20px;
-    min-height: 362px;
+    /* height: 432px; */
     overflow: hidden !important;
     transition: all 0.3s;
     position: relative;
