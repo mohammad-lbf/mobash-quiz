@@ -43,7 +43,7 @@ const FirstBanner = () => {
                     <motion.a
                       rel='noreferrer'
                       className="bg-gray-800 hover-up text-center pt-2"
-                      href=""
+                      href="https://instagram.com/english_with_mobash?igshid=MzNlNGNkZWQ4Mg=="
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
                       transition={{ duration: 1.5, delay: 0.5 }}
@@ -53,7 +53,7 @@ const FirstBanner = () => {
                     <motion.a
                       rel='noreferrer'
                       className="bg-gray-800 hover-up text-center pt-2 mx-2"
-                      href=""
+                      href="https://api.whatsapp.com/send?phone=989383439244"
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
                       transition={{ duration: 1.5, delay: 0.7 }}
@@ -63,7 +63,7 @@ const FirstBanner = () => {
                     <motion.a
                       rel='noreferrer'
                       className="bg-gray-800 hover-up text-center pt-2"
-                      href=""
+                      href="https://www.youtube.com/@English.with.Mobash"
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
                       transition={{ duration: 1.5, delay: 0.9 }}

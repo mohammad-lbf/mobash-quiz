@@ -4,22 +4,23 @@ import Card from '../Card';
 const TestsSection = () => {
     return (
         <>
-            <h3 className="color-linear text-center text-lg-end">آزمون ها</h3>
-            <div style={{width:"110px"}} className="lbf-after-card-img mx-lg-0 mb-4 mt-0 mx-auto"></div>
-            <div className="container px-0">
-                <div className="row article-vertical row-cols-xl-3 row-cols-lg-2 row-cols-sm-1 row-cols-md-2 row-cols-xs-1">
-                    <div className='col-sm mb-3 mb-lg-0'>
+            {/* <h3 className="color-linear text-center text-lg-end">آزمون ها</h3> */}
+            <div className="container">
+            <h3 style={{fontFamily:"KalamehWeb-Bold" , color:"#090736" , fontSize:"30px"}} className='lh-lg text-center mb-2'>آزمون ها</h3>
+            <div style={{width:"200px"}} className="lbf-after-card-img mb-4 mt-0 mx-auto"></div>
+                <div className="row justify-content-center row-cols-xl-3 row-cols-lg-2 row-cols-sm-1 row-cols-md-2 row-cols-xs-1">
+                    <div className='col-sm d-flex justify-content-center mb-3 mb-lg-0'>
                     <Card
                      slug={`grammar`}
                      title={`تعیین سطح گرامر`}
-                     caption={`لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است`}
+                     caption={"1.	این آزمون منحصراً به بررسی مهارت‌های شما در زمینه Grammar میپردازد.     \n2.	برای شرکت در دوره‌های اختصاصی گرامر کاربرد دارد."}
                      />
                     </div>
-                    <div className='col-sm'>
+                    <div className='col-sm d-flex justify-content-center'>
                     <Card
                      slug={`public`}
                      title={`تعیین سطح عمومی`}
-                     caption={`لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است`}
+                     caption={"1.	این آزمون به بررسی چهار مهارت اصلی: Grammar, Listening, Reading, vocabulary میپردازد.\n2.	برای شرکت در دوره‌های ترمیک کاربرد دارد."}
                      />
                     </div>
 
