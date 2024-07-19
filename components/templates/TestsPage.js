@@ -36,7 +36,7 @@ const TestsPage = () => {
                                         <p style={{fontFamily:"KalamehWeb-Medium" , fontSize:"16px" , color:"#000"}} className='text-center text-lg- lh-lg pb-4'>
                                         آزمون های آکادمی مبش بر مبنای مقیاس CEFR و بادقت بسیاربالا طراحی شده اند تا بتوانند به تعیین دقیق سطح زبانی شما کمک کنند.
                                         </p>
-                                        <Link style={{fontFamily:"KalamehWeb-Medium" , fontSize:"16px"}} className='text-primary fw-bold' href={"/articles/cefrscales"}>برای آشنایی با مقیاس CEFR کلیک کنید</Link>
+                                        <Link style={{fontFamily:"KalamehWeb-Medium" , fontSize:"16px"}} className='text-primary fw-bold' href={"/articles/cefr-scales"}>برای آشنایی با مقیاس CEFR کلیک کنید</Link>
                                         </div>
                         </div>
                     </div>
