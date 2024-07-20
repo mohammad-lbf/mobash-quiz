@@ -8,7 +8,7 @@ const CEFRScalesPage = () => {
     const {articleTitle , slug , coverPhoto , datePublished} = articleData
     return (
         <div className='page-padding-tops'>
-            <div className='pt-4'>
+            <div className='pt-2 pt-md-4'>
                 <div className='container'>
                         <div className='row justify-content-between'>
                             <div className='col-12 col-xl-7'>

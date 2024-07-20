@@ -9,21 +9,21 @@ const ShareSection = ({slug}) => {
                 className='fs-4 mx-2 color-gray-600'
                 target={'_blank'}
                 rel="noreferrer"
-                href={`https://t.me/share/url?url=https://www.mobash.ir/${slug}`}>
+                href={`https://t.me/share/url?url=https://www.mobash.ir${slug}`}>
                     <i class="bi bi-telegram"></i>
                 </a>
                 <a 
                 className='fs-4 mx-2 color-gray-600'
                 target={'_blank'}
                 rel="noreferrer"
-                href={`whatsapp://send/?text=https://www.mobash.ir/${slug}`}>
+                href={`whatsapp://send/?text=https://www.mobash.ir${slug}`}>
                    <i class="bi bi-whatsapp"></i>
                 </a>
                 <a 
                 className='fs-4 mx-2 color-gray-600'
                 target={'_blank'}
                 rel="noreferrer"
-                href={`https://www.linkedin.com/sharing/share-offsite/?url=https://www.mobash.ir/${slug}`}>
+                href={`https://www.linkedin.com/sharing/share-offsite/?url=https://www.mobash.ir${slug}`}>
                     <i class="bi bi-linkedin"></i>
                 </a>
             
