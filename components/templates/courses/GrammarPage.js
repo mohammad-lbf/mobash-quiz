@@ -10,14 +10,11 @@ const GrammarPage = () => {
         <div className='page-padding-tops'>
             <div className='pt-4'>
                 <div className='container'>
-                        <div className='row justify-content-between'>
-                            <div className='col-12 col-xl-7'>
+                        <div className='row justify-content-center'>
+                            <div className='col-12 col-xl-10'>
                                 <ArticleMainSection categoryName={"دوره ها"} category={"/courses"} mainTitle={articleTitle} slug={slug} coverPhoto={coverPhoto} datePublished={datePublished} />
                                 <ArticleContent />
                                 <ShareSection slug={slug} />
-                            </div>
-                            <div className='col-12 col-xl-4'>
-                                <CourseAsideSection />
                             </div>
                         </div>
                 </div>

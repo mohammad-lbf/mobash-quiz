@@ -25,8 +25,8 @@ const ArticleContent = () => {
 <Paragraph>2. افرادی که لیسنینگ(Listening) خوبی دارند اما نمی‌توانند به خوبی مکالمه کنند.</Paragraph>
 <Paragraph>3. افرادی که به گرامر انگلیسی ازجمله 12 زمان زبان انگلیسی مسلط هستند.</Paragraph>
 <Paragraph>4. افرادی که به دوره های بدون کتاب آموزشی علاقه مند میباشند.</Paragraph>
-<Link href="/courses/grammar" className='text-primary fw-bold' style={{fontSize:"16px"}}>برای یادگیری اختصاصی گرامر کلیک کنید.</Link>
-
+<br />
+<Link href="/courses/grammar" className='text-primary fw-bold mb-3' style={{fontSize:"16px"}}>برای یادگیری اختصاصی گرامر کلیک کنید.</Link>
 <MainTitle>کلاس های مکالمه</MainTitle>
 
 <SubTitle>اطلاعات کلی:</SubTitle>
