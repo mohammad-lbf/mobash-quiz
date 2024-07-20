@@ -20,14 +20,18 @@ const ArticleContent = () => {
               <source src="/videos/articles/evolve-books/1.mp4" type="video/mp4" />
             </video>
             </div>
-            <MainTitle>با EVOLVE، از پایه تا آیلتس 8</MainTitle>
 
+            <div className='d-flex flex-column flex-lg-row  align-items-center'>
+                <div className='d-flex flex-column ms-0 ms-lg-4'>
+            <MainTitle>با EVOLVE، از پایه تا آیلتس 8</MainTitle>
             <Paragraph>دانشگاه کمبریج برای شناخت هرچه بهتر نیازهای زبان آموزان ، با بیش از 2000 دانشجوی زبان انگلیسی مصاحبه ای را انجام داد تا بتواند جذاب ترین موضوعات و مهارت ها را از دیدگاه دانشجویان در کلاس درس شناسایی کند.</Paragraph>
             <Paragraph>نتیجه این پروژه پیچیده به تحریر در آوردن مجموعه ای 6 جلدی شد که سطح زبانی دانشجویان را از A1 (مبتدی) به C1 ( پیشرفته) میرساند.</Paragraph>
             <Paragraph>این بدین معناست که یک زبان آموز که تنها فقط با الفبای زبان انگلیسی آشنایی دارد، پس از مطالعه کتب Evolve میتواند نمره میانگین 7.5 تا 8 را در آزمون آیلتس دریافت کند.</Paragraph>
-            <Paragraph>شما با مشاهده ی چارت زیر میتوانید سطح بین المللی(CEFR) مجموعه Evolve و نمره ی آیلتس (IELTS) معادل آن را مشاهده کنید.</Paragraph>
+            <Paragraph>شما با مشاهده ی چارت رو به رو میتوانید سطح بین المللی(CEFR) مجموعه Evolve و نمره ی آیلتس (IELTS) معادل آن را مشاهده کنید.</Paragraph>
             <Link style={{fontSize:"16px"}} className='w-100 text-primary fw-bold mt-3' href="/articles/cefr-scales">برای آشنایی با مقیاس CEFR کلیک کنید.</Link>
-            <ArticleImage style={{height:"400px" , width:"200px"}} src={"/images/articles/evolve-books/1.jpg"} width={319} height={701} />
+                </div>
+            <ArticleImage style={{height:"400px" , maxWidth:"250px"}} src={"/images/articles/evolve-books/1.jpg"} width={319} height={701} />
+            </div>
 
             <MainTitle>اهداف کتاب EVOLVE</MainTitle>
             <SubTitle>تقویت اختصاصی مهارت مکالمه:</SubTitle>
