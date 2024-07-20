@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+import ArticleAccordian from '../../Article/ArticleAccordian';
 import ArticleImage from '../../Article/ArticleImage';
 import MainTitle from '../../Article/MainTitle';
 import Paragraph from '../../Article/Paragraph';
@@ -21,6 +22,9 @@ const ArticleContent = () => {
             مقیاس CEFR در یادگیری زبان انگلیسی بسیار موفق عمل کرده زیرا رویکرد آن برمبنای مهارت ارتباطی تعریف شده است. در واقع، هدف CEFR صرفاً ارزیابی دانش زبانی خاصی نیست بلکه می‌کوشد انواع مهارت‌های خواندن، شنیدن، صحبت کردن، نوشتن و دستور زبان انگلیسی را به صورت کامل بررسی کند.
             </Paragraph>
             <MainTitle>هر یک از مهارت‌های زبانی به چه معنایی هستند؟</MainTitle>
+            <SubTitle>برای مشاهده مهارت های زبانی هر سطح، روی آن کلیک کنید:</SubTitle>
+            <br />
+            <ArticleAccordian caption={"سطح A1"}>
             <ArticleImage
             style={{width:"150px"}}
              src={"/images/articles/cefr-scales/1.png"} 
@@ -38,6 +42,8 @@ const ArticleContent = () => {
              <Paragraph>می‌توانید با عبارات بسیار ساده که از قبل حفظ کرده‌اید درباره افراد، مکان‌ها و زندگی روزمره صحبت کنید.</Paragraph>
              <SubTitle>مهارت نوشتن: نوشتن</SubTitle>
              <Paragraph>می‌توانید چندین جمله و عبارت محدود درباره موضوعات بسیار ساده بنویسید.</Paragraph>
+            </ArticleAccordian>
+             <ArticleAccordian caption={"سطح A2"}>
              <ArticleImage
             style={{width:"150px"}}
              src={"/images/articles/cefr-scales/2.png"} 
@@ -58,6 +64,8 @@ const ArticleContent = () => {
              <Paragraph>می‌توانید با استفاده از مجموعه‌ای از کلمات و جملات ساده، خانواده و دوستان، زندگی روزمره، اتفاقات گذشته، شغل و تحصیلات خود را توصیف کنید.</Paragraph>
              <SubTitle>مهارت نوشتن: نوشتن</SubTitle>
              <Paragraph>می‌توانید درباره موضوعات ساده و روزمره جملات کوتاه نوشته و آنها را با حروف ربط به هم متصل کنید تا چیزی شبیه به یک پاراگراف ساده به دست آید.</Paragraph>
+             </ArticleAccordian>
+             <ArticleAccordian caption={"سطح B1"}>
              <ArticleImage
             style={{width:"150px"}}
              src={"/images/articles/cefr-scales/3.png"} 
@@ -78,6 +86,8 @@ const ArticleContent = () => {
              <SubTitle>مهارت نوشتن: نوشتن</SubTitle>
              <Paragraph>1. می‌توانید یک متن معنادار و مشخص اما به زبان ساده درباره موضوعاتی که روی آنها تسلط دارید بنویسید.</Paragraph>
              <Paragraph>2. می‌توانید از علاقه‌ها و تجربیات شخصی خود جمله بسازید.</Paragraph>
+             </ArticleAccordian>
+             <ArticleAccordian caption={"سطح B2"}>
              <ArticleImage
             style={{width:"150px"}}
              src={"/images/articles/cefr-scales/4.png"} 
@@ -120,6 +130,8 @@ const ArticleContent = () => {
              <Paragraph>
 
              </Paragraph>
+             </ArticleAccordian>
+             <ArticleAccordian caption={"سطح C1"}>
              <ArticleImage
             style={{width:"150px"}}
              src={"/images/articles/cefr-scales/5.png"} 
@@ -127,25 +139,26 @@ const ArticleContent = () => {
              height={1000} 
              alt="C1.png" />
              <SubTitle>درک مطلب: مهارت شنیداری</SubTitle>
-<Paragraph>1. می‌توانید سخنرانی‌‎های مختلف را درباره موضوعات متفاوت متوجه شوید، فقط اصطلاحات بسیار پیچیده و تخصصی یا لهجه ناآشنای طرف مقابل ممکن است کار را برای شما سخت کند.</Paragraph>
-<Paragraph>2. می‌توانید دامنه بزرگی از لغات و اصطلاحات متفاوت را متوجه شده و بدون دردسر منظور کلی هر صحبتی را بفهمید.</Paragraph>
-
-<SubTitle>درک مطلب: مهارت خواندن</SubTitle>
-<Paragraph>1. می‌توانید متن‌های پیچیده و طولانی را مطالعه کنید، هرچند با موضوع تخصص شما مرتبط نباشند.</Paragraph>
-<Paragraph>2. احتمال دارد در بخش‌هایی که در آنها از واژگان تخصصی یا بسیار دشوار استفاده شده، نیاز داشته باشید جملات را چند بار خوانده یا معنی بعضی کلمات را در واژه نامه چک کنید.</Paragraph>
-
-<SubTitle>مهارت سخن گفتن: تعامل کلامی</SubTitle>
-<Paragraph>1. می‌توانید بی مقدمه و به راحتی، با سرعت قابل قبول و بدون زحمت صحبت کنید و نظرات خود را با دیگران به اشتراک بگذارید.</Paragraph>
-<Paragraph>2. می‌توانید از زبان برای اهداف اجتماعی و حرفه‌ای و به شکلی کارآمد استفاده کنید.</Paragraph>
-<Paragraph>3. طبیعی است که در موضوعات بسیار دشوار و تخصصی ممکن است نتوانید به آسانی منظور خود را رسانده و نیاز به تکرار و توضیحات بیشتر احساس شود.</Paragraph>
-
-<SubTitle>مهارت سخن گفتن: تولید کلامی</SubTitle>
-<Paragraph>می‌توانید با تسلط و آرامش درباره موضوعات نسبتا پیچیده سخنرانی کرده و برای جزئیات آن دلیل و برهان بیاورید.</Paragraph>
-
-<SubTitle>مهارت نوشتن: نوشتن</SubTitle>
-<Paragraph>1. می‌توانید به خوبی و روشنی و با ساختاری استاندارد درباره نظرات خود نوشته و یا از کسی انتقاد کنید.</Paragraph>
-<Paragraph>2. می‌توانید با کیفیت بالا نامه یا گزارشی بنویسید که در آن نقاط قوت و ضعف، دلیل و مثال، مقدمه و نتیجه گیری مناسب وجود داشته باشد.</Paragraph>
-
+            <Paragraph>1. می‌توانید سخنرانی‌‎های مختلف را درباره موضوعات متفاوت متوجه شوید، فقط اصطلاحات بسیار پیچیده و تخصصی یا لهجه ناآشنای طرف مقابل ممکن است کار را برای شما سخت کند.</Paragraph>
+            <Paragraph>2. می‌توانید دامنه بزرگی از لغات و اصطلاحات متفاوت را متوجه شده و بدون دردسر منظور کلی هر صحبتی را بفهمید.</Paragraph>
+                
+            <SubTitle>درک مطلب: مهارت خواندن</SubTitle>
+            <Paragraph>1. می‌توانید متن‌های پیچیده و طولانی را مطالعه کنید، هرچند با موضوع تخصص شما مرتبط نباشند.</Paragraph>
+            <Paragraph>2. احتمال دارد در بخش‌هایی که در آنها از واژگان تخصصی یا بسیار دشوار استفاده شده، نیاز داشته باشید جملات را چند بار خوانده یا معنی بعضی کلمات را در واژه نامه چک کنید.</Paragraph>
+                
+            <SubTitle>مهارت سخن گفتن: تعامل کلامی</SubTitle>
+            <Paragraph>1. می‌توانید بی مقدمه و به راحتی، با سرعت قابل قبول و بدون زحمت صحبت کنید و نظرات خود را با دیگران به اشتراک بگذارید.</Paragraph>
+            <Paragraph>2. می‌توانید از زبان برای اهداف اجتماعی و حرفه‌ای و به شکلی کارآمد استفاده کنید.</Paragraph>
+            <Paragraph>3. طبیعی است که در موضوعات بسیار دشوار و تخصصی ممکن است نتوانید به آسانی منظور خود را رسانده و نیاز به تکرار و توضیحات بیشتر احساس شود.</Paragraph>
+                
+            <SubTitle>مهارت سخن گفتن: تولید کلامی</SubTitle>
+            <Paragraph>می‌توانید با تسلط و آرامش درباره موضوعات نسبتا پیچیده سخنرانی کرده و برای جزئیات آن دلیل و برهان بیاورید.</Paragraph>
+                
+            <SubTitle>مهارت نوشتن: نوشتن</SubTitle>
+            <Paragraph>1. می‌توانید به خوبی و روشنی و با ساختاری استاندارد درباره نظرات خود نوشته و یا از کسی انتقاد کنید.</Paragraph>
+            <Paragraph>2. می‌توانید با کیفیت بالا نامه یا گزارشی بنویسید که در آن نقاط قوت و ضعف، دلیل و مثال، مقدمه و نتیجه گیری مناسب وجود داشته باشد.</Paragraph>
+             </ArticleAccordian>
+             <ArticleAccordian caption={"سطح C2"}>
              <ArticleImage
             style={{width:"150px"}}
              src={"/images/articles/cefr-scales/6.png"} 
@@ -169,7 +182,7 @@ const ArticleContent = () => {
                  
              <SubTitle>مهارت نوشتن: نوشتن</SubTitle>
              <Paragraph>می‌توانید نامه‌ها، گزارش‌ها یا مقالات پیچیده‌ و تاثیرگذاری بنویسید که ادعایی را با ساختار مناسب مطرح میکنند، خواننده را متقاعد نموده و کاری میکنند تا او به نکات مهم پی متن برده و آنها را به خاطر بسپارد.</Paragraph>
-
+             </ArticleAccordian>
         </div>
         <>
             <MainTitle>میزان تناسب نمرات آزمون آیلتس با سطوح CEFR :</MainTitle>

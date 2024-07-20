@@ -4,26 +4,29 @@ import ArticleImage from '../../Article/ArticleImage';
 import MainTitle from '../../Article/MainTitle';
 import Paragraph from '../../Article/Paragraph';
 import SubTitle from '../../Article/SubTitle';
+import ArticleAccordian from '../../Article/ArticleAccordian';
 
 const ArticleContent = () => {
     return (
-        <div className='mt-2'>
+        <div className='mt-2 d-flex flex-column align-items-center'>
             <>
             
             <MainTitle>آشنایی با مجموعه کتاب های Evolve:</MainTitle>
             <Paragraph>انتشارات دانشگاه کمبریج ، یکی از پیشگامان عرصه آموزش زبان، در سال 2019  یکی از بهترین کتب آموزش زبان انگلیسی را با عنوان   Evolve  منتشر کرد.</Paragraph>
             <Paragraph>این کتاب با همکاری تیم بزرگی از نویسندگان، اساتید و مشاورین رسمی دانشگاه کمبریج تهیه شده است تا بتواند تمامی نیازهای دانشجویان در یادگیری زبان انگلیسی را برآورده کند.</Paragraph>
             
+            <div style={{maxWidth:"400px"}}>
             <video className='rounded w-100' controls>
               <source src="/videos/articles/evolve-books/1.mp4" type="video/mp4" />
             </video>
+            </div>
             <MainTitle>با EVOLVE، از پایه تا آیلتس 8</MainTitle>
 
             <Paragraph>دانشگاه کمبریج برای شناخت هرچه بهتر نیازهای زبان آموزان ، با بیش از 2000 دانشجوی زبان انگلیسی مصاحبه ای را انجام داد تا بتواند جذاب ترین موضوعات و مهارت ها را از دیدگاه دانشجویان در کلاس درس شناسایی کند.</Paragraph>
             <Paragraph>نتیجه این پروژه پیچیده به تحریر در آوردن مجموعه ای 6 جلدی شد که سطح زبانی دانشجویان را از A1 (مبتدی) به C1 ( پیشرفته) میرساند.</Paragraph>
             <Paragraph>این بدین معناست که یک زبان آموز که تنها فقط با الفبای زبان انگلیسی آشنایی دارد، پس از مطالعه کتب Evolve میتواند نمره میانگین 7.5 تا 8 را در آزمون آیلتس دریافت کند.</Paragraph>
             <Paragraph>شما با مشاهده ی چارت زیر میتوانید سطح بین المللی(CEFR) مجموعه Evolve و نمره ی آیلتس (IELTS) معادل آن را مشاهده کنید.</Paragraph>
-            <Link style={{fontSize:"16px"}} className='text-primary fw-bold' href="/articles/cefr-scales">برای آشنایی با مقیاس CEFR کلیک کنید.</Link>
+            <Link style={{fontSize:"16px"}} className='w-100 text-primary fw-bold mt-3' href="/articles/cefr-scales">برای آشنایی با مقیاس CEFR کلیک کنید.</Link>
             <ArticleImage style={{height:"400px" , width:"200px"}} src={"/images/articles/evolve-books/1.jpg"} width={319} height={701} />
 
             <MainTitle>اهداف کتاب EVOLVE</MainTitle>
@@ -32,9 +35,11 @@ const ArticleContent = () => {
             <Paragraph>این کتاب در هر سطح،  12 موضوع جذاب و بروز را مورد بحث و بررسی قرار میدهد و با قرار دادن دانشجویان در موقعیت هایی مشابه آنچه در دنیای واقعی تجربه خواهند کرد، آنان را به استفاده از لغات و گرامری که در هر بخش به صورت موضوعی فرا میگیرند، تشویق میکند.</Paragraph>
             <Paragraph>کتاب Evolve  تنها به قراردادن فعالیت های رایج برای تقویت مکالمه بسنده نکرده و با اختصاص دادن 12 بخش کامل (Time To Speak) در کنار هزاران فعالیت مکالمه محور، آموزش اصطلاحات رایج انگلیسی در قالب  Insider English وUseful Phrases ، گامی بلند در راستای تقویت مهارت Speaking دانشجویان برداشته است.</Paragraph>
             <Paragraph>کتاب Evolve با قراردادن نمونه های متعدد ویدیویی از زبان آموزان واقعی و متخصصین در حوزه های مختلف در قالب  QRکد تلاش کرده است تا اولین کتاب در دنیا باشد که با نمایش نمونه های دست یافتنی به زبان آموزان کمک کند تا نه تنها با اعتماد به نفس بالاتری انگلیسی صحبت کنند بلکه بتوانند در رابطه با موضوعات مختلف ایده پردازی کنند و به تفصیل صحبت کنند.</Paragraph>
-            <video className='rounded w-100 mb-3 border' controls>
-              <source src="/videos/articles/evolve-books/2.mp4"  type="video/mp4" />
+            <div style={{maxWidth:"400px"}}>
+            <video className='rounded mb-3 border w-100' controls>
+              <source  src="/videos/articles/evolve-books/2.mp4"  type="video/mp4" />
             </video>
+            </div>
 
             
             <SubTitle>تقویت اختصاصی گرامر</SubTitle>
@@ -60,19 +65,20 @@ const ArticleContent = () => {
 
             <ArticleImage src={"/images/articles/evolve-books/2.jpg"} width={7680} height={294} alt={"evolve-books"} />
             <MainTitle>سوالات متداول</MainTitle>
-
-            <SubTitle>کتاب های Evolve برای چه سطحی مناسب هستند؟</SubTitle>
+            
+            <ArticleAccordian caption={"کتاب های Evolve برای چه سطحی مناسب هستند؟"}>
             <Paragraph>این مجموعه برای زبان‌آموزان از سطح مبتدی تا پیشرفته مناسب است. هر کتاب این مجموعه، با توجه به چارچوب CEFR، یک سطح خاص را پوشش می‌دهد. کتاب اول برای سطح A1، کتاب دوم برای سطح A2، کتاب سوم برای سطح B1، کتاب چهارم برای سطح B1+، کتاب پنجم برای سطح B2 و کتاب ششم برای سطح C1 مناسب است.</Paragraph>
-
-            <SubTitle>چگونه می‌توانم برای استفاده از کتاب‌های Evolve سطح خود را تعیین کنم؟</SubTitle>
+            </ArticleAccordian>
+            <ArticleAccordian caption={"چگونه می‌توانم برای استفاده از کتاب‌های Evolve سطح خود را تعیین کنم؟"}>
             <Paragraph>از <Link className='fw-bold text-primary' href="/tests/public">آزمون تعیین سطح عمومی سایت</Link> استفاده کنید.</Paragraph>
-
-            <SubTitle>چگونه میتوانم به یادگیری اصولی کتاب های Evolve بپردازم؟</SubTitle>
+            </ArticleAccordian>
+            <ArticleAccordian caption={" چگونه میتوانم به یادگیری اصولی کتاب های Evolve بپردازم؟"}>
             <Paragraph>با شرکت در <Link className='fw-bold text-primary' href='/courses/termic'>دوره‌های ترمیک و فشرده</Link> میتوانید با بهترین کیفیت و در کمترین زمان ممکن به کتاب‌های Evolve مسلط شوید.</Paragraph>
-
-            <SubTitle>چگونه می‌توانم به فایل‌های صوتی و ویدئویی مجموعه Evolve دسترسی داشته باشم؟</SubTitle>
+            </ArticleAccordian>
+            <ArticleAccordian caption={"چگونه می‌توانم به فایل‌های صوتی و ویدئویی مجموعه Evolve دسترسی داشته باشم؟"}>
             <Paragraph>1. استفاده از نسخه دیجیتال کتاب و دسترسی به فایل‌های صوتی و ویدئویی از طریق نرم‌افزار کمبریج ریدر.</Paragraph>
             <Paragraph>2.  استفاده از QRکدهای کتاب.</Paragraph>
+            </ArticleAccordian>
             </>
 
         </div>

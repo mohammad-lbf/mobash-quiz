@@ -2,7 +2,8 @@ import React from 'react';
 
 const LearningHoursTable = () => {
   return (
-    <table className="table table-striped" style={{ width: '100%', fontSize: '16px', borderCollapse: 'collapse' }}>
+    <div className='d-flex justify-content-center'>
+      <table className="table table-striped" style={{maxWidth:"500px", width: '100%', fontSize: '16px', borderCollapse: 'collapse' }}>
       <thead>
         <tr className="bg-primary text-white">
           <th className='text-center text-light' style={{ padding: '16px', border: '1px solid black' }}>Guided Learning Hours</th>
@@ -36,6 +37,7 @@ const LearningHoursTable = () => {
         </tr>
       </tbody>
     </table>
+    </div>
   );
 };
 
