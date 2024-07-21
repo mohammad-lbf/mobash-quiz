@@ -49,199 +49,200 @@ const testData = {
     ,
     listening:'/audios/tests/public/B2High/sound.mp3',
     questions: [
-        {
+      {
           "id": "q1",
           "number": 1,
           "type": "multiple",
           "question": "A: Look, the way Julie is walking is so funny.\nB: Yes, she is just one year old and taking her first ......... steps.",
           "options": [
-            "unwilling",
-            "unfortunate",
-            "unsteady",
-            "unreasonable"
+              "unwilling",
+              "unfortunate",
+              "unsteady",
+              "unreasonable"
           ],
-          "correctanswer": 3
-        },
-        {
+          "correctanswer": "unsteady"
+      },
+      {
           "id": "q2",
           "number": 2,
           "type": "multiple",
           "question": "A: Our players are facing powerful .......... this year.\nB: No worries, we will rely on your abilities.",
           "options": [
-            "innocence",
-            "clients",
-            "customers",
-            "opponents"
+              "innocence",
+              "clients",
+              "customers",
+              "opponents"
           ],
-          "correctanswer": 4
-        },
-        {
+          "correctanswer": "opponents"
+      },
+      {
           "id": "q3",
           "number": 3,
           "type": "multiple",
           "question": "A: Fast food has received much bad ........... in recent years.\nB: Yes, but many people still love it.",
           "options": [
-            "reduction",
-            "publicity",
-            "sympathy",
-            "willingness"
+              "reduction",
+              "publicity",
+              "sympathy",
+              "willingness"
           ],
-          "correctanswer": 2
-        },
-        {
+          "correctanswer": "publicity"
+      },
+      {
           "id": "q4",
           "number": 4,
           "type": "multiple",
           "question": "A: Did you see the game last night?\nB: No, I was really tired so I ......... straight to bed.",
           "options": [
-            "had gone",
-            "was going",
-            "went",
-            "gone"
+              "had gone",
+              "was going",
+              "went",
+              "gone"
           ],
-          "correctanswer": 3
-        },
-        {
+          "correctanswer": "went"
+      },
+      {
           "id": "q5",
           "number": 5,
           "type": "multiple",
           "question": "A: He ........ his car cleaned by some workers.\nB: Yes, I can see the workers in the yard.",
           "options": [
-            "is having",
-            "has",
-            "had",
-            "was having"
+              "is having",
+              "has",
+              "had",
+              "was having"
           ],
-          "correctanswer": 1
-        },
-        {
+          "correctanswer": "is having"
+      },
+      {
           "id": "q6",
           "number": 6,
           "type": "multiple",
           "question": "A: If only I ........ the piano.\nB: You can if you take some classes.",
           "options": [
-            "had played",
-            "have played",
-            "were playing",
-            "could play"
+              "had played",
+              "have played",
+              "were playing",
+              "could play"
           ],
-          "correctanswer": 4
-        },
-        {
+          "correctanswer": "could play"
+      },
+      {
           "id": "q7",
           "number": 7,
           "type": "multiple",
           "question": "............... tolerate censorship in academic settings.",
           "options": [
-            "Never we should",
-            "No way we should",
-            "Under no circumstances should we",
-            "On no account we should"
+              "Never we should",
+              "No way we should",
+              "Under no circumstances should we",
+              "On no account we should"
           ],
-          "correctanswer": 3
-        },
-        {
+          "correctanswer": "Under no circumstances should we"
+      },
+      {
           "id": "q8",
           "number": 8,
           "type": "multiple",
           "question": "A: .........................................\nB: It's okay. We can sort it out.",
           "options": [
-            "If I did something wrong?",
-            "Was that anything wrong?",
-            "Anything wrong did I do?",
-            "Did I do something wrong?"
+              "If I did something wrong?",
+              "Was that anything wrong?",
+              "Anything wrong did I do?",
+              "Did I do something wrong?"
           ],
-          "correctanswer": 4
-        },
-        {
+          "correctanswer": "Did I do something wrong?"
+      },
+      {
           "id": "q9",
           "number": 9,
           "type": "multiple",
           "question": "A: Which way do we have to take?\nB: ........... right again at this junction.",
           "options": [
-            "It's definitely not",
-            "It's not definitely",
-            "Not fairly sure",
-            "Fairly sure not"
+              "It's definitely not",
+              "It's not definitely",
+              "Not fairly sure",
+              "Fairly sure not"
           ],
-          "correctanswer": 1
-        },
-        {
+          "correctanswer": "It's definitely not"
+      },
+      {
           "id": "q10",
           "number": 10,
           "type": "reading",
           "question": "Fear Of Missing Out is ...",
           "options": [
-            "anxiety about not having the latest technology.",
-            "an irrational need to go out all the time.",
-            "a fear of missing opportunities for interaction on social media.",
-            "an obsession with social media video games."
+              "anxiety about not having the latest technology.",
+              "an irrational need to go out all the time.",
+              "a fear of missing opportunities for interaction on social media.",
+              "an obsession with social media video games."
           ],
-          "correctanswer": 3
-        },
-        {
+          "correctanswer": "a fear of missing opportunities for interaction on social media."
+      },
+      {
           "id": "q11",
           "number": 11,
           "type": "reading",
           "question": "Research shows that schoolchildren are tired because they ...",
           "options": [
-            "are going to bed very late.",
-            "are waking up in the middle of the night.",
-            "are getting up too early in the morning.",
-            "are playing video games too much."
+              "are going to bed very late.",
+              "are waking up in the middle of the night.",
+              "are getting up too early in the morning.",
+              "are playing video games too much."
           ],
-          "correctanswer": 2
-        },
-        {
+          "correctanswer": "are waking up in the middle of the night."
+      },
+      {
           "id": "q12",
           "number": 12,
           "type": "reading",
           "question": "Nearly a quarter of 12 to 15-year-olds wake up to use social media ...",
           "options": [
-            "once a night, on average.",
-            "twice a night, on average.",
-            "almost every night.",
-            "once a week."
+              "once a night, on average.",
+              "twice a night, on average.",
+              "almost every night.",
+              "once a week."
           ],
-          "correctanswer": 3
-        },
-        {
+          "correctanswer": "almost every night."
+      },
+      {
           "id": "q13",
           "number": 13,
           "type": "listening",
           "question": "What is the main idea of the article?",
           "options": [
-            "How TV can cause depression.",
-            "TV might lead to depression.",
-            "Alternatives to TV for teens."
+              "How TV can cause depression.",
+              "TV might lead to depression.",
+              "Alternatives to TV for teens."
           ],
-          "correctanswer": 2
-        },
-        {
+          "correctanswer": "TV might lead to depression."
+      },
+      {
           "id": "q14",
           "number": 14,
           "type": "listening",
           "question": "Depressed teens tended to watch TV ............ then their peers.",
           "options": [
-            "22 minutes less",
-            "about a third an hour more",
-            "about an hour more."
+              "22 minutes less",
+              "about a third an hour more",
+              "about an hour more."
           ],
-          "correctanswer": 2
-        },
-        {
+          "correctanswer": "about a third an hour more"
+      },
+      {
           "id": "q15",
           "number": 15,
           "type": "listening",
           "question": "According to the article, in 1995 teens spent ........... listening to music as they did watching TV.",
           "options": [
-            "more time",
-            "less time",
-            "the same amount of time"
+              "more time",
+              "less time",
+              "the same amount of time"
           ],
-          "correctanswer": 2
-        }
-      ]
+          "correctanswer": "less time"
+      }
+  ]
+  
       
 }
 export default testData;

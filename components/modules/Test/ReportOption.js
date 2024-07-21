@@ -1,9 +1,8 @@
 import React from 'react';
 
 const ReportOption = ({ optionText, index, correctanswer, clientAnswer, status }) => {
-    const borderColor = correctanswer == index + 1 ? "#28a745" : clientAnswer == index + 1 && status == "incorrect" ? "#DC3545" : "#6c757d";
-    const bgColor = correctanswer == index + 1 ? "bg-success text-light" : clientAnswer == index + 1 && status == "incorrect" ? "bg-danger text-light" : "";
-
+    const borderColor = optionText === correctanswer ? "#28a745" : optionText === clientAnswer && status === "incorrect" ? "#DC3545" : "#6c757d";
+    const bgColor = optionText === correctanswer ? "bg-success text-light" : optionText === clientAnswer && status === "incorrect" ? "bg-danger text-light" : "";
     return (
         <div
             style={{ border: `2px solid ${borderColor}` }}

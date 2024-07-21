@@ -45,196 +45,197 @@ const testData = {
     ,
     listening:'/audios/tests/public/C2CPE/sound.mp3',
     questions: [
-        {
+      {
           "id": "q1",
           "number": 1,
           "type": "multiple",
           "question": "It was a wonderful vacation. We really had a ......... of a time lying on the beach.",
           "options": [
-            "butterfly",
-            "pig",
-            "fish",
-            "whale"
+              "butterfly",
+              "pig",
+              "fish",
+              "whale"
           ],
-          "correctanswer": 4
-        },
-        {
+          "correctanswer": "whale"
+      },
+      {
           "id": "q2",
           "number": 2,
           "type": "multiple",
           "question": "The company has a lot of problems, but they all seem to ......... to money.",
           "options": [
-            "lead over",
-            "boil down",
-            "cook up",
-            "reason out"
+              "lead over",
+              "boil down",
+              "cook up",
+              "reason out"
           ],
-          "correctanswer": 2
-        },
-        {
+          "correctanswer": "boil down"
+      },
+      {
           "id": "q3",
           "number": 3,
           "type": "multiple",
           "question": "The cheese in the fridge is giving .......... a very funny smell. I think it must be. Bad I will through it out.",
           "options": [
-            "up",
-            "in",
-            "out",
-            "off"
+              "up",
+              "in",
+              "out",
+              "off"
           ],
-          "correctanswer": 4
-        },
-        {
+          "correctanswer": "off"
+      },
+      {
           "id": "q4",
           "number": 4,
           "type": "multiple",
           "question": "The black pirate ............ over a million copies already this year.",
           "options": [
-            "was selling",
-            "has been sold",
-            "had been selling",
-            "had sold"
+              "was selling",
+              "has been sold",
+              "had been selling",
+              "had sold"
           ],
-          "correctanswer": 4
-        },
-        {
+          "correctanswer": "had sold"
+      },
+      {
           "id": "q5",
           "number": 5,
           "type": "multiple",
           "question": "Rick should know about the meaning because I ............ him about it yesterday.",
           "options": [
-            "told",
-            "have told",
-            "had been told",
-            "was told"
+              "told",
+              "have told",
+              "had been told",
+              "was told"
           ],
-          "correctanswer": 1
-        },
-        {
+          "correctanswer": "told"
+      },
+      {
           "id": "q6",
           "number": 6,
           "type": "multiple",
           "question": "Sonia looks like she's .......... asleep any minute.",
           "options": [
-            "fell",
-            "falling",
-            "going to fall",
-            "having fallen"
+              "fell",
+              "falling",
+              "going to fall",
+              "having fallen"
           ],
-          "correctanswer": 3
-        },
-        {
+          "correctanswer": "going to fall"
+      },
+      {
           "id": "q7",
           "number": 7,
           "type": "multiple",
           "question": "A: Water depletion is a serious issue nowadays.\nB: ........... . You're absolutely right.",
           "options": [
-            "I couldn't agree more.",
-            "There may be some truth in that.",
-            "You can't be serious.",
-            "I agree more"
+              "I couldn't agree more.",
+              "There may be some truth in that.",
+              "You can't be serious.",
+              "I agree more"
           ],
-          "correctanswer": 1
-        },
-        {
+          "correctanswer": "I couldn't agree more."
+      },
+      {
           "id": "q8",
           "number": 8,
           "type": "multiple",
           "question": "A: Dispatching all police forces to the area is of high importance now.\nB:  That might be true, but something ..........the sensitivity of the situation which may cause a public panic.",
           "options": [
-            "we bear here is",
-            "else to your mind is",
-            "to bear is",
-            "else to bear in mind is"
+              "we bear here is",
+              "else to your mind is",
+              "to bear is",
+              "else to bear in mind is"
           ],
-          "correctanswer": 4
-        },
-        {
+          "correctanswer": "else to bear in mind is"
+      },
+      {
           "id": "q9",
           "number": 9,
           "type": "multiple",
           "question": "A: This photo is amazing. Do you think it's been taken by a professional photographer?\nB: Maybe, but not necessarily. Take ............ my brother, he's into photography and usually takes photos are of the same standard as those by professionals.",
           "options": [
-            "it as",
-            "in the case of",
-            "the case of",
-            "the case as"
+              "it as",
+              "in the case of",
+              "the case of",
+              "the case as"
           ],
-          "correctanswer": 3
-        },
-        {
+          "correctanswer": "the case of"
+      },
+      {
           "id": "q10",
           "number": 10,
           "type": "reading",
           "question": "What newsworthy event took place in 2011?",
           "options": [
-            "There were lots of violent political protests.",
-            "There were riots on the streets of London.",
-            "A lot of people tried to steal things from shops.",
-            "There was a wave of public disorder across England."
+              "There were lots of violent political protests.",
+              "There were riots on the streets of London.",
+              "A lot of people tried to steal things from shops.",
+              "There was a wave of public disorder across England."
           ],
-          "correctanswer": 4
-        },
-        {
+          "correctanswer": "There was a wave of public disorder across England."
+      },
+      {
           "id": "q11",
           "number": 11,
           "type": "reading",
           "question": "Which of the statements about the population is not true?",
           "options": [
-            "About 2 percent can remember faces seen briefly for years.",
-            "About 96 percent have an average memory for faces.",
-            "About 2 percent can’t recognize people’s faces at all.",
-            "About 2 percent have a near-perfect memory for faces."
+              "About 2 percent can remember faces seen briefly for years.",
+              "About 96 percent have an average memory for faces.",
+              "About 2 percent can’t recognize people’s faces at all.",
+              "About 2 percent have a near-perfect memory for faces."
           ],
-          "correctanswer": 4
-        },
-        {
+          "correctanswer": "About 2 percent have a near-perfect memory for faces."
+      },
+      {
           "id": "q12",
           "number": 12,
           "type": "reading",
           "question": "In paragraph 6, 'caught red-handed' means …",
           "options": [
-            "caught with blood on your hands.",
-            "caught with red dye on your hands (from security devices).",
-            "caught in the act of committing an offense.",
-            "caught in a very embarrassing situation."
+              "caught with blood on your hands.",
+              "caught with red dye on your hands (from security devices).",
+              "caught in the act of committing an offense.",
+              "caught in a very embarrassing situation."
           ],
-          "correctanswer": 3
-        },
-        {
+          "correctanswer": "caught in the act of committing an offense."
+      },
+      {
           "id": "q13",
           "number": 13,
           "type": "listening",
           "question": "Nyctophobia is the fear of public speaking.",
           "options": [
-            "True",
-            "False"
+              "True",
+              "False"
           ],
-          "correctanswer": 2
-        },
-        {
+          "correctanswer": "False"
+      },
+      {
           "id": "q14",
           "number": 14,
           "type": "listening",
           "question": "People with phobias may experience physical symptoms like dizziness or excessive sweating.",
           "options": [
-            "True",
-            "False"
+              "True",
+              "False"
           ],
-          "correctanswer": 1
-        },
-        {
+          "correctanswer": "True"
+      },
+      {
           "id": "q15",
           "number": 15,
           "type": "listening",
           "question": "Past traumatic events can trigger phobias.",
           "options": [
-            "True",
-            "False"
+              "True",
+              "False"
           ],
-          "correctanswer": 1
-        }
-      ]      
+          "correctanswer": "True"
+      }
+  ]
+  
 }
 
 

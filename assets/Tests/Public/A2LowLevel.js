@@ -17,190 +17,191 @@ const testData = {
     ],
     listening:'/audios/tests/public/A2Low/sound.mp3',
     questions: [
-        {
+      {
           "id": "q1",
           "number": 1,
           "type": "multiple",
           "question": "A: Did you understand it?\nB: No, you should make it ..... by giving some examples.",
           "options": [
-            "correct",
-            "comfortable",
-            "clear",
-            "complete"
+              "correct",
+              "comfortable",
+              "clear",
+              "complete"
           ],
-          "correctanswer": 3
-        },
-        {
+          "correctanswer": "clear"
+      },
+      {
           "id": "q2",
           "number": 2,
           "type": "multiple",
           "question": "A: I will send my application next week.\nB: But the closing date for the ...... of applications is tomorrow.",
           "options": [
-            "receive",
-            "receipt",
-            "sale",
-            "return"
+              "receive",
+              "receipt",
+              "sale",
+              "return"
           ],
-          "correctanswer": 2
-        },
-        {
+          "correctanswer": "receipt"
+      },
+      {
           "id": "q3",
           "number": 3,
           "type": "multiple",
           "question": "A: Did you find a job, David?\nB: Yes, after several weeks of searching, I ...... found one.",
           "options": [
-            "finally",
-            "probably",
-            "usually",
-            "nearly"
+              "finally",
+              "probably",
+              "usually",
+              "nearly"
           ],
-          "correctanswer": 1
-        },
-        {
+          "correctanswer": "finally"
+      },
+      {
           "id": "q4",
           "number": 4,
           "type": "multiple",
           "question": "A: I ..... understand German but sadly I ..... speak it.\nB: That's nice.",
           "options": [
-            "can - can",
-            "can't - can't",
-            "can - can't",
-            "can't - can"
+              "can - can",
+              "can't - can't",
+              "can - can't",
+              "can't - can"
           ],
-          "correctanswer": 3
-        },
-        {
+          "correctanswer": "can - can't"
+      },
+      {
           "id": "q5",
           "number": 5,
           "type": "multiple",
           "question": "A: I have ........ finished my homework.\nB: Oh, so you can watch TV now.",
           "options": [
-            "just",
-            "yet",
-            "still",
-            "for"
+              "just",
+              "yet",
+              "still",
+              "for"
           ],
-          "correctanswer": 1
-        },
-        {
+          "correctanswer": "just"
+      },
+      {
           "id": "q6",
           "number": 6,
           "type": "multiple",
           "question": "A: Are you ready to order?\nB: Yes, a hamburger with some fries and a soda.\nA: ....................?",
           "options": [
-            "Nothing other.",
-            "Something other",
-            "Anything else",
-            "Something else"
+              "Nothing other.",
+              "Something other",
+              "Anything else",
+              "Something else"
           ],
-          "correctanswer": 3
-        },
-        {
+          "correctanswer": "Anything else"
+      },
+      {
           "id": "q7",
           "number": 7,
           "type": "multiple",
           "question": "A: We are thinking about going out. ...............\nB: Okay, I'll let you know after I get permission from my parents.",
           "options": [
-            "Come on.",
-            "Why don't you come too?",
-            "Let's come with us.",
-            "Put that shyness aside and come."
+              "Come on.",
+              "Why don't you come too?",
+              "Let's come with us.",
+              "Put that shyness aside and come."
           ],
-          "correctanswer": 2
-        },
-        {
+          "correctanswer": "Why don't you come too?"
+      },
+      {
           "id": "q8",
           "number": 8,
           "type": "multiple",
           "question": "A: I think in 50 years children .......... to their schools.\nB: No, I don't think so.",
           "options": [
-            "are flying",
-            "flew",
-            "have flown",
-            "will fly"
+              "are flying",
+              "flew",
+              "have flown",
+              "will fly"
           ],
-          "correctanswer": 4
-        },
-        {
+          "correctanswer": "will fly"
+      },
+      {
           "id": "q9",
           "number": 9,
           "type": "multiple",
-          "question": "A: I'm sorry. I didn't mean to Spill tea on you.\nB: ............................",
+          "question": "A: I'm sorry. I didn't mean to spill tea on you.\nB: ............................",
           "options": [
-            "No, it's fine really.",
-            "No, really, it's fine.",
-            "No, it's really fine.",
-            "Really? No, it's fine."
+              "No, it's fine really.",
+              "No, really, it's fine.",
+              "No, it's really fine.",
+              "Really? No, it's fine."
           ],
-          "correctanswer": 2
-        },
-        {
+          "correctanswer": "No, really, it's fine."
+      },
+      {
           "id": "q10",
           "number": 10,
           "type": "reading",
           "question": "Newquay is in the north of England.",
           "options": [
-            "True",
-            "False"
+              "True",
+              "False"
           ],
-          "correctanswer": 2
-        },
-        {
+          "correctanswer": "False"
+      },
+      {
           "id": "q11",
           "number": 11,
           "type": "reading",
           "question": "Newquay is near the coast.",
           "options": [
-            "True",
-            "False"
+              "True",
+              "False"
           ],
-          "correctanswer": 1
-        },
-        {
+          "correctanswer": "True"
+      },
+      {
           "id": "q12",
           "number": 12,
           "type": "reading",
           "question": "Alex loves to do outdoor activities.",
           "options": [
-            "True",
-            "False"
+              "True",
+              "False"
           ],
-          "correctanswer": 1
-        },
-        {
+          "correctanswer": "True"
+      },
+      {
           "id": "q13",
           "number": 13,
           "type": "listening",
           "question": "The north of the country has a chance of rain.",
           "options": [
-            "True",
-            "False"
+              "True",
+              "False"
           ],
-          "correctanswer": 1
-        },
-        {
+          "correctanswer": "True"
+      },
+      {
           "id": "q14",
           "number": 14,
           "type": "listening",
           "question": "The weather is dry and sunny in the west and middle of the country.",
           "options": [
-            "True",
-            "False"
+              "True",
+              "False"
           ],
-          "correctanswer": 2
-        },
-        {
+          "correctanswer": "False"
+      },
+      {
           "id": "q15",
           "number": 15,
           "type": "listening",
           "question": "The south has the highest temperature mentioned.",
           "options": [
-            "True",
-            "False"
+              "True",
+              "False"
           ],
-          "correctanswer": 1
-        }
-      ]
+          "correctanswer": "True"
+      }
+  ]
+  
       
   
       

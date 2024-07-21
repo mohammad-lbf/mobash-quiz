@@ -11,7 +11,7 @@ const Option = ({ optionText, index, questionNumber, selectedAnswer, changeHandl
                 onChange={changeHandler} 
                 type="radio" 
                 id={`option${index + 1}${questionNumber}`} 
-                value={index + 1}  
+                value={optionText}  
                 name={`option${questionNumber}`} />
             <label 
                 style={{ direction: "ltr" }} 

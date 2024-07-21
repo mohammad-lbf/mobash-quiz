@@ -10,124 +10,125 @@ const testData = {
     reading:null,
     listening:null,
     questions: [
-        {
+      {
           "id": "q1",
           "number": 1,
           "type": "multiple",
           "question": "I _____ even a word of his story because he _____ to me many times.",
           "options": [
-            "don't believe/has been lying",
-            "won't believe/is lying",
-            "am not going to believe/lied",
-            "haven't believed/has lied"
+              "don't believe/has been lying",
+              "won't believe/is lying",
+              "am not going to believe/lied",
+              "haven't believed/has lied"
           ],
-          "correctanswer": 1
-        },
-        {
+          "correctanswer": "don't believe/has been lying"
+      },
+      {
           "id": "q2",
           "number": 2,
           "type": "multiple",
           "question": "The quiz was a surprise. We ______ studied for it.",
           "options": [
-            "could have",
-            "would have",
-            "should have",
-            "must have"
+              "could have",
+              "would have",
+              "should have",
+              "must have"
           ],
-          "correctanswer": 3
-        },
-        {
+          "correctanswer": "should have"
+      },
+      {
           "id": "q3",
           "number": 3,
           "type": "multiple",
           "question": "If you _________ me, I would have helped you.",
           "options": [
-            "had asked",
-            "asked",
-            "ask",
-            "was asking"
+              "had asked",
+              "asked",
+              "ask",
+              "was asking"
           ],
-          "correctanswer": 1
-        },
-        {
+          "correctanswer": "had asked"
+      },
+      {
           "id": "q4",
           "number": 4,
           "type": "multiple",
-          "question": "Report the following sentence correctly: \"I have to work tomorrow.\"",
+          "question": "Report the following sentence correctly: \n \"I have to work tomorrow.\"",
           "options": [
-            "He said he has to work tomorrow.",
-            "He says he had to work tomorrow.",
-            "He is saying he had to work tomorrow.",
-            "He said he had to work the following day."
+              "He said he has to work tomorrow.",
+              "He says he had to work tomorrow.",
+              "He is saying he had to work tomorrow.",
+              "He said he had to work the following day."
           ],
-          "correctanswer": 4
-        },
-        {
+          "correctanswer": "He said he had to work the following day."
+      },
+      {
           "id": "q5",
           "number": 5,
           "type": "multiple",
           "question": "I'm sorry I missed your party. I really wish I _________.",
           "options": [
-            "came",
-            "had come",
-            "didn't come",
-            "would come"
+              "came",
+              "had come",
+              "didn't come",
+              "would come"
           ],
-          "correctanswer": 2
-        },
-        {
+          "correctanswer": "had come"
+      },
+      {
           "id": "q6",
           "number": 6,
           "type": "multiple",
           "question": "Make this sentence passive: “He opened a new restaurant last July.”",
           "options": [
-            "A new restaurant is opened by him last July.",
-            "A new restaurant was opened by him last July.",
-            "A new restaurant has opened by him last July.",
-            "A new restaurant opened by him last July."
+              "A new restaurant is opened by him last July.",
+              "A new restaurant was opened by him last July.",
+              "A new restaurant has opened by him last July.",
+              "A new restaurant opened by him last July."
           ],
-          "correctanswer": 2
-        },
-        {
+          "correctanswer": "A new restaurant was opened by him last July."
+      },
+      {
           "id": "q7",
           "number": 7,
           "type": "multiple",
           "question": "Now that you are 18, you are old ________ to vote.",
           "options": [
-            "enough",
-            "too",
-            "As well",
-            "Also"
+              "enough",
+              "too",
+              "As well",
+              "Also"
           ],
-          "correctanswer": 1
-        },
-        {
+          "correctanswer": "enough"
+      },
+      {
           "id": "q8",
           "number": 8,
           "type": "multiple",
           "question": "I have _____ close friends, and they are really special to me.",
           "options": [
-            "much",
-            "a few",
-            "a little",
-            "a piece of"
+              "much",
+              "a few",
+              "a little",
+              "a piece of"
           ],
-          "correctanswer": 2
-        },
-        {
+          "correctanswer": "a few"
+      },
+      {
           "id": "q9",
           "number": 9,
           "type": "multiple",
           "question": "I enjoyed ________________at the party",
           "options": [
-            "myself",
-            "yourself",
-            "himself",
-            "Itself"
+              "myself",
+              "yourself",
+              "himself",
+              "Itself"
           ],
-          "correctanswer": 1
-        }
-      ]
+          "correctanswer": "myself"
+      }
+  ]
+  
       
     
     

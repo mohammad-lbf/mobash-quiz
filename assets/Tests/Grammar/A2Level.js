@@ -9,112 +9,113 @@ const testData = {
     testTime:12,
     reading:null,
     listening:null,
-    questions:[
-        {
+    questions: [
+      {
           "id": "q1",
           "number": 1,
           "type": "multiple",
-          "question": "A:  _____ you _____ to me? B: Yes, I am.",
+          "question": "A:  _____ you _____ to me? \n B: Yes, I am.",
           "options": [
-            "Am / listening",
-            "Can / listen",
-            "Are / listening",
-            "Is / listening"
+              "Am / listening",
+              "Can / listen",
+              "Are / listening",
+              "Is / listening"
           ],
-          "correctanswer": 3
-        },
-        {
+          "correctanswer": "Are / listening"
+      },
+      {
           "id": "q2",
           "number": 2,
           "type": "multiple",
           "question": "The sun is ______ than the moon.",
           "options": [
-            "large",
-            "larger",
-            "more larger",
-            "Largest"
+              "large",
+              "larger",
+              "more larger",
+              "Largest"
           ],
-          "correctanswer": 2
-        },
-        {
+          "correctanswer": "larger"
+      },
+      {
           "id": "q3",
           "number": 3,
           "type": "multiple",
           "question": "Which store is the ______?",
           "options": [
-            "Good",
-            "Most good",
-            "Better",
-            "Best"
+              "Good",
+              "Most good",
+              "Better",
+              "Best"
           ],
-          "correctanswer": 4
-        },
-        {
+          "correctanswer": "Best"
+      },
+      {
           "id": "q4",
           "number": 4,
           "type": "multiple",
           "question": "If you study, you ________ the test.",
           "options": [
-            "will pass",
-            "will passing",
-            "Pass",
-            "Passed"
+              "will pass",
+              "will passing",
+              "Pass",
+              "Passed"
           ],
-          "correctanswer": 1
-        },
-        {
+          "correctanswer": "will pass"
+      },
+      {
           "id": "q5",
           "number": 5,
           "type": "multiple",
           "question": "Her birthday is _______ December 12th.",
           "options": [
-            "at",
-            "on",
-            "in",
-            "for"
+              "at",
+              "on",
+              "in",
+              "for"
           ],
-          "correctanswer": 2
-        },
-        {
+          "correctanswer": "on"
+      },
+      {
           "id": "q6",
           "number": 6,
           "type": "multiple",
           "question": "My apartment is _____ the third floor.",
           "options": [
-            "at",
-            "to",
-            "in",
-            "on"
+              "at",
+              "to",
+              "in",
+              "on"
           ],
-          "correctanswer": 4
-        },
-        {
+          "correctanswer": "on"
+      },
+      {
           "id": "q7",
           "number": 7,
           "type": "multiple",
-          "question": "A: Have you _______ ridden a horse? B: No, I have _______ ridden one.",
+          "question": "A: Have you _______ ridden a horse? \nB: No, I have _______ ridden one.",
           "options": [
-            "so far / yet",
-            "already / since",
-            "ever / never",
-            "lately / up to now"
+              "so far / yet",
+              "already / since",
+              "ever / never",
+              "lately / up to now"
           ],
-          "correctanswer": 3
-        },
-        {
+          "correctanswer": "ever / never"
+      },
+      {
           "id": "q8",
           "number": 8,
           "type": "multiple",
           "question": "Tim ___ to Italy ten days ago and he ___ yet.",
           "options": [
-            "went / returned",
-            "went / hasn't returned",
-            "has gone / returned",
-            "has gone / didn't return"
+              "went / returned",
+              "went / hasn't returned",
+              "has gone / returned",
+              "has gone / didn't return"
           ],
-          "correctanswer": 2
-        }
-      ]
+          "correctanswer": "went / hasn't returned"
+      }
+  ]
+  
       
     
   

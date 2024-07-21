@@ -4,11 +4,30 @@ import Option from './Option';
 
 const Question = (props) => {
     const dispatch = useDispatch();
-    const [answer, setAnswer] = useState(0);
-    
+    const [answer, setAnswer] = useState(null);
+    const [shuffledOptions, setShuffledOptions] = useState([]);
+    const [correctIndex, setCorrectIndex] = useState(null);
+
     useEffect(() => {
-        if (answer > 0) {
-            if (answer == props.correctanswer) {
+        // شافل کردن گزینه‌ها و یافتن ایندکس گزینه صحیح
+        const shuffleArray = (array) => {
+            let shuffledArray = [...array];
+            for (let i = shuffledArray.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
+            }
+            return shuffledArray;
+        };
+        
+        const shuffled = shuffleArray(props.options);
+        setShuffledOptions(shuffled);
+        const correctIdx = shuffled.indexOf(props.correctAnswer);
+        setCorrectIndex(correctIdx + 1); // ایندکس را به 1 مبنی تغییر می‌دهیم
+    }, [props.options, props.correctAnswer]);
+
+    useEffect(() => {
+        if (answer !== null) {
+            if (answer === props.correctanswer) {
                 dispatch({
                     type: "TRUE_ANSWER",
                     payload: {
@@ -26,7 +45,7 @@ const Question = (props) => {
                 });
             }
         }
-    }, [answer]);
+    }, [answer, correctIndex]);
 
     const changeHandler = (e) => {
         setAnswer(e.target.value);
@@ -38,11 +57,11 @@ const Question = (props) => {
                 <div className="d-flex align-items-start mt-2">
                     <div style={{ direction: "ltr", lineHeight: "25px" }} className="me-1 mb-0 mt-1" dangerouslySetInnerHTML={{ __html: props.question.replace(/\n/g, '<br />') }} />
                     <p className="text-center me-1 bg-primary text-white p-2 pb-1 rounded lh-0" style={{direction:"ltr"}}>{props.number}</p>
-                    {props.type=="reading" ? <i className="bi bi-book-half pt-2 me-1 rounded text-primary" style={{fontSize:"14px"}}></i> : props.type=="listening" ? <i className="bi bi-earbuds pt-2 me-1 rounded text-primary" style={{fontSize:"14px"}}></i> : null}
+                    {props.type === "reading" ? <i className="bi bi-book-half pt-2 me-1 rounded text-primary" style={{fontSize:"14px"}}></i> : props.type === "listening" ? <i className="bi bi-earbuds pt-2 me-1 rounded text-primary" style={{fontSize:"14px"}}></i> : null}
                 </div>
             </div>
             <div className='w-100'>
-                {props.options.map((option, index) => (
+                {shuffledOptions.map((option, index) => (
                     <Option 
                         key={index} 
                         optionText={option} 

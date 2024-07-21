@@ -37,193 +37,194 @@ const testData = {
     ,
     listening:'/audios/tests/public/B1High/sound.mp3',
     questions: [
-        {
+      {
           "id": "q1",
           "number": 1,
           "type": "multiple",
           "question": "A: These gloves are so soft and warm. I love them.\nB: Yeah, they're made of .........",
           "options": [
-            "Fear",
-            "fair",
-            "fur",
-            "favor"
+              "Fear",
+              "fair",
+              "fur",
+              "favor"
           ],
-          "correctanswer": 3
-        },
-        {
+          "correctanswer": "fur"
+      },
+      {
           "id": "q2",
           "number": 2,
           "type": "multiple",
           "question": "A: Mom, I need a dress to wear to the wedding.\nB: Don't worry. I'll ........ one for you.",
           "options": [
-            "protect",
-            "sew",
-            "rescue",
-            "organize"
+              "protect",
+              "sew",
+              "rescue",
+              "organize"
           ],
-          "correctanswer": 2
-        },
-        {
+          "correctanswer": "sew"
+      },
+      {
           "id": "q3",
           "number": 3,
           "type": "multiple",
           "question": "A: We can't cross the river. I'm scared.\nB: Just walk slowly. Whenever you think you're going to fall, ......... my arm.",
           "options": [
-            "grab",
-            "attach",
-            "grab",
-            "forgive"
+              "grab",
+              "attach",
+              "grab",
+              "forgive"
           ],
-          "correctanswer": 1
-        },
-        {
+          "correctanswer": "grab"
+      },
+      {
           "id": "q4",
           "number": 4,
           "type": "multiple",
           "question": "A: Put ....... so, we can go outside.\nB: No, I'm too tired.",
           "options": [
-            "it on",
-            "off it",
-            "on it",
-            "it off"
+              "it on",
+              "off it",
+              "on it",
+              "it off"
           ],
-          "correctanswer": 1
-        },
-        {
+          "correctanswer": "it on"
+      },
+      {
           "id": "q5",
           "number": 5,
           "type": "multiple",
           "question": "A: I was sure that I ....... her before.\nB: Why didn't you tell her?",
           "options": [
-            "have seen",
-            "seen",
-            "had seen",
-            "was seeing"
+              "have seen",
+              "seen",
+              "had seen",
+              "was seeing"
           ],
-          "correctanswer": 3
-        },
-        {
+          "correctanswer": "had seen"
+      },
+      {
           "id": "q6",
           "number": 6,
           "type": "multiple",
           "question": "A: Mom, my teacher said that the world ......... round.\nB: What else did you learn?",
           "options": [
-            "would be",
-            "is",
-            "was being",
-            "is being"
+              "would be",
+              "is",
+              "was being",
+              "is being"
           ],
-          "correctanswer": 2
-        },
-        {
+          "correctanswer": "is"
+      },
+      {
           "id": "q7",
           "number": 7,
           "type": "multiple",
           "question": "A: Can you tell me where ................?\nB: On the top floor of this building.",
           "options": [
-            "is the center of the students",
-            "is the place of the student center",
-            "does the student center place",
-            "the student center is"
+              "is the center of the students",
+              "is the place of the student center",
+              "does the student center place",
+              "the student center is"
           ],
-          "correctanswer": 4
-        },
-        {
+          "correctanswer": "the student center is"
+      },
+      {
           "id": "q8",
           "number": 8,
           "type": "multiple",
           "question": "A: I'm afraid I have a complaint.\nB: ........... You should call extension 474.",
           "options": [
-            "I'll do it immediately.",
-            "Oh dear, I don't deal with complaints.",
-            "It's none of my business.",
-            "I understand you have a complaint."
+              "I'll do it immediately.",
+              "Oh dear, I don't deal with complaints.",
+              "It's none of my business.",
+              "I understand you have a complaint."
           ],
-          "correctanswer": 2
-        },
-        {
+          "correctanswer": "Oh dear, I don't deal with complaints."
+      },
+      {
           "id": "q9",
           "number": 9,
           "type": "multiple",
           "question": "A: What ........... computers?\nB: I think they are great.",
           "options": [
-            "do you think of",
-            "do you mean by",
-            "do you know about",
-            "are"
+              "do you think of",
+              "do you mean by",
+              "do you know about",
+              "are"
           ],
-          "correctanswer": 1
-        },
-        {
+          "correctanswer": "do you think of"
+      },
+      {
           "id": "q10",
           "number": 10,
           "type": "reading",
           "question": "The Statue of Liberty was constructed to welcome immigrants to the USA.",
           "options": [
-            "True",
-            "False"
+              "True",
+              "False"
           ],
-          "correctanswer": 2
-        },
-        {
+          "correctanswer": "False"
+      },
+      {
           "id": "q11",
           "number": 11,
           "type": "reading",
           "question": "Three known copies of Eiffel’s plans of the Statue of Liberty exist today.",
           "options": [
-            "True",
-            "False"
+              "True",
+              "False"
           ],
-          "correctanswer": 1
-        },
-        {
+          "correctanswer": "True"
+      },
+      {
           "id": "q12",
           "number": 12,
           "type": "reading",
           "question": "In the 1980s, engineers noticed that the arm did not match Eiffel’s plans.",
           "options": [
-            "True",
-            "False"
+              "True",
+              "False"
           ],
-          "correctanswer": 1
-        },
-        {
+          "correctanswer": "True"
+      },
+      {
           "id": "q13",
           "number": 13,
           "type": "listening",
           "question": "Who plays the main villain in the movie?",
           "options": [
-            "Daniel Craig",
-            "Judy Dench",
-            "Javier Barden"
+              "Daniel Craig",
+              "Judy Dench",
+              "Javier Barden"
           ],
-          "correctanswer": 3
-        },
-        {
+          "correctanswer": "Javier Barden"
+      },
+      {
           "id": "q14",
           "number": 14,
           "type": "listening",
           "question": "Where are some of the scenes in the movie filmed?",
           "options": [
-            "London and Paris",
-            "Shanghai and Scotland",
-            "New York and Tokyo"
+              "London and Paris",
+              "Shanghai and Scotland",
+              "New York and Tokyo"
           ],
-          "correctanswer": 2
-        },
-        {
+          "correctanswer": "Shanghai and Scotland"
+      },
+      {
           "id": "q15",
           "number": 15,
           "type": "listening",
           "question": "What is different about James Bond in this movie?",
           "options": [
-            "He is older and more human",
-            "He has a new love interest",
-            "He uses more advanced technology"
+              "He is older and more human",
+              "He has a new love interest",
+              "He uses more advanced technology"
           ],
-          "correctanswer": 1
-        }
-      ]      
+          "correctanswer": "He is older and more human"
+      }
+  ]
+  
 }
 
 export default testData;

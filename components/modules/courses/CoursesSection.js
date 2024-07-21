@@ -12,7 +12,7 @@ const CoursesSection = () => {
                     <div className='col-sm d-flex justify-content-center mb-3 mb-lg-0'>
                     <Card
                      slug={`/courses/discussion`}
-                     coverPhoto={`/images/courses/discussion/coverPhoto.jpg`}
+                     coverPhoto={`/images/courses/discussion/coverphoto.jpg`}
                      title={`کلاس های مکالمه و بحث آزاد`}
                      caption={"هدف از کلاس های بحث آزاد (Free discussion)، استفاده از ساختار ها و لغات آموخته شده در مکالمات است. این کلاس ها تاثیر بسزایی..."}
                      buttonText="مشاهده ی دوره"
@@ -21,7 +21,7 @@ const CoursesSection = () => {
                     <div className='col-sm d-flex justify-content-center'>
                     <Card
                      slug={`/courses/grammar`}
-                     coverPhoto={`/images/courses/grammar/coverPhoto.jpg`}
+                     coverPhoto={`/images/courses/grammar/coverphoto.jpg`}
                      title={`دوره اختصاصی گرامر`}
                      caption={"دوره جامع گرامر (Grammar) زبان انگلیسی یک فرصت عالی برای تقویت مهارت‌های زبانی و ارتقاء دانش زبان انگلیسی شماست که به کمک آن می‌توانید ..."}
                      buttonText="مشاهده ی دوره"
@@ -30,7 +30,7 @@ const CoursesSection = () => {
                     <div className='col-sm d-flex justify-content-center'>
                     <Card
                      slug={`/courses/entrance`}
-                     coverPhoto={`/images/courses/Entrance/coverPhoto.jpg`}
+                     coverPhoto={`/images/courses/Entrance/coverphoto.jpg`}
                      title={`کلاس های کنکوری و رفع اشکال`}
                      caption={"زبان انگلیسی یکی از شیرین‌ترین، کاربردی‌ترین و پرطرفدارترین زبان‌های دنیا محسوب می‌شود. افراد زیادی در سرتاسر جهان به این زبان صحبت می‌کنند ..."}
                      buttonText="مشاهده ی دوره"
@@ -39,7 +39,7 @@ const CoursesSection = () => {
                     <div className='col-sm d-flex justify-content-center'>
                     <Card
                      slug={`/courses/termic`}
-                     coverPhoto={`/images/courses/termic/coverPhoto.jpg`}
+                     coverPhoto={`/images/courses/termic/coverphoto.jpg`}
                      title={`دوره های ترمیک و فشرده`}
                      caption={"در این دوره زبان انگلیسی در کنار تدریس هر 4 مهارت اصلی زبان انگلیسی شامل:        Reading، Writing، Listening، Speaking و زیرمهارت های ..."}
                      buttonText="مشاهده ی دوره"

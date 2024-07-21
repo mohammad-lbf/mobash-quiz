@@ -12,7 +12,7 @@ const ArticlesSection = () => {
                     <div className='col-sm d-flex justify-content-center mb-3 mb-lg-0'>
                     <Card
                      slug={`/articles/cefr-scales`}
-                     coverPhoto={`/images/articles/cefr-scales/coverPhoto.jpg`}
+                     coverPhoto={`/images/articles/cefr-scales/coverphoto.jpg`}
                      title={`مقیاس CEFR`}
                      caption={"استاندارد CEFR در سطح بندی زبان انگلیسی، مخفف Common European Framework of Reference for Languages است. یک استاندارد اروپایی برای زبان انگلیسی که..."}
                      buttonText="ادامه ی مطلب..."
@@ -21,7 +21,7 @@ const ArticlesSection = () => {
                     <div className='col-sm d-flex justify-content-center'>
                     <Card
                      slug={`/articles/evolve-books`}
-                     coverPhoto={`/images/articles/evolve-books/coverPhoto.jpg`}
+                     coverPhoto={`/images/articles/evolve-books/coverphoto.jpg`}
                      title={`آشنایی با کتاب های Evolve`}
                      caption={"انتشارات دانشگاه کمبریج ، یکی از پیشگامان عرصه آموزش زبان، در سال 2019  یکی از بهترین کتب آموزش زبان انگلیسی را با عنوان   Evolve  منتشر کرد. این کتاب با همکاری تیم بزرگی از ..."}
                      buttonText="ادامه ی مطلب..."
