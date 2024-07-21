@@ -9,13 +9,12 @@ const Card = ({title , caption, slug , buttonText , coverPhoto}) => {
                 <Image
                  className='w-100 border'
                  width={1080} height={170} 
-                 alt='article-cover-photo' 
+                 alt={title}
                  src={coverPhoto} />
             </div>
             <div className='p-relative'>
                 <div className='lbf-card-author-image'>
                     <Image
-    
                      style={{width:"60px" , height:"60px"}}
                      alt='author-image'
                      width={300} height={300}

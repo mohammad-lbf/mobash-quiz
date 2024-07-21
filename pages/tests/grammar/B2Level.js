@@ -5,13 +5,21 @@ import Test from '../../../components/modules/Test/Test';
 import testData from '../../../assets/Tests/Grammar/B2Level';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-
+import Head from 'next/head';
 import TestAuthor from '../../../components/modules/grammar/TestAuthor'
 const B2Level = () => {
     const{testName , testLevel , userStatus , passPoint , testTime , questions , categoryInp} = testData
 
     return (
         <div className='page-padding-tops'>
+                            <Head>
+                    <meta name="description" content="با استفاده از آزمون تعیین سطح گرامر در Mobash Academy ، شما می‌توانید سطح توانایی خود را در قواعد زبان انگلیسی ارزیابی کنید. این آزمون در شش سطح طبقه بندی شده است و موفقیت در هر سطح ، توانایی شما در آن سطح را نشان می‌دهد." />
+                    <meta name="robots" content="noindex, nofollow" />
+                    <meta name="googlebot" content="noindex, nofollow" />
+                    <meta name="og:title" content="Mobash Academy | سطح B2 | آزمون تعیین سطح گرامر" />
+                    <meta name="og:description" content="با استفاده از آزمون تعیین سطح گرامر در Mobash Academy ، شما می‌توانید سطح توانایی خود را در قواعد زبان انگلیسی ارزیابی کنید. این آزمون در شش سطح طبقه بندی شده است و موفقیت در هر سطح ، توانایی شما در آن سطح را نشان می‌دهد." />
+                    <title>Mobash Academy | سطح B2 | آزمون تعیین سطح گرامر</title>
+                </Head>
             <div className='pt-4 container'>
                     <div className='row pt-3 justify-content-center'>
                         <div className='col-12 pt-4 col-lg-8'>

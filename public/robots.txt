@@ -1,14 +1,35 @@
 User-Agent: *
 Allow: /
-Allow: /weblog
-Allow: /templates
+Allow: /tests
+Allow: /articles
+Allow: /courses
 Allow: /about
-Allow: /call
-Allow: /templates/html
-Allow: /templates/bootstrap
-Disallow: /admin-panel-1381-4548-lbf
-Disallow: /admin-panel-1381-4548-lbf/dashboard
-Disallow: /admin-panel-1381-4548-lbf/articleadd
-Disallow: /admin-panel-1381-4548-lbf/templateadd
+Allow: /tests/grammar
+Allow: /tests/public
+Allow: /articles/cefr-scales
+Allow: /articles/evolve-books
+Allow: /courses/discussion
+Allow: /courses/entrance
+Allow: /courses/grammar
+Allow: /courses/termic
 
-Sitemap: https://codinglbf.ir/sitemap.xml
+Disallow: /404
+Disallow: /tests/grammar/A1Level
+Disallow: /tests/grammar/A2Level
+Disallow: /tests/grammar/B1Level
+Disallow: /tests/grammar/B1PlusLevel
+Disallow: /tests/grammar/C1Level
+
+Disallow: /tests/public/A1Low
+Disallow: /tests/public/A1High
+Disallow: /tests/public/A2Low
+Disallow: /tests/public/A2High
+Disallow: /tests/public/B1Low
+Disallow: /tests/public/B1High
+Disallow: /tests/public/B2Low
+Disallow: /tests/public/B2High
+Disallow: /tests/public/C1Low
+Disallow: /tests/public/C2High
+Disallow: /tests/public/C2CPE
+
+Sitemap: https://mobash.ir/sitemap.xml

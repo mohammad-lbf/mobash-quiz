@@ -8,7 +8,7 @@ const HomeAbout = () => {
       <div className="container">
         <div className="row flex-md-row-reverse justify-content-center justify-content-lg-between align-items-center">
         <div className="col-md-5 d-none d-md-block">
-          <Image className='img-fluid border rounded' src={"/images/about-me.png"} width={1080} height={1350} />
+          <Image alt='author-image' className='img-fluid border rounded' src={"/images/about-me.png"} width={1080} height={1350} />
           </div>
           <div className="col-md-6 content-block text-end aos-init aos-animate" data-aos="fade-right" data-aos-delay="400" data-aos-duration="2000">
             <div className='d-flex flex-column align-items-center align-items-lg-start'>
@@ -22,7 +22,7 @@ const HomeAbout = () => {
                     مدرس تخصصی زبان انگلیسی
                 </span>
             </div>
-            <Image className='img-fluid border rounded border d-md-none' src={"/images/about-me.png"} width={1080} height={1350} />
+            <Image alt='author-image' className='img-fluid border rounded border d-md-none' src={"/images/about-me.png"} width={1080} height={1350} />
             <p className='text-start text-black fw-bold mb-2' style={{lineHeight:"27px" , fontFamily:"Arial" , fontSize:"15px"}}>
             Hey!
             </p>
@@ -41,9 +41,6 @@ const HomeAbout = () => {
            <p className='text-start text-black fw-bold border-bottom py-2' style={{direction:"ltr", lineHeight:"27px" , fontFamily:"Arial" , fontSize:"15px"}}>
            Join me on this exciting journey of learning and growing together.
            </p>
-            {/* <div className='text-center mb-3 text-lg-end'>
-                <a className="btn-org-1 text-white rounded border px-3 py-2" href="" download >دانلود رزومه</a>
-            </div> */}
           </div>
           <div className='col-12'>
           <p className='text-end text-md-center text-black fw-bold mb-2 border-bottom py-2' style={{lineHeight:"27px" , fontFamily:"KalamehWeb-Medium" , fontSize:"15px"}}>
@@ -53,13 +50,13 @@ const HomeAbout = () => {
             دارای مدرک دوره تربیت معلم (TTC) و همچنین مدرک معتبر «رهبران یادگیری» از دانشگاه هاروارد.
             </p>
             <div className='text-center'>
-            <Image style={{width:"300px"}} className='rounded border img-fluid' src={"/images/TTC.jpg"} width={2480} height={3508} />
+            <Image alt='TTC-certificate' style={{width:"300px"}} className='rounded border img-fluid' src={"/images/TTC.jpg"} width={2480} height={3508} />
             <p className='text-center text-black fw-bold mb-2 py-2' style={{lineHeight:"27px" , fontFamily:"KalamehWeb-Medium" , fontSize:"15px" , direction:"ltr"}}>
               TTC certificate
             </p>
             </div>
             <div className='text-end text-md-center border-bottom'>
-            <Image style={{width:"300px"}} className='rounded img-fluid' src={"/images/Certificate_page-0001.jpg"} width={2480} height={3508} />
+            <Image alt='GSEx2-certificate' style={{width:"300px"}} className='rounded img-fluid' src={"/images/Certificate_page-0001.jpg"} width={2480} height={3508} />
             <p className='text-center text-black fw-bold pb-2' style={{lineHeight:"27px" , fontFamily:"KalamehWeb-Medium" , fontSize:"15px" , direction:"ltr"}}>
               GSEx2 certificate
             </p>

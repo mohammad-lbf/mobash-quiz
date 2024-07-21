@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import Image from 'next/image';
 import CountUp from 'react-countup';
 import { useInView } from 'react-intersection-observer';
@@ -54,15 +54,6 @@ const ProfileCard = () => {
                     </div>
                 </div>
             </div>
-            {/* <div className={`${styles.details} align-items-start`}>
-                <span>امیرحسین مبشری | زبان انگلیسی</span>
-                <span>معلم خصوصی/معلم</span>
-                <span>آموزش گرامر، لغات و اصطلاحات انگلیسی</span>
-                <span style={{direction:"ltr"}}>Just an English learner!</span>
-                <span>Here to share the journey</span>
-                <span>👇راه ارتباطی با من👇</span>
-                <a className='text-primary fw-bold' rel="noreferrer" href="https://linktr.ee/Mobash">linktr.ee/Mobash</a>
-            </div> */}
         </div>
     );
 };

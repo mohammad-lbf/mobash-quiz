@@ -5,7 +5,7 @@ import Test from '../../../components/modules/Test/Test';
 import testData from '../../../assets/Tests/Grammar/A1Level';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-
+import Head from 'next/head';
 import TestAuthor from '../../../components/modules/grammar/TestAuthor'
 import Signup from '../../../components/templates/Signup';
 const A1Level = () => {
@@ -26,15 +26,33 @@ const A1Level = () => {
     }, []);
     if (isChecking) {
         return (
-            <div className="d-flex justify-content-center align-items-center" style={{ height: '100vh' }}>
-                <div className="spinner-border" role="status">
-                    <span className="sr-only"></span>
+            <>
+                <Head>
+                    <meta name="description" content="با استفاده از آزمون تعیین سطح گرامر در Mobash Academy ، شما می‌توانید سطح توانایی خود را در قواعد زبان انگلیسی ارزیابی کنید. این آزمون در شش سطح طبقه بندی شده است و موفقیت در هر سطح ، توانایی شما در آن سطح را نشان می‌دهد." />
+                    <meta name="robots" content="noindex, nofollow" />
+                    <meta name="googlebot" content="noindex, nofollow" />
+                    <meta name="og:title" content="Mobash Academy | سطح A1 | آزمون تعیین سطح گرامر" />
+                    <meta name="og:description" content="با استفاده از آزمون تعیین سطح گرامر در Mobash Academy ، شما می‌توانید سطح توانایی خود را در قواعد زبان انگلیسی ارزیابی کنید. این آزمون در شش سطح طبقه بندی شده است و موفقیت در هر سطح ، توانایی شما در آن سطح را نشان می‌دهد." />
+                    <title>Mobash Academy | سطح A1 | آزمون تعیین سطح گرامر</title>
+                </Head>
+                <div className="d-flex justify-content-center align-items-center" style={{ height: '100vh' }}>
+                    <div className="spinner-border" role="status">
+                        <span className="sr-only"></span>
+                    </div>
                 </div>
-            </div>
+            </>
         );
     }
     return (
         <>
+            <Head>
+                <meta name="description" content="با استفاده از آزمون تعیین سطح گرامر در Mobash Academy ، شما می‌توانید سطح توانایی خود را در قواعد زبان انگلیسی ارزیابی کنید. این آزمون در شش سطح طبقه بندی شده است و موفقیت در هر سطح ، توانایی شما در آن سطح را نشان می‌دهد." />
+                <meta name="robots" content="noindex, nofollow" />
+                <meta name="googlebot" content="noindex, nofollow" />
+                <meta name="og:title" content="Mobash Academy | سطح A1 | آزمون تعیین سطح گرامر" />
+                <meta name="og:description" content="با استفاده از آزمون تعیین سطح گرامر در Mobash Academy ، شما می‌توانید سطح توانایی خود را در قواعد زبان انگلیسی ارزیابی کنید. این آزمون در شش سطح طبقه بندی شده است و موفقیت در هر سطح ، توانایی شما در آن سطح را نشان می‌دهد." />
+                <title>Mobash Academy | سطح A1 | آزمون تعیین سطح گرامر</title>
+            </Head>
         {localSign ?
             <div className='page-padding-tops'>
                 <div className='pt-4 container'>

@@ -20,7 +20,7 @@ const ArticleContent = () => {
                     <Link className='text-primary fw-bold mb-3' style={{fontSize:"16px"}} href={"/articles/evolve-books"}>برای آشنایی با کتاب های Evolve کلیک کنید.</Link>     
                 </Paragraph>
                 <div className='me-lg-4'>
-                    <ArticleImage src={"/images/courses/termic/1.jpg"} width={1030} height={295}alt="Evolve-books" />
+                    <ArticleImage src={"/images/courses/termic/1.jpg"} width={1030} height={295} alt="Evolve-books" />
                 </div>
             </div>
             <div className='d-flex flex-column flex-lg-row align-items-center w-100 justify-content-between'>
@@ -50,7 +50,7 @@ const ArticleContent = () => {
             
             <ArticleAccordian caption={"پایهElementary(A1)"}>
                 <div className='d-flex flex-column align-items-center flex-lg-row'>
-                    <Image className='rounded shadow-sm ms-lg-4 mb-3 mb-lg-0' width={700} height={700} style={{width:"150px" , height:"150px"}} src={"/images/courses/termic/A1.webp"} />            
+                    <Image alt='Evolve-book' className='rounded shadow-sm ms-lg-4 mb-3 mb-lg-0' width={700} height={700} style={{width:"150px" , height:"150px"}} src={"/images/courses/termic/A1.webp"} />            
                         <div className='d-flex flex-column'>
                             <SubTitle>سطح پایه (Elementary)</SubTitle>
                             <Paragraph>در این دوره ۶ ترمی به تمام مباحث پایه‌ای، گرامرها و واژگان مناسب این سطح مسلط می‌شوید و در کنار آن، این موارد را فرا می‌گیرید:</Paragraph>
@@ -68,7 +68,7 @@ const ArticleContent = () => {
             </ArticleAccordian>
             <ArticleAccordian caption={"پیش متوسط Pre-Intermediate(A2)"}>
                     <div className='d-flex flex-column align-items-center flex-lg-row'>
-                        <Image className='rounded shadow-sm ms-lg-4 mb-3 mb-lg-0' width={700} height={700} style={{width:"150px" , height:"150px"}} src={"/images/courses/termic/A2.webp"} />
+                        <Image alt='Evolve-book' className='rounded shadow-sm ms-lg-4 mb-3 mb-lg-0' width={700} height={700} style={{width:"150px" , height:"150px"}} src={"/images/courses/termic/A2.webp"} />
                         <div className='d-flex flex-column'>
                             <SubTitle>سطح میانی (Pre-Intermediate)</SubTitle>
                             <Paragraph>این سطح به‌عنوان مکمل سطح پایه عمل می‌کند و علاوه‌بر تکرار مباحث پایه در آن برای یادگیری بیشتر و عمیق‌تر شما، آموزش‌های پیشرفته‌تری به آن اضافه می‌شود تا با دست پر و آمادگی بالایی به سطح‌های بالاتر بروید.</Paragraph>
@@ -87,7 +87,7 @@ const ArticleContent = () => {
             </ArticleAccordian>
             <ArticleAccordian caption={"متوسط Intermediate(B1)"}>
                     <div className='d-flex flex-column align-items-center flex-lg-row'>
-                        <Image className='rounded shadow-sm ms-lg-4 mb-3 mb-lg-0' width={700} height={700} style={{width:"150px" , height:"150px"}} src={"/images/courses/termic/B1.webp"} />
+                        <Image alt='Evolve-book' className='rounded shadow-sm ms-lg-4 mb-3 mb-lg-0' width={700} height={700} style={{width:"150px" , height:"150px"}} src={"/images/courses/termic/B1.webp"} />
                         <div className='d-flex flex-column'>
                             <SubTitle>سطح متوسط (Intermediate)</SubTitle>
                             <Paragraph>این سطح هم مانند سطح‌های قبلی در ۶ ترم ارائه می‌شود. در این سطح، مهارت مکالمه شما به حدی می‌رسد که می‌توانید درباره مسائل روزمره صحبت کنید و مکالمات روزانه را به‌راحتی انجام دهید. علاوه بر موارد گفته شده، با مفاهیم انتزاعی و غیر روزمره نیز آشنا می‌شوید. در مجموع هر دانشی که برای رفع نیازهای زبانی خود در یک محیط انگلیسی لازم داشته باشید را فرا می‌گیرید.</Paragraph>
@@ -107,7 +107,7 @@ const ArticleContent = () => {
             </ArticleAccordian>
             <ArticleAccordian caption={"بالای متوسط Upper-Intermediate(B1+)"}>
                     <div className='d-flex flex-column align-items-center flex-lg-row'>
-                        <Image className='rounded shadow-sm ms-lg-4 mb-3 mb-lg-0' width={700} height={700} style={{width:"150px" , height:"150px"}} src={"/images/courses/termic/B1plus.webp"} />
+                        <Image alt='Evolve-book' className='rounded shadow-sm ms-lg-4 mb-3 mb-lg-0' width={700} height={700} style={{width:"150px" , height:"150px"}} src={"/images/courses/termic/B1plus.webp"} />
                         <div className='d-flex flex-column'>
                         <SubTitle>سطح بالای متوسط (Upper-Intermediate)</SubTitle>
                                 <Paragraph>اگر می‌خواهید زبان انگلیسی را فراتر از مکالمات روزمره یاد بگیرید یا قصد ادامه تحصیل یا کار در محیطی انگلیسی زبان را دارید، این سطح  ۶ ترمی مناسب شماست. در این سطح از دوره آموزش زبان انگلیسی برای بزرگسالان در سفیر، مهارتتان در مکالمه به حدی می‌رسد که به سادگی با افراد بومی (native) صحبت می‌کنید و به درجه‌ای می‌رسید که توانایی درک متن‌های پیچیده کاری و تخصصی را دارید.</Paragraph>
@@ -126,8 +126,8 @@ const ArticleContent = () => {
             </ArticleAccordian>
             <ArticleAccordian caption={"پیشرفته اول و دوم Advanced(B2+/C1)"}>
                     <div className='d-flex flex-column align-items-center flex-lg-row'>
-                        <Image className='rounded shadow-sm ms-lg-4 mb-3 mb-lg-0' width={700} height={700} style={{width:"150px" , height:"150px"}} src={"/images/courses/termic/B2.webp"} />
-                        <Image className='rounded shadow-sm ms-lg-4 mb-3 mb-lg-0' width={700} height={700} style={{width:"150px" , height:"150px"}} src={"/images/courses/termic/C1.webp"} />
+                        <Image alt='Evolve-book' className='rounded shadow-sm ms-lg-4 mb-3 mb-lg-0' width={700} height={700} style={{width:"150px" , height:"150px"}} src={"/images/courses/termic/B2.webp"} />
+                        <Image alt='Evolve-book' className='rounded shadow-sm ms-lg-4 mb-3 mb-lg-0' width={700} height={700} style={{width:"150px" , height:"150px"}} src={"/images/courses/termic/C1.webp"} />
                         <div className='d-flex flex-column'>
                             <SubTitle>سطح پیشرفته اول و دوم (Advanced)</SubTitle>
                             <Paragraph>سطح Advanced دوره‌های آموزش زبان انگلیسی بزرگسالان، برای کسانی مناسب است که به کم قانع نیستند و تمایل دارند مهارت‌های زبانی‌شان را به درجات بالا برسانند. اگر جز این دسته از افراد پیشتاز هستید، شک نکنید که این دوره مناسب شماست! البته، برای ورود به این سطح باید سطح زبان شما بالای متوسط باشد.</Paragraph>
@@ -147,7 +147,7 @@ const ArticleContent = () => {
             </ArticleAccordian>
             <ArticleAccordian caption={"فوق پیشرفته CPE(C2)"}>
                     <div className='d-flex flex-column align-items-center flex-lg-row'>
-                        <Image className='rounded shadow-sm ms-lg-4 mb-3 mb-lg-0' width={454} height={336} style={{width:"150px" , height:"150px"}} src={"/images/courses/termic/C2.jpg"} />
+                        <Image alt='Evolve-book' className='rounded shadow-sm ms-lg-4 mb-3 mb-lg-0' width={454} height={336} style={{width:"150px" , height:"150px"}} src={"/images/courses/termic/C2.jpg"} />
                         <div className='d-flex flex-column'>
                         <SubTitle>سطح فوق پیشرفته یا CPE</SubTitle>
                         <Paragraph>رسیدیم به دوره نهایی آموزش زبان انگلیسی آکادمی مبش! شما پس از گذراندن این دوره به درجه استادی در زبان انگلیسی می‌رسید! اگر تمایل دارید در آزمون CPE که بالاترین مدرک زبان انگلیسی از سوی دانشگاه کمبریج انگلستان است، شرکت کنید، لحظه‌ای برای حضور در این دوره شک نکنید!</Paragraph>

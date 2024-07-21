@@ -34,11 +34,13 @@ const Public = () => {
         <div>
             <div className='pb-4'>
                 <Head>
-                    <meta name="description" content="با استفاده از آزمون تعیین سطح عمومی در Mobash Academy ، شما می‌توانید سطح توانایی خود را در همه مهارت های زبان انگلیسی ارزیابی کنید. این آزمون در یازده سطح طبقه بندی شده است و موفقیت در هر سطح ، توانایی شما در آن سطح را نشان می‌دهد." />
+                    <meta name="description" content="این آزمون به بررسی چهار مهارت اصلی: Grammar, Listening, Reading, vocabulary میپردازد و برای شرکت در دوره های ترمیک کاربرد دارد." />
                     <meta name="robots" content="index, follow" />
                     <meta name="googlebot" content="index, follow" />
+
                     <meta name="og:title" content="Mobash Academy | آزمون تعیین سطح عمومی" />
-                    <meta name="og:description" content="با استفاده از آزمون تعیین سطح عمومی در Mobash Academy ، شما می‌توانید سطح توانایی خود را در همه مهارت های زبان انگلیسی ارزیابی کنید. این آزمون در یازده سطح طبقه بندی شده است و موفقیت در هر سطح ، توانایی شما در آن سطح را نشان می‌دهد." />
+                    <meta name="og:description" content="این آزمون به بررسی چهار مهارت اصلی: Grammar, Listening, Reading, vocabulary میپردازد و برای شرکت در دوره های ترمیک کاربرد دارد." />
+
                     <title>Mobash Academy | آزمون تعیین سطح عمومی</title>
                 </Head>
                 {localSign ? <PublicPage /> : <Signup localSign={localSign} setLocalSign={setLocalSign} />}

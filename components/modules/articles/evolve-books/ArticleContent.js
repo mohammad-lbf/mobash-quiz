@@ -30,7 +30,7 @@ const ArticleContent = () => {
             <Paragraph>شما با مشاهده ی چارت رو به رو میتوانید سطح بین المللی(CEFR) مجموعه Evolve و نمره ی آیلتس (IELTS) معادل آن را مشاهده کنید.</Paragraph>
             <Link style={{fontSize:"16px"}} className='w-100 text-primary fw-bold mt-3' href="/articles/cefr-scales">برای آشنایی با مقیاس CEFR کلیک کنید.</Link>
                 </div>
-            <ArticleImage style={{height:"400px" , maxWidth:"250px"}} src={"/images/articles/evolve-books/1.jpg"} width={319} height={701} />
+            <ArticleImage alt={"evolve-books"} style={{height:"400px" , maxWidth:"250px"}} src={"/images/articles/evolve-books/1.jpg"} width={319} height={701} />
             </div>
 
             <MainTitle>اهداف کتاب EVOLVE</MainTitle>

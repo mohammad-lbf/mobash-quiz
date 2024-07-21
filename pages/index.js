@@ -7,14 +7,14 @@ export default function Home (){
       
       <div className='page-padding-tops'>
           <Head>
-          <meta name="description" content="سلام دوستان، من امیرحسین مبشری هستم و اینجا هم سایت شخصی منه که در اصل برای شماست :) من در اینجا ضمن معرفی خودم، آموخته هام از زبان انگلیسی رو باهاتون به اشتراک میذارم :)" />
+          <meta name="description" content="آکادمی مبش اینجاست تا با جدیدترین متدهای روز دنیا، زبان انگلیسی را بصورت کاربردی و در کم ترین زمان ممکن بیاموزید." />
           <meta name="robots" content="index, follow" />
           <meta name="googlebot" content="index, follow" />
 
-          <meta name="og:title" content="English With Mobash - امیرحسین مبشری ، مدرس زبان انگلیسی" />
-          <meta name="og:description" content="سلام دوستان، من امیرحسین مبشری هستم و اینجا هم سایت شخصی منه که در اصل برای شماست :) من در اینجا ضمن معرفی خودم، آموخته هام از زبان انگلیسی رو باهاتون به اشتراک میذارم :)" />
+          <meta name="og:title" content="Mobash Academy | آکادمی آموزش زبان انگلیسی مبش" />
+          <meta name="og:description" content="آکادمی مبش اینجاست تا با جدیدترین متدهای روز دنیا، زبان انگلیسی را بصورت کاربردی و در کم ترین زمان ممکن بیاموزید." />
 
-          <title>English With Mobash | امیرحسین مبشری</title>
+          <title>Mobash Academy | آکادمی آموزش زبان انگلیسی مبش</title>
           </Head>
           <HomePage />
       </div>

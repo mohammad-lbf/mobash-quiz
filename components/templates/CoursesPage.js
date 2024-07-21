@@ -18,7 +18,7 @@ const CoursesPage = () => {
                         <div className='row justify-content-between flex-lg-row-reverse align-items-start mt-4 pt-4'>
 
                         <div className='col-12 col-lg-4'>
-                        <Image className='img-fluid border rounded' src={"/images/courses/courses-second.jpg"} width={1080} height={1350} />
+                        <Image alt="courses-image-2" className='img-fluid border rounded' src={"/images/courses/courses-second.jpg"} width={1080} height={1350} />
                         </div>
                         <div className='col-12 text-center text-lg-end col-lg-6'>
                         <h3 style={{fontFamily:"KalamehWeb-Medium" , fontSize:"20px" , color:"#090736"}} className=''>وقتی با دوره های آکادمی مبش زبان یاد می‌گیرید ...</h3>

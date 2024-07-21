@@ -5,7 +5,7 @@ import Test from '../../../components/modules/Test/Test';
 import testData from '../../../assets/Tests/Public/C2CPELevel';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-
+import Head from 'next/head';
 import TestAuthor from '../../../components/modules/grammar/TestAuthor'
 import Signup from '../../../components/templates/Signup';
 const C2CPELevel = () => {
@@ -27,6 +27,14 @@ const C2CPELevel = () => {
     if (isChecking) {
         return (
             <div className="d-flex justify-content-center align-items-center" style={{ height: '100vh' }}>
+            <Head>
+                <meta name="description" content="این آزمون به بررسی چهار مهارت اصلی: Grammar, Listening, Reading, vocabulary میپردازد و برای شرکت در دوره های ترمیک کاربرد دارد." />
+                <meta name="robots" content="noindex, nofollow" />
+                <meta name="googlebot" content="noindex, nofollow" />
+                <meta name="og:title" content="Mobash Academy | سطح C2 CPE | آزمون تعیین سطح عمومی" />
+                <meta name="og:description" content="این آزمون به بررسی چهار مهارت اصلی: Grammar, Listening, Reading, vocabulary میپردازد و برای شرکت در دوره های ترمیک کاربرد دارد." />
+                <title>Mobash Academy | سطح C2 CPE | آزمون تعیین سطح عمومی</title>
+            </Head>
                 <div className="spinner-border" role="status">
                     <span className="sr-only"></span>
                 </div>
@@ -35,6 +43,14 @@ const C2CPELevel = () => {
     }
     return (
         <>
+            <Head>
+                <meta name="description" content="این آزمون به بررسی چهار مهارت اصلی: Grammar, Listening, Reading, vocabulary میپردازد و برای شرکت در دوره های ترمیک کاربرد دارد." />
+                <meta name="robots" content="noindex, nofollow" />
+                <meta name="googlebot" content="noindex, nofollow" />
+                <meta name="og:title" content="Mobash Academy | سطح C2 CPE | آزمون تعیین سطح عمومی" />
+                <meta name="og:description" content="این آزمون به بررسی چهار مهارت اصلی: Grammar, Listening, Reading, vocabulary میپردازد و برای شرکت در دوره های ترمیک کاربرد دارد." />
+                <title>Mobash Academy | سطح C2 CPE | آزمون تعیین سطح عمومی</title>
+            </Head>
         {localSign ?
             <div className='page-padding-tops'>
                 <div className='pt-4 container'>

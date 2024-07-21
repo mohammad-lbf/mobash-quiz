@@ -5,7 +5,7 @@ import Test from '../../../components/modules/Test/Test';
 import testData from '../../../assets/Tests/Public/A1LowLevel';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-
+import Head from 'next/head';
 import TestAuthor from '../../../components/modules/grammar/TestAuthor'
 import Signup from '../../../components/templates/Signup';
 const A1LowLevel = () => {
@@ -26,17 +26,38 @@ const A1LowLevel = () => {
     }, []);
     if (isChecking) {
         return (
-            <div className="d-flex justify-content-center align-items-center" style={{ height: '100vh' }}>
-                <div className="spinner-border" role="status">
-                    <span className="sr-only"></span>
+            <>
+                <Head>
+                    <meta name="description" content="این آزمون به بررسی چهار مهارت اصلی: Grammar, Listening, Reading, vocabulary میپردازد و برای شرکت در دوره های ترمیک کاربرد دارد." />
+                    <meta name="robots" content="noindex, nofollow" />
+                    <meta name="googlebot" content="noindex, nofollow" />
+
+                    <meta name="og:title" content="Mobash Academy | سطح A1 Low | آزمون تعیین سطح عمومی" />
+                    <meta name="og:description" content="این آزمون به بررسی چهار مهارت اصلی: Grammar, Listening, Reading, vocabulary میپردازد و برای شرکت در دوره های ترمیک کاربرد دارد." />
+
+                    <title>Mobash Academy | سطح A1 Low | آزمون تعیین سطح عمومی</title>
+                </Head>
+                <div className="d-flex justify-content-center align-items-center" style={{ height: '100vh' }}>
+                    <div className="spinner-border" role="status">
+                        <span className="sr-only"></span>
+                    </div>
                 </div>
-            </div>
+            </>
         );
     }
     return (
         <>
+            <Head>
+                <meta name="description" content="این آزمون به بررسی چهار مهارت اصلی: Grammar, Listening, Reading, vocabulary میپردازد و برای شرکت در دوره های ترمیک کاربرد دارد." />
+                <meta name="robots" content="noindex, nofollow" />
+                <meta name="googlebot" content="noindex, nofollow" />
+                <meta name="og:title" content="Mobash Academy | سطح A1 Low | آزمون تعیین سطح عمومی" />
+                <meta name="og:description" content="این آزمون به بررسی چهار مهارت اصلی: Grammar, Listening, Reading, vocabulary میپردازد و برای شرکت در دوره های ترمیک کاربرد دارد." />
+                <title>Mobash Academy | سطح A1 Low | آزمون تعیین سطح عمومی</title>
+            </Head>
         {localSign ?
             <div className='page-padding-tops'>
+                
                 <div className='pt-4 container'>
                         <div className='row pt-3 justify-content-center'>
                             <div className='col-12 pt-4 col-lg-8'>

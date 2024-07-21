@@ -4,7 +4,6 @@ import Card from '../Card';
 const TestsSection = () => {
     return (
         <>
-            {/* <h3 className="color-linear text-center text-lg-end">آزمون ها</h3> */}
             <div className="container">
             <h3 style={{fontFamily:"KalamehWeb-Bold" , color:"#090736" , fontSize:"30px"}} className='lh-lg text-center mb-2'>آزمون ها</h3>
             <div style={{width:"200px"}} className="lbf-after-card-img mb-4 mt-0 mx-auto"></div>
@@ -27,8 +26,6 @@ const TestsSection = () => {
                     buttonText="شرکت در آزمون"
                      />
                     </div>
-
-          
                 </div>
             </div>
         </>

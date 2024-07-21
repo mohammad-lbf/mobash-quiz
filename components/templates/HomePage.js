@@ -2,10 +2,8 @@ import React from 'react';
 import CoursesSection from '../modules/HomePage/CoursesSection';
 import CustomSlider from '../modules/HomePage/CustomSlider';
 import FirstBanner from '../modules/HomePage/FirstBanner';
-import HomeAbout from '../modules/HomePage/HomeAbout';
 import InstagramBanner from '../modules/HomePage/InstagramBanner';
 import IntroSection from '../modules/HomePage/IntroSection';
-import ProfileCard from '../modules/HomePage/InstagramCard';
 import Properties from '../modules/HomePage/Properties';
 import TestsSection from '../modules/HomePage/TestsSection';
 
@@ -22,8 +20,7 @@ const HomePage = () => {
                             <TestsSection />
                             <CustomSlider />
                             <CoursesSection />
-                            <InstagramBanner />
-                            {/* <HomeAbout /> */}    
+                            <InstagramBanner /> 
                     </div>
                 </div>
             </div>

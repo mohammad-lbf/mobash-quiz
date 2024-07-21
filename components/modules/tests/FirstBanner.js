@@ -1,6 +1,5 @@
 import React from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 const FirstBanner = () => {
     return (
 <div className="">
@@ -10,7 +9,7 @@ const FirstBanner = () => {
                     <div className='col-12 col-lg-6 text-center text-lg-end'>
                     <div className='d-flex flex-column justify-content-center justify-content-lg-start'>
                         <h3 style={{fontFamily:"KalamehWeb-Bold" , color:"#090736" , fontSize:"30px"}} className='pt-4 lh-lg'>آزمون های تعیین سطح زبان انگلیسی مبش</h3>
-                        <Image className='img-fluid rounded border d-lg-none' alt='html-logo' width={1305} height={683} src={'/images/tests/tests-banner.png'} />
+                        <Image className='img-fluid rounded border d-lg-none' alt='Tests-page-coverphoto' width={1305} height={683} src={'/images/tests/tests-banner.png'} />
                     </div>
                         <h3 style={{fontFamily:"KalamehWeb-Medium" , fontSize:"15px" , color:"#090736"}} className='mt-3'>به راحتی، از سطح دانش زبانی خود مطلع شوید!</h3>
                         <h3 style={{fontFamily:"KalamehWeb-Medium" , fontSize:"17px" , color:"#090736"}} className='mt-3'>تعیین سطح زبان چیست و دقیقا چه کاربردهایی دارد؟ </h3>
