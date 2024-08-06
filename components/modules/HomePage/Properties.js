@@ -7,7 +7,7 @@ const Properties = () => {
             <p className='text-secondary text-center mb-0 mb-lg-4 lh-lg' style={{fontSize:"20px", fontFamily:"KalamehWeb-Medium", }}>بهترین شیوه یادگیری زبان انگلیسی</p>
         <div className='row justify-content-center align-items-center pt-4'>
             <div className='col-12 col-lg-4 d-flex justify-content-lg-end justify-content-center'>
-                <div style={{overflow:"hidden" , maxWidth:"350px" , height:"350px" , borderRadius:"10px" , backgroundColor:"#f0f0f0"}} className="px-4 property-card mb-3 mb-lg-0">
+                <div style={{overflow:"hidden" , maxWidth:"350px" , height:"400px" , borderRadius:"10px" , backgroundColor:"#f0f0f0"}} className="px-4 property-card mb-3 mb-lg-0">
                     <div className='text-center w-100 mt-4 pt-3' style={{fontSize:"50px"}}>
                     <i class="bi bi-clipboard-check-fill text-success"></i>
                     </div>
@@ -18,7 +18,7 @@ const Properties = () => {
                 </div>
             </div>
             <div className='col-12 col-lg-4 d-flex justify-content-center'>
-            <div style={{overflow:"hidden" , maxWidth:"350px" , height:"350px" , borderRadius:"10px" , backgroundColor:"#f0f0f0"}} className="px-4 property-card mb-3 mb-lg-0">
+            <div style={{overflow:"hidden" , maxWidth:"350px" , height:"400px" , borderRadius:"10px" , backgroundColor:"#f0f0f0"}} className="px-4 property-card mb-3 mb-lg-0">
                     <div className='text-center w-100 mt-4 pt-3' style={{fontSize:"50px"}}>
                     <i class="bi bi-journal-bookmark-fill text-success"></i>
                     </div>
@@ -29,7 +29,7 @@ const Properties = () => {
                 </div>
             </div>
             <div className='col-12 col-lg-4 d-flex justify-content-lg-start justify-content-center'>
-            <div style={{overflow:"hidden" , maxWidth:"350px" , height:"350px" , borderRadius:"10px" , backgroundColor:"#f0f0f0"}} className="px-4 property-card mb-3 mb-lg-0">
+            <div style={{overflow:"hidden" , maxWidth:"350px" , height:"400px" , borderRadius:"10px" , backgroundColor:"#f0f0f0"}} className="px-4 property-card mb-3 mb-lg-0">
                     <div className='text-center w-100 mt-4 pt-3' style={{fontSize:"50px"}}>
                     <i class="bi bi-ui-checks-grid text-success"></i>
                     </div>

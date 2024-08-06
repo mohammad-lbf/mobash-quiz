@@ -113,21 +113,31 @@ const ArticleContent = () => {
 
             </ArticleAccordian>
             <ArticleAccordian caption={"پیشرفته اول و دوم"}>
-                    <div className='d-flex flex-column align-items-center flex-lg-row'>
-                        <Image alt='Evolve-book' className='rounded shadow-sm ms-lg-4 mb-3 mb-lg-0' width={700} height={700} style={{width:"150px" , height:"150px"}} src={"/images/courses/termic/B2.webp"} />
-                        <Image alt='Evolve-book' className='rounded shadow-sm ms-lg-4 mb-3 mb-lg-0' width={700} height={700} style={{width:"150px" , height:"150px"}} src={"/images/courses/termic/C1.webp"} />
-                        <div className='d-flex flex-column'>
-                            <SubTitle>سطح پیشرفته اول و دوم (Advanced)</SubTitle>
-                            <Paragraph>سطح Advanced دوره‌های آموزش زبان انگلیسی بزرگسالان، برای کسانی مناسب است که به کم قانع نیستند و تمایل دارند مهارت‌های زبانی‌شان را به درجات بالا برسانند. اگر جز این دسته از افراد پیشتاز هستید، شک نکنید که این دوره مناسب شماست! البته، برای ورود به این سطح باید سطح زبان شما بالای متوسط باشد.</Paragraph>
-                            <Paragraph>پس از گذراندن این دوره، نمره آزمون‌های بین‌المللی شما مانند آیلتس و تافل تا حد شگفت‌انگیزی افزایش می‌یابد و متن‌های پیچیده و طولانی انگلیسی برایتان مانند متن‌های فارسی قابل درک است. مهارت نوشتار متن‌های آکادمیک شما هم به حد اعلایی می‌رسد و می‌توانید علاوه‌بر مکالمه درباره مسائل تخصصی، درباره آن‌ها هر مطلبی که می‌خواهید را نیز بنویسید.</Paragraph>
-                            <Paragraph>برخی از مطالب درسی این دو سطح، شامل این موضوعات است:</Paragraph>
-                            <Paragraph>1. صحبت‌ کردن در مورد شبکه‌های اجتماعی</Paragraph>
-                            <Paragraph>2. مطبوعات و رسانه‌ها</Paragraph>
-                            <Paragraph>3. زندگی کاری و شرایط آن</Paragraph>
-                            <Paragraph>4. علم تغذیه و تاثیرات آن بر دنیای مدرن</Paragraph>
-                            <Paragraph>5. موفقیت و شادی در زندگی</Paragraph>
-                            <Paragraph>6. فرهنگ کشورهای مختلف</Paragraph>
+                <div className='container'>
+                    <div className='row align-items-center'>
+                        <div className='col-12 col-lg-4' >
+                            <div className='d-flex flex-column justify-content-center align-items-center'>
+                            <Image alt='Evolve-book' className='rounded shadow-sm ms-lg-4 mb-3' width={700} height={700} style={{width:"150px" , height:"150px"}} src={"/images/courses/termic/B2.webp"} />
+                            <Image alt='Evolve-book' className='rounded shadow-sm ms-lg-4 mb-3' width={700} height={700} style={{width:"150px" , height:"150px"}} src={"/images/courses/termic/C1.webp"} />
+                            </div>
                         </div>
+                        <div className='col-12 col-lg-8'>
+                            <div className='d-flex flex-column'>
+                                <SubTitle>سطح پیشرفته اول و دوم (Advanced)</SubTitle>
+                                <Paragraph>سطح Advanced دوره‌های آموزش زبان انگلیسی بزرگسالان، برای کسانی مناسب است که به کم قانع نیستند و تمایل دارند مهارت‌های زبانی‌شان را به درجات بالا برسانند. اگر جز این دسته از افراد پیشتاز هستید، شک نکنید که این دوره مناسب شماست! البته، برای ورود به این سطح باید سطح زبان شما بالای متوسط باشد.</Paragraph>
+                                <Paragraph>پس از گذراندن این دوره، نمره آزمون‌های بین‌المللی شما مانند آیلتس و تافل تا حد شگفت‌انگیزی افزایش می‌یابد و متن‌های پیچیده و طولانی انگلیسی برایتان مانند متن‌های فارسی قابل درک است. مهارت نوشتار متن‌های آکادمیک شما هم به حد اعلایی می‌رسد و می‌توانید علاوه‌بر مکالمه درباره مسائل تخصصی، درباره آن‌ها هر مطلبی که می‌خواهید را نیز بنویسید.</Paragraph>
+                                <Paragraph>برخی از مطالب درسی این دو سطح، شامل این موضوعات است:</Paragraph>
+                                <Paragraph>1. صحبت‌ کردن در مورد شبکه‌های اجتماعی</Paragraph>
+                                <Paragraph>2. مطبوعات و رسانه‌ها</Paragraph>
+                                <Paragraph>3. زندگی کاری و شرایط آن</Paragraph>
+                                <Paragraph>4. علم تغذیه و تاثیرات آن بر دنیای مدرن</Paragraph>
+                                <Paragraph>5. موفقیت و شادی در زندگی</Paragraph>
+                                <Paragraph>6. فرهنگ کشورهای مختلف</Paragraph>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <div className='d-flex flex-column align-items-center flex-lg-row'>
                     </div>
 
 

@@ -13,8 +13,8 @@ const IntroSection = () => {
       <div className="container py-4">
         <div className='row py-4 align-items-center justify-content-center'>
           <div className='col-12 col-lg-6'>
-            <div className="text-center text-lg-end lh-lg">
-              <p style={{fontSize:"30px", fontFamily:"KalamehWeb-Bold", color:"#fff"}} className="fs-2 fw-bold mb-4">
+            <div className="text-center lh-lg">
+              <p style={{fontSize:"30px", fontFamily:"KalamehWeb-Bold", color:"#fff"}} className="fs-2 fw-bold mb-4 text-center">
                 Welcome to Mobash Academy
               </p>
               <p className="lh-lg fw-bold fs-2 mb-4 mb-lg-0" style={{fontSize:"28px", fontFamily:"KalamehWeb-Bold", color:"#e0e0e0"}}>

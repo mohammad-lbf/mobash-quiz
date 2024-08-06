@@ -25,7 +25,7 @@ const ArticleContent = () => {
             {/* <MainTitle>کلاس‌ های بحث آزاد و مکالمه</MainTitle> */}
 
 <MainTitle>کلاس های بحث آزاد</MainTitle>
-<p className='text-center mb-3' style={{fontFamily:"KalamehWeb-Bold" ,fontSize:"23px" , lineHeight:"1.88" , textAlign:"justify" , direction:"rtl"}}>اطلاعات کلی:</p>
+{/* <p className='text-center mb-3' style={{fontFamily:"KalamehWeb-Bold" ,fontSize:"23px" , lineHeight:"1.88" , textAlign:"justify" , direction:"rtl"}}>اطلاعات کلی:</p> */}
 <div className='d-flex flex-column align-items-center w-100'>
 <div className='mx-auto' style={{background:"rgb(41,35,92)" , borderRadius:"15px" , color:"#fff" , padding:"20px" , marginBottom:"15px" , width:"calc(100% - 3rem)"}}>
 <p className='text-light' style={{fontFamily:"KalamehWeb-Medium" ,fontSize:"15px" , lineHeight:"1.88" , textAlign:"justify" , direction:"rtl"}}>
@@ -86,7 +86,7 @@ const ArticleContent = () => {
 </ReadMoreBox>
 <MainTitle>کلاس های مکالمه</MainTitle>
 
-<p className='text-center mb-3' style={{fontFamily:"KalamehWeb-Bold" ,fontSize:"23px" , lineHeight:"1.88" , textAlign:"justify" , direction:"rtl"}}>اطلاعات کلی:</p>
+{/* <p className='text-center mb-3' style={{fontFamily:"KalamehWeb-Bold" ,fontSize:"23px" , lineHeight:"1.88" , textAlign:"justify" , direction:"rtl"}}>اطلاعات کلی:</p> */}
 <div className='d-flex flex-column align-items-center w-100'>
 <div className='mx-auto' style={{background:"rgb(41,35,92)" , borderRadius:"15px" , color:"#fff" , padding:"20px" , marginBottom:"15px" , width:"calc(100% - 3rem)"}}>
 <p className='text-light' style={{fontFamily:"KalamehWeb-Medium" ,fontSize:"15px" , lineHeight:"1.88" , textAlign:"justify" , direction:"rtl"}}>

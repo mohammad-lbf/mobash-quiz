@@ -10,7 +10,7 @@ const PublicContent = () => {
             style={{fontSize:"15px" ,
             color:"#474d52" ,
             lineHeight:"2em" , 
-            textAlign:"justify" ,
+            textAlign:"start",
             fontFamily:"KalamehWeb-Medium"}} 
             className='border-bottom pb-2 mb-2'>
                 ١.	این آزمون به بررسی چهار مهارت اصلی: Grammar, Listening, Reading, vocabulary میپردازد.
