@@ -11,7 +11,7 @@ const EvolveBooksPage = () => {
             <div className='pt-4'>
                 <div className='container'>
                         <div className='row justify-content-center'>
-                            <div className='col-12 col-xl-10 about-section mt-4 mt-lg-0 pt-0 pt-lg-4'>
+                            <div className='col-12 col-xl-10 about-section mt-4 mt-lg-0 pt-0 pt-lg-4' style={{paddingBottom:"0"}}>
                                 <ArticleMainSection categoryName={"مقالات"} category={"/articles"} mainTitle={articleTitle} slug={slug} coverPhoto={coverPhoto} datePublished={datePublished} />
                                 <ArticleContent />
                                 <ShareSection slug={slug} />

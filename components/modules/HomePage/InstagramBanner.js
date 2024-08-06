@@ -15,8 +15,8 @@ const InstagramBanner = () => {
           </div>
           <div className='col-12 col-lg-4 d-flex justify-content-center align-items-center'>
             {/* <ProfileCard /> */}
-            <Image src="/images/youtube.webp" width={1920} height={1920} style={{width:"120px" , height:"120px"}} />
-            <Image src="/images/instagram.png" width={1920} height={1920} style={{width:"100px" , height:"100px"}} />
+            <Image src="/images/youtube.webp" alt='YouTube-logo' width={1920} height={1920} style={{width:"120px" , height:"120px"}} />
+            <Image src="/images/instagram.png" alt='Instagram-Logo' width={1920} height={1920} style={{width:"100px" , height:"100px"}} />
           </div>
       </div>
   </div>

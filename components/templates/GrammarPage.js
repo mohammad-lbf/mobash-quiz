@@ -11,7 +11,7 @@ const GrammarPage = () => {
     return (
         <div className='page-padding-tops'>
             <div className='pt-4'>
-                <div className='container'>
+                <div className='container mt-4 mt-lg-2'>
                         <div className='row justify-content-between'>
                             <div className='col-12 col-xl-8'>
                                 <GrammarMainSection />

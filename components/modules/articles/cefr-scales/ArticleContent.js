@@ -240,7 +240,7 @@ const ArticleContent = () => {
                           <Paragraph>- توجه: برای نمرات بالا مقداری درصد خطا درنظر گرفته شود.</Paragraph>
                       </div>
                       <div className='col-12 col-md-6'>
-                            <Image className='img-fluid' src={"/images/articles/cefr-scales/ielts.png"} width={957} height={1013} />
+                            <Image className='img-fluid' src={"/images/articles/cefr-scales/ielts.png"} width={957} height={1013} alt="IELTS" />
                       </div>
                 </div>
             </div>

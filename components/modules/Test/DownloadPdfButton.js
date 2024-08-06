@@ -51,7 +51,7 @@ const DownloadPdfButton = ({ fileName, reportData }) => {
 
         // Red color for the type of test value
         doc.setTextColor('red');
-        doc.text(reportData.category + ' assessment', margin + typeOfTestWidth + 10, margin + 25);
+        doc.text(reportData.category + ' assessment' + ''+ '/' + reportData.testLevel, margin + typeOfTestWidth + 10, margin + 25);
 
         // Draw another line
         doc.setLineWidth(0.5);
@@ -82,12 +82,13 @@ const DownloadPdfButton = ({ fileName, reportData }) => {
         // Test Results
         startY += 10;
         const results = [
+            ['Test Level:', reportData.testLevel],
             ['Total questions:', reportData.questions.length],
             ['Correct:', reportData.corrects.length],
             ['Incorrect:', reportData.incorrects.length],
             ['Blank:', reportData.noAnswers.length],
             ['Percentage:', `${reportData.pointPercent.toFixed(2)}%`],
-            ['Level:', reportData.pointPercent < reportData.passPoint ? 'Failed' : 'Pass']
+            ['Status:', reportData.pointPercent < reportData.passPoint ? 'Failed' : 'Pass']
         ];
 
         results.forEach(result => {

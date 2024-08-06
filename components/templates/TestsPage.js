@@ -4,6 +4,7 @@ import Authors from '../modules/tests/Authors';
 import FirstBanner from '../modules/tests/FirstBanner';
 import Link from 'next/link'
 import Image from 'next/image';
+import ReadMoreBox from '../../components/modules/Article/ReadMoreBox'
 
 const TestsPage = () => {
     return (
@@ -34,16 +35,18 @@ const TestsPage = () => {
                                         <p style={{fontFamily:"KalamehWeb-Regular" , fontSize:"16px" , color:"#000"}} className='text-end text-lg- lh-lg border-bottom pb-2'>
                                         این سطح که شامل دو بخش C1 و C2 می‌باشد برای افرادی مناسب است که سطح زبان انگلیسی بالایی دارند
                                         </p>
-                                        <Image className='img-fluid d-lg-none' src="/images/tests/levels.png" width={818} height={615} />
+                                        <Image className='img-fluid d-lg-none' src="/images/tests/levels.png" width={818} height={615} alt="tests-levels" />
                                         <div className='border-bottom text-center py-2'>
                                         <p style={{fontFamily:"KalamehWeb-Medium" , fontSize:"16px" , color:"#000"}} className='text-center lh-lg pb-4'>
                                         آزمون های آکادمی مبش بر مبنای مقیاس CEFR و بادقت بسیاربالا طراحی شده اند تا بتوانند به تعیین دقیق سطح زبانی شما کمک کنند.
                                         </p>
+                                        <ReadMoreBox title={"بیشتر بخوانید"}>
                                         <Link style={{fontFamily:"KalamehWeb-Medium" , fontSize:"16px"}} className='text-primary fw-bold text-center' href={"/articles/cefr-scales"}>برای آشنایی با مقیاس CEFR کلیک کنید</Link>
+                                        </ReadMoreBox>
                                         </div>
                         </div>
                         <div className='col-12 col-lg-6'>
-                                <Image className='img-fluid d-none d-lg-block' src="/images/tests/levels.png" width={818} height={615} />
+                                <Image className='img-fluid d-none d-lg-block' src="/images/tests/levels.png" width={818} height={615} alt="tests-levels" />
                         </div>
                         </div>
                     </div>
