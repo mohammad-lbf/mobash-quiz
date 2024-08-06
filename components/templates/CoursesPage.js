@@ -26,25 +26,25 @@ const CoursesPage = () => {
                                         در زمان صرفه‌‌جویی می‌کنید:
                                         </p>
                                         <p style={{fontFamily:"KalamehWeb-Regular" , fontSize:"16px" , color:"#000"}} className='text-center text-lg-end lh-lg border-bottom pb-2'>
-                                        چون نیازی نیست برای هر جلسه کلاس زبان، تایم زیادی برای رفت و آمد وقتتان تلف شود و به راحتی در گوشی یا لپتاپ خود به تمامی دروس و مطالب تکمیلی دسترسی دارید.
+                                        چون نیازی نیست برای هر جلسه کلاس زبان، تایم زیادی برای رفت و آمد تلف شود بلکه میتوانید براحتی و در هر مکانی در کلاس شرکت کنید
                                         </p>
                                         <p style={{fontFamily:"KalamehWeb-Bold" , fontSize:"16px" , color:"#000"}} className='text-center text-lg-end lh-lg mb-2 pt-2'>
-                                        با برنامه‌ای دقیق ولی منعطف پیش می‌روید: 
+                                        پشتیبانی دریافت می کنید:
                                         </p>
                                         <p style={{fontFamily:"KalamehWeb-Regular" , fontSize:"16px" , color:"#000"}} className='text-center text-lg-end lh-lg border-bottom pb-2'>
-                                        چون برنامه دوره به نحوی طراحی شده‌است که هر هفته 6 درس از 92 جلسه نیم ساعته به همراه فایل‌های مکمل و تمرین در اختیارتان قرار می‌گیرد تا متناسب با شرایط خودتان یادگیری زبان را در برنامه‌تان بگنجانید.
+                                        تا اطمینان حاصل کنید همیشه افرادی هستند که شما را در مسیر یادگیری همراهی کرده و به پیشرفت شما کمک کنند
                                         </p>
                                         <p style={{fontFamily:"KalamehWeb-Bold" , fontSize:"16px" , color:"#000"}} className='text-center text-lg-end lh-lg mb-2 pt-2'>
-                                        با سبک زندگی خودتان زبان یاد می‌گیرید:
+                                        با منابع معتبر آموزش می بینید:
                                         </p>
                                         <p style={{fontFamily:"KalamehWeb-Regular" , fontSize:"16px" , color:"#000"}} className='text-center text-lg-end lh-lg border-bottom pb-2'>
-                                        تمرین‌های آموزشی در دوره های آکادمی مبش طوری طراحی شده‌اند تا هر فرد متناسب با اتفاقات روزمره زندگی خود بتواند مطالب را مرور و تثبیت کند.
+                                        تا اطمینان حاصل کنید از بروزترین منابع و رویکردهای آموزشی زبان انگلیسی بهره مند میگردید. 
                                         </p>
                                         <p style={{fontFamily:"KalamehWeb-Bold" , fontSize:"16px" , color:"#000"}} className='text-center text-lg-end lh-lg mb-2 pt-2'>
-                                        با هزینه منصفانه تا سطح پیشرفته زبان انگلیسی را فرا‌می‌گیرید:
+                                        به امکانات ویژه دسترسی دارید:
                                         </p>
                                         <p style={{fontFamily:"KalamehWeb-Regular" , fontSize:"16px" , color:"#000"}} className='text-center text-lg-end lh-lg border-bottom pb-2'>
-                                        چون در ازای 92 جلسه آموزش زبان به همراه فایل‌های مکمل و تمرین هر درس فقط مبلغی معادل دو ترم آموزش زبان در موسسات سنتی را پرداخت می‌کنید.
+                                        تا از انواع کلاس های آنلاین, فیلم‌ها, پادکست‌ها و لایو های آموزشی استفاده کنید و به جلسات آموزشی یوتیوب نیز دسترسی یابید. 
                                         </p>
                         </div>
                         </div>

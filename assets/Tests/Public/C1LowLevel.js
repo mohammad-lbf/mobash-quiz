@@ -178,7 +178,7 @@ const testData = {
               "It’s a way of attacking your political opponents.",
               "It’s a form of entertainment."
           ],
-          "correctanswer": "It’s a form of entertainment."
+          "correctanswer": "It’s a way of making money from people who pay to read the stories."
       },
       {
           "id": "q12",

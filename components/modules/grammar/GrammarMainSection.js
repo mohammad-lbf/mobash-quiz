@@ -6,7 +6,7 @@ import GrammarTestImage from './GrammarTestImage';
 
 const GrammarMainSection = () => {
     return (
-        <div className='pt-4 pt-sm-0'>
+        <div className='pt-4 pt-sm-0 bg-white border rounded px-3'>
             <GrammerBreadCrumb />
             <h3
              style={{fontFamily:"KalamehWeb-Bold" , color: "#03004e" , fontSize: "27px"}}

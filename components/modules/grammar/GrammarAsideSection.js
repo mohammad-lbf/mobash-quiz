@@ -5,7 +5,7 @@ import GrammerTestLevels from './GrammerTestLevels';
 
 const GrammarAsideSection = () => {
     return (
-        <div className='flex-column w-100 align-items-center pt-0 d-none d-xl-flex'>
+        <div  className='flex-column w-100 align-items-center pt-0 d-none d-xl-flex bg-white p-3 rounded border'>
           <h5
           style={{fontSize:"24px",color:"#464749" , 
           fontFamily:"KalamehWeb-Bold" , }} 

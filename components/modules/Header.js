@@ -42,7 +42,7 @@ const Header = () => {
                                             </li>
                                             <li>
                                             <Link className='text-end' href='/tests/public'>
-                                                    <span style={{fontFamily:"KalamehWeb-Bold" , }}>آزمون تعیین سطح عمومی</span>
+                                                    <span style={{fontFamily:"KalamehWeb-Bold" , }}>آزمون تعیین سطح جامع</span>
                                                 </Link>
                                             </li>
                                         </ul>

@@ -6,49 +6,37 @@ import Paragraph from '../../Article/Paragraph';
 import SubTitle from '../../Article/SubTitle';
 import ArticleAccordian from '../../Article/ArticleAccordian';
 import Image from 'next/image';
+import ReadMoreBox from '../../Article/ReadMoreBox';
 
 const ArticleContent = () => {
     return (
         <div className='mt-2 d-flex flex-column align-items-center'>
             <MainTitle>دوره های ترمیک و فشرده</MainTitle>
-            <Paragraph>در این دوره زبان انگلیسی در کنار تدریس هر 4 مهارت اصلی زبان انگلیسی شامل: Reading، Writing، Listening، Speaking و زیرمهارت های Vocabulary، Grammar، Pronunciation تاکید بسیار ویژه ای بر ارتقا مهارت مکالمه وجود دارد به طوری که زبان آموزان بتوانند پس از پایان هر ترم به راحتی از تمامی ساختارها و لغات نو آموخته خود در مکالمات روزمره استفاده نمایند.</Paragraph>
+            <Paragraph>در این دوره در کنار تدریس هر 4 مهارت اصلی زبان انگلیسی شامل: Reading، Writing، Listening، Speaking و زیرمهارت های Vocabulary، Grammar، Pronunciation تاکید بسیار ویژه ای بر ارتقا مهارت مکالمه وجود دارد به طوری که زبان آموزان بتوانند پس از پایان هر ترم به راحتی از تمامی ساختارها و لغات نو آموخته خود در مکالمات روزمره استفاده نمایند.</Paragraph>
 
-            <SubTitle>کتاب های دوره</SubTitle>
+            <SubTitle>منابع دوره</SubTitle>
             <div className='d-flex flex-column flex-lg-row align-items-center align-items-lg-start'>
                 <Paragraph>
                     منابع آموزشی دوره های ترمیک و فشرده، کتاب‌های Evolve از سری کتب دانشگاه کمبریج هستند که با اهداف این دوره مطابقت کامل داشته و می‌توانند زبان آموزان را در کوتاه ترین زمان ممکن به اهداف خود برسانند.
-                    <Link className='text-primary fw-bold mb-3' style={{fontSize:"16px"}} href={"/articles/evolve-books"}>برای آشنایی با کتاب های Evolve کلیک کنید.</Link>     
+                    
                 </Paragraph>
                 <div className='me-lg-4'>
-                    <ArticleImage src={"/images/courses/termic/1.jpg"} width={1030} height={295} alt="Evolve-books" />
                 </div>
             </div>
-            <div className='d-flex flex-column flex-lg-row align-items-center w-100 justify-content-between'>
-            <Paragraph>علاوه بر سری کتب Evolve، از مجموعه کتاب‌های Oxford word skills نیز استفاده خواهد شد.</Paragraph>
+                    <ArticleImage src={"/images/courses/termic/1.jpg"} width={1030} height={295} alt="Evolve-books" />
+            <div className='d-flex flex-column flex-lg-row align-items-center justify-content-center w-100'>
+            <p style={{fontFamily:"Vazirmatn" , fontSize:"16px" , lineHeight:"20px"}} className="text-center">علاوه بر سری کتب Evolve، از مجموعه کتاب‌های Oxford word skills نیز استفاده خواهد شد.</p>
             <div className='me-lg-4'>
-            <ArticleImage style={{maxWidth:"300px"}} src={"/images/courses/termic/2.jpg"} width={800} height={800} alt="Oxford-books" />
             </div>
             </div>
-            <SubTitle>تعداد جلسات و مدت زمان هر ترم</SubTitle>
-            <Paragraph>این دوره مجموعاً شامل دو بخش میباشد:</Paragraph>
-            <Paragraph>1. دوره‌های مبتدی و متوسط در ۲۴ ترم.</Paragraph>
-            <Paragraph>2. دوره‌های تخصصی و پیشرفته در ۱۸ ترم.</Paragraph>
-            <Paragraph>هر ترم دارای 12 جلسه آموزشی میباشد که به یکی از اشکال زیر ارائه می‌گردد:</Paragraph>
-            <Paragraph>1. ترمیک: دو جلسه در هفته (مدت زمان هر ترم یک ماه و نیم خواهد بود.)</Paragraph>
-            <Paragraph>2. فشرده: چهار جلسه در هفته (مدت زمان هر ترم 21 روز خواهد بود.)</Paragraph>
-
-            <SubTitle>ویژگی های دوره ترمیک و فشرده</SubTitle>
-            <Paragraph>1. امکان انتخاب روز و ساعت توسط زبان آموزان.</Paragraph>
-            <Paragraph>2. تدریس خصوصی و صرفه جویی در زمان.</Paragraph>
-            <Paragraph>3. تمرکز کامل معلم روی نقاط قوت و ضعف زبان آموز.</Paragraph>
-            <Paragraph>4. تدریس هر 4 مهارت اصلی با تاکید ویژه به ارتقاء مهارت مکالمه.</Paragraph>
-            <Paragraph>5. مشاوره‌های منظم و پشتیبانی آموزشی مستمر در طول دوره.</Paragraph>
-            <Paragraph>6. استفاده از بروز ترین منابع آموزشی.</Paragraph>
-            <Paragraph>7. برنامه ریزی اختصاصی برای یادگیری هر زبان آموز.</Paragraph>
-
+            <div className='w-100 my-4'>
+            <ReadMoreBox title={"بیشتر بخوانید"}>
+            <Link className='text-primary fw-bold mb-3' style={{fontSize:"16px" , fontFamily:"KalamehWeb-Bold"}} href={"/articles/evolve-books"}>برای آشنایی با کتاب های Evolve کلیک کنید</Link>     
+            </ReadMoreBox>
+            </div>
             <MainTitle>سطوح مختلف کلاس های ترمیک</MainTitle>
             
-            <ArticleAccordian caption={"پایهElementary(A1)"}>
+            <ArticleAccordian caption={"پایه"}>
                 <div className='d-flex flex-column align-items-center flex-lg-row'>
                     <Image alt='Evolve-book' className='rounded shadow-sm ms-lg-4 mb-3 mb-lg-0' width={700} height={700} style={{width:"150px" , height:"150px"}} src={"/images/courses/termic/A1.webp"} />            
                         <div className='d-flex flex-column'>
@@ -66,7 +54,7 @@ const ArticleContent = () => {
                         </div>
                 </div>
             </ArticleAccordian>
-            <ArticleAccordian caption={"پیش متوسط Pre-Intermediate(A2)"}>
+            <ArticleAccordian caption={"پیش متوسط"}>
                     <div className='d-flex flex-column align-items-center flex-lg-row'>
                         <Image alt='Evolve-book' className='rounded shadow-sm ms-lg-4 mb-3 mb-lg-0' width={700} height={700} style={{width:"150px" , height:"150px"}} src={"/images/courses/termic/A2.webp"} />
                         <div className='d-flex flex-column'>
@@ -85,7 +73,7 @@ const ArticleContent = () => {
 
 
             </ArticleAccordian>
-            <ArticleAccordian caption={"متوسط Intermediate(B1)"}>
+            <ArticleAccordian caption={"متوسط"}>
                     <div className='d-flex flex-column align-items-center flex-lg-row'>
                         <Image alt='Evolve-book' className='rounded shadow-sm ms-lg-4 mb-3 mb-lg-0' width={700} height={700} style={{width:"150px" , height:"150px"}} src={"/images/courses/termic/B1.webp"} />
                         <div className='d-flex flex-column'>
@@ -105,7 +93,7 @@ const ArticleContent = () => {
 
 
             </ArticleAccordian>
-            <ArticleAccordian caption={"بالای متوسط Upper-Intermediate(B1+)"}>
+            <ArticleAccordian caption={"بالای متوسط"}>
                     <div className='d-flex flex-column align-items-center flex-lg-row'>
                         <Image alt='Evolve-book' className='rounded shadow-sm ms-lg-4 mb-3 mb-lg-0' width={700} height={700} style={{width:"150px" , height:"150px"}} src={"/images/courses/termic/B1plus.webp"} />
                         <div className='d-flex flex-column'>
@@ -124,7 +112,7 @@ const ArticleContent = () => {
 
 
             </ArticleAccordian>
-            <ArticleAccordian caption={"پیشرفته اول و دوم Advanced(B2+/C1)"}>
+            <ArticleAccordian caption={"پیشرفته اول و دوم"}>
                     <div className='d-flex flex-column align-items-center flex-lg-row'>
                         <Image alt='Evolve-book' className='rounded shadow-sm ms-lg-4 mb-3 mb-lg-0' width={700} height={700} style={{width:"150px" , height:"150px"}} src={"/images/courses/termic/B2.webp"} />
                         <Image alt='Evolve-book' className='rounded shadow-sm ms-lg-4 mb-3 mb-lg-0' width={700} height={700} style={{width:"150px" , height:"150px"}} src={"/images/courses/termic/C1.webp"} />
@@ -145,20 +133,22 @@ const ArticleContent = () => {
 
 
             </ArticleAccordian>
-            <ArticleAccordian caption={"فوق پیشرفته CPE(C2)"}>
-                    <div className='d-flex flex-column align-items-center flex-lg-row'>
-                        <Image alt='Evolve-book' className='rounded shadow-sm ms-lg-4 mb-3 mb-lg-0' width={454} height={336} style={{width:"150px" , height:"150px"}} src={"/images/courses/termic/C2.jpg"} />
-                        <div className='d-flex flex-column'>
-                        <SubTitle>سطح فوق پیشرفته یا CPE</SubTitle>
-                        <Paragraph>رسیدیم به دوره نهایی آموزش زبان انگلیسی آکادمی مبش! شما پس از گذراندن این دوره به درجه استادی در زبان انگلیسی می‌رسید! اگر تمایل دارید در آزمون CPE که بالاترین مدرک زبان انگلیسی از سوی دانشگاه کمبریج انگلستان است، شرکت کنید، لحظه‌ای برای حضور در این دوره شک نکنید!</Paragraph>
-                        <Paragraph>اما اگر قصد شرکت در چنین آزمونی را هم ندارید باز توصیه می‌کنیم در این دوره شرکت کنید تا چهار مهارت زبانی‌تان را به بالاترین درجه برسانید تا بتوانید در باب مسائلی مانند فرهنگ و ادب، تغذیه و سبک زندگی، دنیای جدید و تکنولوژی به راحتی بنویسید و صحبت کنید.</Paragraph>
+            <SubTitle>تعداد جلسات و مدت زمان هر ترم</SubTitle>
+            <Paragraph>این دوره مجموعاً شامل دو بخش میباشد:</Paragraph>
+            <Paragraph>1. دوره‌های مبتدی و متوسط در ۲۴ ترم.</Paragraph>
+            <Paragraph>2. دوره‌های تخصصی و پیشرفته در ۱۸ ترم.</Paragraph>
+            <Paragraph>هر ترم دارای 12 جلسه آموزشی میباشد که به یکی از اشکال زیر ارائه می‌گردد:</Paragraph>
+            <Paragraph>1. ترمیک: دو جلسه در هفته (مدت زمان هر ترم یک ماه و نیم خواهد بود.)</Paragraph>
+            <Paragraph>2. فشرده: چهار جلسه در هفته (مدت زمان هر ترم 21 روز خواهد بود.)</Paragraph>
 
-                        </div>
-                    </div>
-
-
-
-            </ArticleAccordian>
+            <SubTitle>ویژگی های دوره ترمیک و فشرده</SubTitle>
+            <Paragraph>1. امکان انتخاب روز و ساعت توسط زبان آموزان.</Paragraph>
+            <Paragraph>2. تدریس خصوصی و صرفه جویی در زمان.</Paragraph>
+            <Paragraph>3. تمرکز کامل معلم روی نقاط قوت و ضعف زبان آموز.</Paragraph>
+            <Paragraph>4. تدریس هر 4 مهارت اصلی با تاکید ویژه به ارتقاء مهارت مکالمه.</Paragraph>
+            <Paragraph>5. مشاوره‌های منظم و پشتیبانی آموزشی مستمر در طول دوره.</Paragraph>
+            <Paragraph>6. استفاده از بروز ترین منابع آموزشی.</Paragraph>
+            <Paragraph>7. برنامه ریزی اختصاصی برای یادگیری هر زبان آموز.</Paragraph>
 
             <div className='d-flex flex-column flex-lg-row align-items-center justify-content-lg-between justify-content-center w-100 bg-gray-850 border-gray-800 p-3 rounded'>
                 <div className='d-flex flex-column align-items-center align-items-lg-end'>
@@ -167,6 +157,10 @@ const ArticleContent = () => {
                 </div>
             <Link style={{fontFamily:"KalamehWeb-Bold"}} href="/tests/public" className='text-white btn-main-2 mt-3 mt-lg-0'>شروع کنید</Link>
             </div>
+            <p className='mt-4 text-center' style={{fontFamily:"KalamehWeb-Bold" , lineHeight:"27px" , fontSize:"16px"}}>
+            برای اطلاع از شرایط ثبت نام و هزینه های دوره می توانید از طریق راه های ارتباطی موجود در سایت (واتساپ و اینستاگرام)
+اقدام نمایید.
+            </p>
             
 
         </div>

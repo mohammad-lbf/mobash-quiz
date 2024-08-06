@@ -13,7 +13,7 @@ const TestsSection = () => {
                      slug={`/tests/grammar`}
                      coverPhoto={`/images/tests/grammar.jpg`}
                      title={`تعیین سطح گرامر`}
-                     caption={"1.	این آزمون منحصراً به بررسی مهارت‌های شما در زمینه Grammar میپردازد.     \n2.	برای شرکت در دوره‌های اختصاصی گرامر کاربرد دارد."}
+                     caption={"-	 به ارزیابی مهارت‌ شما در زمینه Grammar میپردازد.     \n-	برای شرکت در دوره‌های اختصاصی گرامر کاربرد دارد."}
                      buttonText="شرکت در آزمون"
                      />
                     </div>
@@ -21,8 +21,8 @@ const TestsSection = () => {
                     <Card
                      slug={`/tests/public`}
                      coverPhoto={`/images/tests/public.jpg`}
-                     title={`تعیین سطح عمومی`}
-                     caption={"1.	این آزمون به بررسی چهار مهارت اصلی: Grammar, Listening, Reading, vocabulary میپردازد.\n2.	برای شرکت در دوره‌های ترمیک کاربرد دارد."}
+                     title={`تعیین سطح جامع`}
+                     caption={"-	 به ارزیابی چهار مهارت اصلی زبان انگلیسی میپردازد.\n-	برای شرکت در دوره‌های ترمیک کاربرد دارد."}
                     buttonText="شرکت در آزمون"
                      />
                     </div>

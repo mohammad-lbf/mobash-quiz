@@ -18,7 +18,7 @@ const FirstBanner = () => {
               >
                 <div className="banner-info d-flex flex-column align-items-center align-items-lg-start">
                   <motion.span
-                    style={{ fontFamily: "Vazirmatn" }}
+                    style={{ fontFamily: "Vazirmatn" , direction:"ltr" }}
                     className="text-sm-bold color-gray-600"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
@@ -34,7 +34,7 @@ const FirstBanner = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1.5 }}
                   >
-                    با آموزش‌های آکادمی مبش، با اعتماد به نفس و روان انگلیسی صحبت کنید!
+                      صحبت کردن به زبان انگلیسی یک هنر است و ما در آکادمی مبش به آموزش این هنر می‌پردازیم.
                   </motion.h3>
                   <br />
                   <div className="box-socials">

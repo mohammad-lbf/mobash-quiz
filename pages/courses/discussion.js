@@ -15,6 +15,7 @@ const Discussion = () => {
 
               <title>Mobash Academy | کلاس های مکالمه و بحث آزاد</title>
             </Head>
+            
             <DiscussionPage />
         </div>
     );

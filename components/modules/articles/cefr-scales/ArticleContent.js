@@ -5,25 +5,53 @@ import ArticleAccordian from '../../Article/ArticleAccordian';
 import ArticleImage from '../../Article/ArticleImage';
 import MainTitle from '../../Article/MainTitle';
 import Paragraph from '../../Article/Paragraph';
+import ReadMoreBox from '../../Article/ReadMoreBox';
 import SubTitle from '../../Article/SubTitle';
 import LearningHoursTable from './LearningHoursTable';
 
 const ArticleContent = () => {
+
+  const ulStyle = {
+    listStyleType: 'inherit',
+    padding: '0',
+    direction: 'rtl',
+    fontFamily: 'Arial, sans-serif',
+  };
+
+  // استایل برای آیتم‌های لیست
+  const liStyle = {
+    fontFamily:"Vazirmatn" ,fontSize:"16px" , lineHeight:"1.88" , textAlign:"justify" , direction:"rtl" , marginBottom:"27px"
+  };
+
     return (
         <>
         <div className='mt-2'>
             <MainTitle>مقیاس CEFR چیست؟</MainTitle>
-            <Paragraph>
-            استاندارد CEFR در سطح بندی زبان انگلیسی، مخفف Common European Framework of Reference for Languages است. یک استاندارد اروپایی برای زبان انگلیسی که به عنوان مهم‌ترین و رایج‌ترین استاندارد انگلیسی در دنیا مطرح است.
-            </Paragraph>
-            <Paragraph>
-            استاندارد CEFR سطح‌های زبان را به شش سطح از A1 تا C2 تقسیم‌بندی می‌کند. این سطوح می‌توانند در سه دسته بزرگ‌تر به صورت سطح پایه، سطح متوسط و سطح پیشرفته قرار گیرند.
-            </Paragraph>
-            <Paragraph>
-            مقیاس CEFR در یادگیری زبان انگلیسی بسیار موفق عمل کرده زیرا رویکرد آن برمبنای مهارت ارتباطی تعریف شده است. در واقع، هدف CEFR صرفاً ارزیابی دانش زبانی خاصی نیست بلکه می‌کوشد انواع مهارت‌های خواندن، شنیدن، صحبت کردن، نوشتن و دستور زبان انگلیسی را به صورت کامل بررسی کند.
-            </Paragraph>
+            <div style={{ margin: '0px 20px', padding: '20px 20px 0 20px' }}>
+      <ul style={ulStyle}>
+        <li style={liStyle}>
+
+          استاندارد CEFR در سطح بندی زبان انگلیسی، مخفف Common European Framework of Reference for Languages است. یک استاندارد اروپایی برای زبان انگلیسی که به عنوان مهم‌ترین و رایج‌ترین استاندارد انگلیسی در دنیا مطرح است.
+        </li>
+        <li style={liStyle}>
+
+          استاندارد CEFR سطح‌های زبان را به شش سطح از A1 تا C2 تقسیم‌بندی می‌کند. این سطوح می‌توانند در سه دسته بزرگ‌تر به صورت سطح پایه، سطح متوسط و سطح پیشرفته قرار گیرند.
+        </li>
+        <li style={liStyle}>
+
+          مقیاس CEFR در یادگیری زبان انگلیسی بسیار موفق عمل کرده زیرا رویکرد آن برمبنای مهارت ارتباطی تعریف شده است. در واقع، هدف CEFR صرفاً ارزیابی دانش زبانی خاصی نیست بلکه می‌کوشد انواع مهارت‌های خواندن، شنیدن، صحبت کردن، نوشتن و دستور زبان انگلیسی را به صورت کامل بررسی کند.
+        </li>
+      </ul>
+    </div>
             <MainTitle>هر یک از مهارت‌های زبانی به چه معنایی هستند؟</MainTitle>
-            <SubTitle>برای مشاهده مهارت های زبانی هر سطح، روی آن کلیک کنید:</SubTitle>
+            <div style={{ margin: '0 20px', padding: '20px 20px 0px 20px' }}>
+                <ul style={ulStyle}>
+                <li style={liStyle}>
+                برای مشاهده مهارت های زبانی هر سطح، روی آن کلیک کنید:
+                </li>
+                </ul>
+            </div>
+            {/* <SubTitle>برای مشاهده مهارت های زبانی هر سطح، روی آن کلیک کنید:</SubTitle> */}
             <br />
             <ArticleAccordian caption={"سطح A1"}>
   <div className='d-flex align-items-center flex-column flex-lg-row'>
@@ -199,25 +227,50 @@ const ArticleContent = () => {
 
         </div>
         <>
-            <MainTitle>میزان تناسب نمرات آزمون آیلتس با سطوح CEFR :</MainTitle>
-            <SubTitle>این اطلاعات برگرفته از سایت جامع دانشگاه کمبریج میباشد:</SubTitle>
-            <Paragraph>1. نمره 4 تا 5 آزمون آیلتس در سطح B1</Paragraph>
-            <Paragraph>2. نمره 5 تا 6.25 در سطح B2</Paragraph>
-            <Paragraph>3. نمره 6.25 تا 7.5 در سطح C1</Paragraph>
-            <Paragraph>4. از نمره 7.5 به بالا در سطح C2</Paragraph>
-            <Paragraph>- توجه: برای نمرات بالا مقداری درصد خطا درنظر گرفته شود.</Paragraph>
+            <div className='container'>
+                          <MainTitle>میزان تناسب نمرات آزمون آیلتس با سطوح CEFR :</MainTitle>
+                <div className='row align-items-center'>
+                      <div className='col-12 col-md-6'>
+                          <h3 className='text-center text-md-end' style={{fontSize:"15px" , fontFamily:"KalamehWeb-Bold"}}>این اطلاعات برگرفته از سایت جامع دانشگاه کمبریج میباشد:</h3>
+                          
+                          <Paragraph>1. نمره 4 تا 5 آزمون آیلتس در سطح B1</Paragraph>
+                          <Paragraph>2. نمره 5 تا 6.25 در سطح B2</Paragraph>
+                          <Paragraph>3. نمره 6.25 تا 7.5 در سطح C1</Paragraph>
+                          <Paragraph>4. از نمره 7.5 به بالا در سطح C2</Paragraph>
+                          <Paragraph>- توجه: برای نمرات بالا مقداری درصد خطا درنظر گرفته شود.</Paragraph>
+                      </div>
+                      <div className='col-12 col-md-6'>
+                            <Image className='img-fluid' src={"/images/articles/cefr-scales/ielts.png"} width={957} height={1013} />
+                      </div>
+                </div>
+            </div>
 
         </>
         <>
         <MainTitle>چقدر طول می‌کشد تا به سطوح بالاتر برسم؟</MainTitle>
-        <Paragraph>بر اساس ارزیابی کمبریج، زبان‌آموز برای گذراندن یک سطح و رسیدن به سطح دیگر، به مدت زمان مشخصی برای یادگیری نیاز دارد که به آن «ساعت‌های آموزشی هدایت‌شده» (Guided Learning Hours) می‌گویند. در این زمینه، جدول زیر اطلاعات کاملی را دراختیار شما قرار خواهد داد:</Paragraph>
+        <div style={{ margin: '20px', padding: '20px' }}>
+        <ul style={ulStyle}>
+        <li style={liStyle}>
+          بر اساس ارزیابی کمبریج، زبان‌آموز برای گذراندن یک سطح و رسیدن به سطح دیگر، به مدت زمان مشخصی برای یادگیری نیاز دارد که به آن «ساعت‌های آموزشی هدایت‌شده» (Guided Learning Hours) می‌گویند. در این زمینه، جدول زیر اطلاعات کاملی را دراختیار شما قرار خواهد داد:
+        </li>
+      </ul>
+    </div>
         <LearningHoursTable />
-        <Paragraph>توجه: ساعت‌های آموزشی ممکن است برای همه یکسان نباشند اما میتوانند به زبان آموز کمک کنند تا بتواند مدت زمانی را که برای رسیدن به یک سطح خاص نیاز دارد، به طور حدودی تخمین بزند. </Paragraph>
+        <div style={{ margin: '0 20px', padding: '20px 20px 0px 20px' }}>
+                <ul style={ulStyle}>
+                <li style={liStyle}>
+                توجه: ساعت‌های آموزشی ممکن است برای همه یکسان نباشند اما میتوانند به زبان آموز کمک کنند تا بتواند مدت زمانی را که برای رسیدن به یک سطح خاص نیاز دارد، به طور حدودی تخمین بزند.
+                </li>
+                </ul>
+            </div>
+        {/* <Paragraph>توجه: ساعت‌های آموزشی ممکن است برای همه یکسان نباشند اما میتوانند به زبان آموز کمک کنند تا بتواند مدت زمانی را که برای رسیدن به یک سطح خاص نیاز دارد، به طور حدودی تخمین بزند. </Paragraph> */}
         </>
         <>
-        <SubTitle>منابع مقاله: </SubTitle>
-        <Link target="_blank" className='my-3 text-primary d-block fw-bold' style={{fontSize:"16px"}} href={"https://www.cambridgeenglish.org/exams-and-tests/cefr"}>https://www.cambridgeenglish.org/exams-and-tests/cefr</Link>
-        <Link target="_blank" className='my-3 text-primary d-block fw-bold' style={{fontSize:"16px"}} href={"https://www.englishprofile.org/the-cefr "}>https://www.englishprofile.org/the-cefr </Link>
+
+        <ReadMoreBox title={"منابع مقاله"}>
+            <Link target="_blank" className='my-3 text-primary d-block text-start fw-bold' style={{fontSize:"16px"}} href={"https://www.cambridgeenglish.org/exams-and-tests/cefr"}>https://www.cambridgeenglish.org/exams-and-tests/cefr</Link>
+            <Link target="_blank" className='my-3 text-primary d-block text-start fw-bold' style={{fontSize:"16px"}} href={"https://www.englishprofile.org/the-cefr "}>https://www.englishprofile.org/the-cefr </Link>
+        </ReadMoreBox>
         </>
         </>
     );

@@ -13,7 +13,7 @@ const PublicPage = () => {
             <div className='pt-4'>
                 <div className='container'>
                         <div className='row justify-content-between'>
-                            <div className='col-12 col-xl-7'>
+                            <div className='col-12 col-xl-8'>
                                 <PublicMainSection />
                             </div>
                             <div className='col-12 col-xl-4'>

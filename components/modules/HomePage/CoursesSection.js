@@ -10,7 +10,7 @@ const CoursesSection = () => {
                         <h3 style={{fontFamily:"KalamehWeb-Bold" , fontSize:"30px" , color:"#090736" , lineHeight:"40px"}} className='mb-1 mx-auto text-center'>دوره ها و کلاس‌های آموزشی</h3>
                         <div style={{maxWidth:"330px"}} className="lbf-after-card-img mx-auto"></div>
                             <p style={{fontFamily:"KalamehWeb-Bold" , fontSize:"17px" , color:"#000"}} className=' text-center lh-lg mb-4'>
-                            یادگیری سریع و عمیق زبان انگلیسی با مبش
+                                با آموزش‌های آکادمی مبش، با اعتماد به نفس و روان انگلیسی صحبت کنید!
                             </p>
                             <Link style={{ width: "fit-content" }} href={'/courses'} className="mx-auto btn-main-2 text-white d-flex align-items-center animated-link">
                                 <span style={{ fontFamily: "KalamehWeb-Bold" }}>

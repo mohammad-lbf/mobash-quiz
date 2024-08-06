@@ -14,7 +14,7 @@ const ArticleBreadcrumb = () => {
             </Link>
             <span className='mx-2'>/</span>
             <Link className='fw-bold color-gray-600' href={'/tests/public'}>
-                آزمون تعیین سطح عمومی
+                آزمون تعیین سطح جامع
             </Link>
         </div>
     );

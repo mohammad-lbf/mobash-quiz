@@ -67,6 +67,7 @@ const GrammarContent = () => {
             fontFamily:"KalamehWeb-Bold" , }} 
             className='text-center mt-4 pt-2 mb-4 pb-2'>سطوح آزمون تعیین سطح گرامر:</h5>
             <GrammerTestLevels />
+            <div>
             <h5
             style={{fontSize:"24px",color:"#464749" , 
             fontFamily:"KalamehWeb-Bold" , }} 
@@ -76,71 +77,79 @@ const GrammarContent = () => {
             color:"#474d52" ,lineHeight:"2em" , 
             textAlign:"justify" , 
             fontFamily:"KalamehWeb-Medium"}} 
-            className='border-bottom pb-2 mb-2'>
+            className='pb-2 mb-2'>
             انتخاب پلتفرمی مناسب برای تعیین سطح اصولی مهارت های زبان انگلیسی، کاری دشوار و چالش برانگیز بنظر میرسد.<br />
-از این رو، تیم &quot;مبش آکادمی&quot; مفتخر است تا با درنظر گرفتن ۴ معیار پیش رو، محیطی مناسب را برای سنجش اصولی مهارت های زبانی شما فراهم کند.
+            از این رو، تیم &quot;مبش آکادمی&quot; مفتخر است تا با درنظر گرفتن ۴ معیار پیش رو، محیطی مناسب را برای سنجش اصولی مهارت های زبانی شما فراهم کند.
             </p>
+            </div>
+            <div style={{border:"5px solid #29235c" , borderRadius:"30px" , padding:"15px"}}>
             <h5
             style={{fontSize:"24px",color:"#464749" , 
-            fontFamily:"KalamehWeb-Bold" , }} 
-            className='text-center mt-4 pt-2 mb-4 pb-2'>۱. آزمون های متنوع</h5>
+            fontFamily:"KalamehWeb-Bold"}} 
+            className='text-end  mb-3'> آزمون های متنوع</h5>
             <p 
             style={{fontSize:"15px" , 
             color:"#474d52" ,lineHeight:"2em" , 
             textAlign:"start" , 
             fontFamily:"KalamehWeb-Medium"}} 
-            className='border-bottom pb-2 mb-2'>
-                در &quot;مبش آکادمی&quot;، شما قادر خواهید بود تا وابسته به نوع نیاز خود، در سه آزمون مختلف تعیین سطح شرکت کنید.
+            className=''>
+                در &quot;مبش آکادمی&quot;، شما قادر خواهید بود تا وابسته به نوع نیاز خود، در دو آزمون مختلف تعیین سطح شرکت کنید.
                 <br />
-۱. تعیین سطح اختصاصی گرامر (Grammar assessment)
-<br />
-۲. تعیین سطح زبان عمومی (General English)
-<br />
-۳. تعیین سطح جامع.
+                ۱. تعیین سطح اختصاصی گرامر
+                ۲. تعیین سطح جامع
             </p>
+            </div>
+            <div className='mt-3' style={{border:"5px solid #29235c" , borderRadius:"30px" , padding:"15px"}}>
             <h5
             style={{fontSize:"24px",color:"#464749" , 
             fontFamily:"KalamehWeb-Bold" , }} 
-            className='text-center mt-4 pt-2 mb-4 pb-2'>
-                ۲. سوالات استاندارد
+            className='text-end  mb-3'>
+                سوالات استاندارد
             </h5>
             <p 
             style={{fontSize:"15px" , 
             color:"#474d52" ,lineHeight:"2em" , 
             textAlign:"justify" , 
             fontFamily:"KalamehWeb-Medium"}} 
-            className='border-bottom pb-2 mb-2'>
+            className=''>
                 سوالات هر سه آزمون، از منابع معتبری همچون Cambridge, British Council و... انتخاب گردیده است تا به ارزیابی استاندارد مهارتهای زبانی شما کمک کند.
             </p>
+            </div>
+            <div className='mt-3' style={{border:"5px solid #29235c" , borderRadius:"30px" , padding:"15px"}}>
+
             <h5
             style={{fontSize:"24px",color:"#464749" , 
             fontFamily:"KalamehWeb-Bold" , }} 
-            className='text-center mt-4 pt-2 mb-4 pb-2'>
-                ۳. منطبق بر مقیاس جهانی CEFR
+            className='text-end mb-3'>
+                منطبق بر مقیاس جهانی CEFR
             </h5>
             <p 
             style={{fontSize:"15px" , 
             color:"#474d52" ,lineHeight:"2em" , 
             textAlign:"justify" , 
             fontFamily:"KalamehWeb-Medium"}} 
-            className='border-bottom pb-2 mb-2'>
+            className=''>
                 تمامی آزمونها براساس چارچوب مرجع مشترک اروپایی (CEFR) طراحی گردیده اند تا نتایج بدست آمده از آنها، قابل ارزیابی و مورد قبول موسسات آموزشی باشد.
 
             </p>
+            </div>
+            <div className='mt-3' style={{border:"5px solid #29235c" , borderRadius:"30px" , padding:"15px"}}>
+
             <h5
             style={{fontSize:"24px",color:"#464749" , 
             fontFamily:"KalamehWeb-Bold" , }} 
-            className='text-center mt-4 pt-2 mb-4 pb-2'>
-                ۴. مشاوره اختصاصی
+            className='text-end mb-3'>
+                مشاوره اختصاصی
             </h5>
             <p 
             style={{fontSize:"15px" , 
             color:"#474d52" ,lineHeight:"2em" , 
             textAlign:"justify" , 
             fontFamily:"KalamehWeb-Medium"}} 
-            className='border-bottom pb-2 mb-2'>
+            className=''>
                 در &quot; مبش آکادمی&quot; این امکان فراهم شده تا پس از اتمام آزمون جامع، بتوانید از مشاوره و راهنمایی تیم مجرب ما بهره مند شوید و مسیر اختصاصی یادگیری زبان خود را طرح ریزی و برنامه ریزی نمایید.
             </p>
+            </div>
             <ShareSecton/>
         </div>
     );

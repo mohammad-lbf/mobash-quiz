@@ -4,7 +4,7 @@ import isUserNameInLocalStorage from '../../assets/functions/localStorageChecker
 
 const Card = ({title , caption, slug , buttonText , coverPhoto}) => {
     return (
-            <div style={{maxWidth:"350px" , overflow:"hidden"}} className='lbf-card border-gray-800 bg-gray-850 mb-3'>
+            <div style={{width:"350px" , overflow:"hidden"}} className='lbf-card border-gray-800 bg-gray-850 mb-3'>
             <div className='lbf-card-image-article'>
                 <Image
                  className='w-100 border'
@@ -27,7 +27,7 @@ const Card = ({title , caption, slug , buttonText , coverPhoto}) => {
                     <i className="bi bi-pen-fill ms-1 text-black"></i>
                     <p style={{fontFamily:"KalamehWeb-Medium" , color:"#000"}}>امیرحسین مبشری</p>
                     </div>
-                    <div className="lh-lg text-end" style={{fontFamily:"KalamehWeb-Medium" , fontSize:"12px" , color:"#000"}} dangerouslySetInnerHTML={{ __html: caption.replace(/\n/g, '<br />') }}>
+                    <div className="lh-lg text-end" style={{fontFamily:"KalamehWeb-Medium" , height:"80px" , fontSize:"12px" , color:"#000"}} dangerouslySetInnerHTML={{ __html: caption.replace(/\n/g, '<br />') }}>
                     </div>
                 </div>
             </div>
