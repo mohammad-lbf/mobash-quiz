@@ -70,8 +70,8 @@ const GrammarContent = () => {
             <div>
             <h5
             style={{fontSize:"24px",color:"#464749" , 
-            fontFamily:"KalamehWeb-Bold" , }} 
-            className='text-center mt-4 pt-2 mb-4 pb-2'>چرا تعیین سطح مبش آکادمی؟</h5>
+            fontFamily:"KalamehWeb-Bold" }} 
+            className='text-center mt-4 pt-2 mb-4 pb-2 lh-lg'>چرا تعیین سطح مبش آکادمی؟</h5>
             <p 
             style={{fontSize:"15px" , 
             color:"#474d52" ,lineHeight:"2em" , 
@@ -83,32 +83,32 @@ const GrammarContent = () => {
             </p>
             </div>
             <div style={{border:"5px solid #29235c" , borderRadius:"30px" , padding:"15px"}}>
-            <h5
-            style={{fontSize:"24px",color:"#464749" , 
-            fontFamily:"KalamehWeb-Bold"}} 
-            className='text-end  mb-3'> آزمون های متنوع</h5>
+            <p
+            style={{fontSize:"20px",color:"#000" , 
+            fontFamily:"KalamehWeb-Medium" , marginBottom:"10px"}} 
+            className='text-end'> آزمون های متنوع</p>
             <p 
-            style={{fontSize:"15px" , 
-            color:"#474d52" ,lineHeight:"2em" , 
-            textAlign:"start" , 
+            style={{fontSize:"14px" , 
+            color:"#000" ,lineHeight:"25px" , 
+            textAlign:"justify" , 
             fontFamily:"KalamehWeb-Medium"}} 
             className=''>
-                در &quot;مبش آکادمی&quot;، شما قادر خواهید بود تا وابسته به نوع نیاز خود، در دو آزمون مختلف تعیین سطح شرکت کنید.
+                در &quot;مبش آکادمی&quot;، شما قادر خواهید بود تا وابسته به نوع نیاز خود، در دو آزمون مختلف تعیین سطح شرکت کنید:
                 <br />
-                ۱. تعیین سطح اختصاصی گرامر
-                ۲. تعیین سطح جامع
+                تعیین سطح گرامر
+                و تعیین سطح جامع
             </p>
             </div>
             <div className='mt-3' style={{border:"5px solid #29235c" , borderRadius:"30px" , padding:"15px"}}>
-            <h5
-            style={{fontSize:"24px",color:"#464749" , 
-            fontFamily:"KalamehWeb-Bold" , }} 
-            className='text-end  mb-3'>
+            <p
+            style={{fontSize:"20px",color:"#000" , 
+            fontFamily:"KalamehWeb-Medium" , marginBottom:'10px' }} 
+            className='text-end'>
                 سوالات استاندارد
-            </h5>
+            </p>
             <p 
-            style={{fontSize:"15px" , 
-            color:"#474d52" ,lineHeight:"2em" , 
+            style={{fontSize:"14px" , 
+            color:"#000" ,lineHeight:"25px" , 
             textAlign:"justify" , 
             fontFamily:"KalamehWeb-Medium"}} 
             className=''>
@@ -117,15 +117,15 @@ const GrammarContent = () => {
             </div>
             <div className='mt-3' style={{border:"5px solid #29235c" , borderRadius:"30px" , padding:"15px"}}>
 
-            <h5
-            style={{fontSize:"24px",color:"#464749" , 
-            fontFamily:"KalamehWeb-Bold" , }} 
-            className='text-end mb-3'>
+            <p
+            style={{fontSize:"20px",color:"#000" , 
+            fontFamily:"KalamehWeb-Medium" , marginBottom:"10px" }} 
+            className='text-end'>
                 منطبق بر مقیاس جهانی CEFR
-            </h5>
+            </p>
             <p 
-            style={{fontSize:"15px" , 
-            color:"#474d52" ,lineHeight:"2em" , 
+            style={{fontSize:"14px" , 
+            color:"#000" ,lineHeight:"25px" , 
             textAlign:"justify" , 
             fontFamily:"KalamehWeb-Medium"}} 
             className=''>
@@ -135,15 +135,15 @@ const GrammarContent = () => {
             </div>
             <div className='mt-3' style={{border:"5px solid #29235c" , borderRadius:"30px" , padding:"15px"}}>
 
-            <h5
-            style={{fontSize:"24px",color:"#464749" , 
-            fontFamily:"KalamehWeb-Bold" , }} 
-            className='text-end mb-3'>
+            <p
+            style={{fontSize:"20px",color:"#000" , 
+            fontFamily:"KalamehWeb-Medium" , marginBottom:"10px" }} 
+            className='text-end'>
                 مشاوره اختصاصی
-            </h5>
+            </p>
             <p 
-            style={{fontSize:"15px" , 
-            color:"#474d52" ,lineHeight:"2em" , 
+            style={{fontSize:"14px" , 
+            color:"#000" ,lineHeight:"25px" , 
             textAlign:"justify" , 
             fontFamily:"KalamehWeb-Medium"}} 
             className=''>
