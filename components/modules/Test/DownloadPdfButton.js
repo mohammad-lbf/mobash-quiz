@@ -5,25 +5,25 @@ import ImageBase64 from '../../../assets/functions/ImageBase64';
 
 const DownloadPdfButton = ({ fileName, reportData }) => {
 
-        // ایجاد یک شیء جدید Date برای دریافت تاریخ و زمان کنونی
-const now = new Date();
+    // ایجاد یک شیء جدید Date برای دریافت تاریخ و زمان کنونی
+    const now = new Date();
 
-// دریافت سال، ماه و روز
-const year = now.getFullYear();
-const month = now.getMonth() + 1; // ماه‌ها از 0 شروع می‌شوند
-const day = now.getDate();
+    // دریافت سال، ماه و روز
+    const year = now.getFullYear();
+    const month = now.getMonth() + 1; // ماه‌ها از 0 شروع می‌شوند
+    const day = now.getDate();
 
-// فرمت کردن تاریخ به میلادی
-const formattedDate = `${year}-${month.toString().padStart(2, '0')}-${day.toString().padStart(2, '0')}`;
+    // فرمت کردن تاریخ به میلادی
+    const formattedDate = `${year}-${month.toString().padStart(2, '0')}-${day.toString().padStart(2, '0')}`;
 
     const generatePDF = () => {
         const doc = new jsPDF();
-        
+
         // Add Persian font
         doc.addFileToVFS('Vazir.ttf', VazirFont);
         doc.addFont('Vazir.ttf', 'Vazir', 'normal');
         doc.setFont('Vazir');
-        
+
         // Page dimensions
         const lineThickness = 0.15;
         const pageWidth = doc.internal.pageSize.width;
@@ -42,7 +42,6 @@ const formattedDate = `${year}-${month.toString().padStart(2, '0')}-${day.toStri
 
         drawRoundedRect(margin, margin, pageWidth - 2 * margin, pageHeight - 2 * margin, borderRadius);
 
-        // Title: "Report Form"
         const title = 'Report Form';
         const titleFontSize = 20;
         doc.setFontSize(titleFontSize);
@@ -54,13 +53,7 @@ const formattedDate = `${year}-${month.toString().padStart(2, '0')}-${day.toStri
         const imgWidth = 45; // Set image width
         const imgHeight = 15; // Set image height
         const imgX = (pageWidth - imgWidth) / 2; // Center the image horizontally
-        // const imgY = startY + 10; // Position the image above the footer
         doc.addImage(ImageBase64, 'PNG', margin + 119, 25, imgWidth, imgHeight);
-
-
-        // Draw a line under the title
-        // doc.setLineWidth(0.5);
-        // doc.line(margin, margin + 15, pageWidth - margin, margin + 15);
 
         // Add type of test
         doc.setFontSize(12);
@@ -68,15 +61,13 @@ const formattedDate = `${year}-${month.toString().padStart(2, '0')}-${day.toStri
         doc.setTextColor('black'); // Black color for the type of test title
         const typeOfTest = 'Type of test:';
         doc.setLineWidth(lineThickness);
-        doc.rect(margin + 5 , 43, 73, 12);
+        doc.rect(margin + 5 , 43, 78, 12);
         const typeOfTestWidth = doc.getStringUnitWidth(typeOfTest) * 12 / doc.internal.scaleFactor;
         doc.text(typeOfTest, margin + 7, 50);
 
-
         const Date = 'Date:';
         doc.setLineWidth(lineThickness);
-        doc.rect(margin + 119 , 43, 45, 12);
-        // const typeOfTestWidth = doc.getStringUnitWidth(typeOfTest) * 12 / doc.internal.scaleFactor;
+        doc.rect(margin + 119.5 , 43, 43.5, 12);
         doc.text(Date, margin + 123, 50);
 
         // Red color for the type of test value
@@ -86,23 +77,12 @@ const formattedDate = `${year}-${month.toString().padStart(2, '0')}-${day.toStri
         doc.setTextColor('red');
         doc.text(formattedDate, margin + 135, 50);
 
-        // Draw another line
-        doc.setLineWidth(0.2);
-        doc.setTextColor('black'); // Reset to black for the line
-        // doc.line(margin, margin + 30, pageWidth - margin, margin + 30);
-
-        // Add personal information
-        const personalInfo = [
-            ['Name:', reportData.userLocalName],
-            ['Country / Town:', 'Iran'],
-            ['First language:', 'Farsi']
-        ];
         const boxWidth = 100;
         const boxHeight = 12;
         let startY = margin + 40;
 
         doc.setTextColor('black'); // Black color for the info title
-        doc.text('Name', margin + 5, 70);
+        doc.text('Name:', margin + 5, 70);
         doc.setLineWidth(lineThickness);
         doc.rect((pageWidth / 2) - 45, 62, 110, boxHeight); // کشیدن مستطیل
         doc.setTextColor('red'); // Red color for the info value
@@ -123,50 +103,26 @@ const formattedDate = `${year}-${month.toString().padStart(2, '0')}-${day.toStri
         doc.text('Farsi', pageWidth / 2 - 40, 99);
 
 
-        // Draw another line
-        doc.setLineWidth(0.5);
-        doc.setTextColor('black'); // Reset to black for the line
-        // doc.line(margin, startY, pageWidth - margin, startY);
+        // Draw line above "Test Results"
+        doc.setLineWidth(0.15); // Set line width
+        doc.line(margin, 110, pageWidth - margin, 110); // Line above "Test Results"
 
         doc.setFontSize(titleFontSize);
         doc.setFont('Vazir', 'bold');
-        doc.text('Test Results:', margin + 5, 120);
+        doc.text('Test Results:', margin + 5, 123);
 
         // Test Results
         startY += 10;
-        const results = [
-            ['Test Level:', reportData.testLevel],
-            ['Total questions:', reportData.questions.length],
-            ['Correct:', reportData.corrects.length],
-            ['Incorrect:', reportData.incorrects.length],
-            ['Blank:', reportData.noAnswers.length],
-            ['Percentage:', `${reportData.pointPercent.toFixed(2)}%`],
-            ['Status:', reportData.pointPercent < reportData.passPoint ? 'Failed' : 'Pass']
-        ];
 
         doc.setFontSize(12);
         doc.setFont('Vazir', 'normal');
 
-        // results.forEach(result => {
-        //     doc.setTextColor('black'); // Black color for the result title
-        //     doc.text(result[0], margin + 5, startY);
-        //     doc.setTextColor('red'); // Red color for the result value
-        //     doc.text(result[1].toString(), pageWidth / 2, startY);
-        //     startY += 10;
-        // });
-
-        // // Draw final line
-        // doc.setLineWidth(0.5);
-        // doc.setTextColor('black'); // Reset to black for the line
-        // doc.line(margin, startY, pageWidth - margin, startY);
-
         doc.setTextColor('black'); // Black color for the info title
-        doc.text('Test Level', margin + 5, 140);
+        doc.text('Test Level:', margin + 5, 140);
         doc.setLineWidth(lineThickness);
         doc.rect((pageWidth / 2) - 45, 132, 110, boxHeight); // کشیدن مستطیل
         doc.setTextColor('red'); // Red color for the info value
         doc.text(reportData.testLevel, pageWidth / 2 - 40, 139);
-
 
         doc.setTextColor('black'); // Black color for the info title
         doc.text('Total questions:', margin + 5, 155);
@@ -175,7 +131,6 @@ const formattedDate = `${year}-${month.toString().padStart(2, '0')}-${day.toStri
         doc.setTextColor('red'); // Red color for the info value
         doc.text(reportData.questions.length.toString(), pageWidth / 2 - 40, 154);
 
-
         doc.setTextColor('black'); // Black color for the info title
         doc.text('Correct:', margin + 5, 170);
         doc.setLineWidth(lineThickness);
@@ -183,9 +138,8 @@ const formattedDate = `${year}-${month.toString().padStart(2, '0')}-${day.toStri
         doc.setTextColor('red'); // Red color for the info value
         doc.text(reportData.corrects.length.toString(), pageWidth / 2 - 40, 169);
 
-
         doc.setTextColor('black'); // Black color for the info title
-        doc.text('Inorrect:', margin + 5, 185);
+        doc.text('Incorrect:', margin + 5, 185);
         doc.setLineWidth(lineThickness);
         doc.rect((pageWidth / 2) - 45, 177, 110, boxHeight); // کشیدن مستطیل
         doc.setTextColor('red'); // Red color for the info value
@@ -198,28 +152,25 @@ const formattedDate = `${year}-${month.toString().padStart(2, '0')}-${day.toStri
         doc.setTextColor('red'); // Red color for the info value
         doc.text(reportData.noAnswers.length.toString(), pageWidth / 2 - 40, 199);
 
-
         doc.setTextColor('black'); // Black color for the info title
         doc.text('Percentage:', margin + 5, 215);
         doc.setLineWidth(lineThickness);
         doc.rect((pageWidth / 2) - 45, 207, 110, boxHeight); // کشیدن مستطیل
         doc.setTextColor('red'); // Red color for the info value
-        doc.text(`${reportData.pointPercent.toFixed(2)}%` , pageWidth / 2 - 40, 214);
-
+        doc.text(`${reportData.pointPercent.toFixed(2)}%`, pageWidth / 2 - 40, 214);
 
         doc.setTextColor('black'); // Black color for the info title
         doc.text('Status:', margin + 5, 230);
         doc.setLineWidth(lineThickness);
         doc.rect((pageWidth / 2) - 45, 222, 110, boxHeight); // کشیدن مستطیل
         doc.setTextColor('red'); // Red color for the info value
-        doc.text(reportData.pointPercent < reportData.passPoint ? 'Failed' : 'Pass' , pageWidth / 2 - 40, 229);
+        doc.text(reportData.pointPercent < reportData.passPoint ? 'Failed' : 'Pass', pageWidth / 2 - 40, 229);
 
-        // Add image
-        // const imgWidth = 60; // Set image width
-        // const imgHeight = 20; // Set image height
-        // const imgX = (pageWidth - imgWidth) / 2; // Center the image horizontally
+        // Draw line below "Test Results"
+        doc.setLineWidth(0.15); // Set line width
+        doc.line(margin, 240, pageWidth - margin, 240); // Line below "Test Results"
+
         const imgY = startY + 10; // Position the image above the footer
-        // doc.addImage(ImageBase64, 'PNG', imgX, imgY, imgWidth, imgHeight);
 
         // Add footer text
         startY = imgY + imgHeight + 20;
@@ -228,7 +179,7 @@ const formattedDate = `${year}-${month.toString().padStart(2, '0')}-${day.toStri
         doc.setTextColor('black'); // Black color for footer text
         const footerText = 'Mobash.ir';
         const footerTextWidth = doc.getStringUnitWidth(footerText) * 16 / doc.internal.scaleFactor;
-        doc.text(footerText, margin + 5, 255);
+        doc.text(footerText, margin + 5, 260);
 
         // Add bottom note with two lines
         startY += 10;
@@ -238,13 +189,12 @@ const formattedDate = `${year}-${month.toString().padStart(2, '0')}-${day.toStri
 
         const bottomNoteLine1 = 'To view information about your current level,';
         const bottomNoteLine2 = 'check out the CEFR article on our website.';
-        
+
         const bottomNoteLine1Width = doc.getStringUnitWidth(bottomNoteLine1) * 12 / doc.internal.scaleFactor;
         const bottomNoteLine2Width = doc.getStringUnitWidth(bottomNoteLine2) * 12 / doc.internal.scaleFactor;
-
-        doc.text(bottomNoteLine1, margin + 60, 250);
-        // startY += 10; // Move down for the next line
-        doc.text(bottomNoteLine2, margin + 60, 260);
+        doc.rect(margin + 57, 246, 80, 25);
+        doc.text(bottomNoteLine1, margin + 60, 256);
+        doc.text(bottomNoteLine2, margin + 60, 266);
 
         // Save the PDF file
         doc.save(`${fileName}.pdf`);
