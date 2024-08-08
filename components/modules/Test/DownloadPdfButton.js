@@ -55,27 +55,31 @@ const DownloadPdfButton = ({ fileName, reportData }) => {
         const imgX = (pageWidth - imgWidth) / 2; // Center the image horizontally
         doc.addImage(ImageBase64, 'PNG', margin + 119, 25, imgWidth, imgHeight);
 
+
+        doc.setLineWidth(0.15); // Set line width
+        doc.line(margin, 43, pageWidth - margin, 43);
+
         // Add type of test
         doc.setFontSize(12);
         doc.setFont('Vazir', 'normal');
         doc.setTextColor('black'); // Black color for the type of test title
         const typeOfTest = 'Type of test:';
         doc.setLineWidth(lineThickness);
-        doc.rect(margin + 5 , 43, 78, 12);
+        doc.rect(margin + 5 , 46, 78, 12);
         const typeOfTestWidth = doc.getStringUnitWidth(typeOfTest) * 12 / doc.internal.scaleFactor;
-        doc.text(typeOfTest, margin + 7, 50);
+        doc.text(typeOfTest, margin + 7, 53);
 
         const Date = 'Date:';
         doc.setLineWidth(lineThickness);
-        doc.rect(margin + 119.5 , 43, 43.5, 12);
-        doc.text(Date, margin + 123, 50);
+        doc.rect(margin + 119.5 , 46, 43.5, 12);
+        doc.text(Date, margin + 123, 53);
 
         // Red color for the type of test value
         doc.setTextColor('red');
-        doc.text(reportData.category + ' assessment', margin + typeOfTestWidth + 10, 50);
+        doc.text(reportData.category + ' assessment', margin + typeOfTestWidth + 10, 53);
 
         doc.setTextColor('red');
-        doc.text(formattedDate, margin + 135, 50);
+        doc.text(formattedDate, margin + 135, 53);
 
         const boxWidth = 100;
         const boxHeight = 12;
@@ -175,12 +179,12 @@ const DownloadPdfButton = ({ fileName, reportData }) => {
 
         // Add footer text
         startY = imgY + imgHeight + 20;
-        doc.setFontSize(titleFontSize);
+        doc.setFontSize(18);
         doc.setFont('Vazir', 'bold');
         doc.setTextColor('black'); // Black color for footer text
         const footerText = 'Mobash.ir';
         const footerTextWidth = doc.getStringUnitWidth(footerText) * 16 / doc.internal.scaleFactor;
-        doc.text(footerText, margin + 5, 260);
+        doc.text(footerText, margin + 5, 261);
 
         // Add bottom note with two lines
         startY += 10;
@@ -188,14 +192,21 @@ const DownloadPdfButton = ({ fileName, reportData }) => {
         doc.setFont('Vazir', 'normal');
         doc.setTextColor('red'); // Red color for bottom note
 
-        const bottomNoteLine1 = 'To view information about your current level,';
-        const bottomNoteLine2 = 'check out the CEFR article on our website.';
+        const bottomNoteLine1 = 'To view information about your current level, check out the';
+        const bottomNoteLine2 = 'CEFR article on our website.';
 
         const bottomNoteLine1Width = doc.getStringUnitWidth(bottomNoteLine1) * 12 / doc.internal.scaleFactor;
         const bottomNoteLine2Width = doc.getStringUnitWidth(bottomNoteLine2) * 12 / doc.internal.scaleFactor;
-        doc.rect(margin + 57, 247, 80, 25);
-        doc.text(bottomNoteLine1, margin + 60, 256);
-        doc.text(bottomNoteLine2, margin + 60, 266);
+        doc.rect((pageWidth / 2) - 45, 247, 110, 25);
+        doc.text(bottomNoteLine1, (pageWidth / 2) - 42, 256);
+        doc.text(bottomNoteLine2, (pageWidth / 2) - 42, 266);
+
+        doc.setTextColor(0, 0, 255);
+        const link = "https://www.mobash.ir/articles/cefr-scales";
+        doc.textWithLink("Check it now!", 111, 266, { url: link });
+
+        doc.setDrawColor(0, 0, 255); // تنظیم رنگ خط به آبی
+        doc.line(111, 267 , 134, 267); // کشیدن خط زیر متن
 
         // Save the PDF file
         doc.save(`${fileName}.pdf`);
