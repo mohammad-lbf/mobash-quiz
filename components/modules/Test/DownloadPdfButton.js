@@ -109,6 +109,7 @@ const DownloadPdfButton = ({ fileName, reportData }) => {
 
         doc.setFontSize(titleFontSize);
         doc.setFont('Vazir', 'bold');
+        doc.setTextColor('black');
         doc.text('Test Results:', margin + 5, 123);
 
         // Test Results
@@ -192,7 +193,7 @@ const DownloadPdfButton = ({ fileName, reportData }) => {
 
         const bottomNoteLine1Width = doc.getStringUnitWidth(bottomNoteLine1) * 12 / doc.internal.scaleFactor;
         const bottomNoteLine2Width = doc.getStringUnitWidth(bottomNoteLine2) * 12 / doc.internal.scaleFactor;
-        doc.rect(margin + 57, 246, 80, 25);
+        doc.rect(margin + 57, 247, 80, 25);
         doc.text(bottomNoteLine1, margin + 60, 256);
         doc.text(bottomNoteLine2, margin + 60, 266);
 
