@@ -22,7 +22,7 @@ const CoursesSection = () => {
                     <Card
                      slug={`/courses/grammar`}
                      coverPhoto={`/images/courses/grammar/coverphoto.jpg`}
-                     title={`دوره اختصاصی گرامر`}
+                     title={`دوره تخصصی گرامر`}
                      caption={"دوره جامع گرامر (Grammar) زبان انگلیسی یک فرصت عالی برای تقویت مهارت‌های زبانی و ارتقاء دانش زبان انگلیسی شماست که به کمک آن می‌توانید ..."}
                      buttonText="مشاهده ی دوره"
                      />

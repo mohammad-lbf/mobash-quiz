@@ -85,8 +85,8 @@ const FirstBanner = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.5 }}
             >
-              <div className="banner-image">
-                <Image width={"470"} height={"420"} alt="first-banner-image" className='img-fluid' src={`/images/home-first-banner.png`} />
+              <div className="">
+                <Image width={"470"} height={"420"} alt="first-banner-image" className='img-fluid' src={`/images/Untitled-1.png`} />
               </div>
             </motion.div>
           </div>

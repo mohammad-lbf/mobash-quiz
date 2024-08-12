@@ -22,7 +22,7 @@ const ArticleContent = () => {
       };
     return (
         <div className='mt-2'>
-            <MainTitle>دوره اختصاصی گرامر</MainTitle>
+            <MainTitle>دوره تخصصی گرامر</MainTitle>
 <Paragraph>دوره جامع گرامر (Grammar) زبان انگلیسی یک فرصت عالی برای تقویت مهارت‌های زبانی و ارتقاء دانش زبان انگلیسی شماست که به کمک آن می‌توانید ساختار جملات را به درستی متوجه شوید, اشتباهات رایج تان را کاهش داده و توانایی صحبت کردن (Speaking) و نوشتن (Writing) بهتری پیدا کنید.</Paragraph>
 
 <MainTitle>هدف اصلی دوره جامع گرامر چیست؟</MainTitle>
