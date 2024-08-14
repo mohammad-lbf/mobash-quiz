@@ -11,7 +11,7 @@ const HomePage = () => {
     return (
         <div className='cover-home-3'>
             <FirstBanner />
-            <IntroSection />
+            {/* <IntroSection /> */}
             <div className='container-fluid'>
                 <div className='row justify-content-center'>
 

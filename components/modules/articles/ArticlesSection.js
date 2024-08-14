@@ -5,7 +5,7 @@ const ArticlesSection = () => {
     return (
         <>
             {/* <h3 className="color-linear text-center text-lg-end">آزمون ها</h3> */}
-            <div className="container">
+            <div className="container px-0">
             <h3 style={{fontFamily:"KalamehWeb-Bold" , color:"#090736" , fontSize:"23px"}} className='lh-lg text-center mb-2'>مقالات آکادمی زبان انگلیسی مبش</h3>
             <div style={{maxWidth:"300px"}} className="lbf-after-card-img mb-4 mt-0 mx-auto"></div>
                 <div className="row justify-content-center row-cols-xxl-3 row-cols-lg-2 row-cols-sm-1 row-cols-md-2 row-cols-xs-1">

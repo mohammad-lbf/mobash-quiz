@@ -10,29 +10,29 @@ const TestsSection = () => {
                 <div className="row justify-content-center row-cols-xl-3 row-cols-lg-2 row-cols-sm-1 row-cols-md-2 row-cols-xs-1">
                     <div className='col-sm d-flex justify-content-center mb-3 mb-lg-0'>
                     <Card
-                     slug={`/tests/grammar`}
-                     coverPhoto={`/images/tests/grammar.png`}
-                     title={`تعیین سطح گرامر`}
-                     caption={"-	 به ارزیابی مهارت‌ شما در زمینه Grammar میپردازد.     \n-	برای شرکت در دوره‌های اختصاصی گرامر کاربرد دارد."}
-                     buttonText="شرکت در آزمون"
-                     />
-                    </div>
-                    <div className='col-sm d-flex justify-content-center mb-3 mb-lg-0'>
-                    <Card
                      slug={`/tests/public`}
                      coverPhoto={`/images/tests/public-1.png`}
                      title={`تعیین سطح جامع`}
-                     caption={"-	 به ارزیابی چهار مهارت اصلی زبان انگلیسی میپردازد.\n-	برای شرکت در دوره‌های ترمیک کاربرد دارد."}
+                     caption={"-	 به ارزیابی چهار مهارت اصلی زبان انگلیسی میپردازد.\n-	برای شرکت در دوره‌های ترمیک کاربرد دارد. \n تعیین سطح دقیق با 165 سوال"}
                     buttonText="شرکت در آزمون"
                      />
                     </div>
-                    <div className='col-sm d-flex justify-content-center'>
+                    <div className='col-sm d-flex justify-content-center mb-3 mb-lg-0'>
                     <Card
                      slug={`/tests/general`}
                      coverPhoto={`/images/tests/general.png`}
                      title={`تعیین سطح عمومی`}
                      caption={"-  آزمون تعیین سطح با استاندارد های دانشگاه کمبریج.\n-	تعیین سطح سریع با 25 سوال"}
                     buttonText="به زودی..."
+                     />
+                    </div>
+                    <div className='col-sm d-flex justify-content-center mb-3 mb-lg-0'>
+                    <Card
+                     slug={`/tests/grammar`}
+                     coverPhoto={`/images/tests/grammar.png`}
+                     title={`تعیین سطح گرامر`}
+                     caption={"-	 به ارزیابی مهارت‌ شما در زمینه Grammar میپردازد.     \n-	برای شرکت در دوره‌های اختصاصی گرامر کاربرد دارد."}
+                     buttonText="شرکت در آزمون"
                      />
                     </div>
                 </div>
