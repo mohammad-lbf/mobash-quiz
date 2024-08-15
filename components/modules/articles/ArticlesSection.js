@@ -12,7 +12,7 @@ const ArticlesSection = () => {
                     <div className='col-sm d-flex justify-content-center mb-3 mb-lg-0'>
                     <Card
                      slug={`/articles/cefr-scales`}
-                     coverPhoto={`/images/articles/cefr-scales/coverphoto.jpg`}
+                     coverPhoto={`/images/articles/cefr-scales/coverphoto.png`}
                      title={`مقیاس CEFR`}
                      caption={"استاندارد CEFR در سطح بندی زبان انگلیسی، مخفف Common European Framework of Reference for Languages است. یک استاندارد اروپایی برای زبان انگلیسی که..."}
                      buttonText="ادامه ی مطلب..."

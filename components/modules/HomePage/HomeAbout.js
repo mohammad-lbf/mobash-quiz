@@ -16,7 +16,7 @@ const HomeAbout = () => {
             </div>
         <div className="row mb-4 flex-md-row justify-content-center justify-content-lg-between align-items-center">
         <div className="col-md-5 d-none d-md-block">
-          <Image alt='author-image' className='img-fluid border rounded' src={"/images/about-me.png"} width={1080} height={1350} />
+          <Image alt='author-image' className='img-fluid' src={"/images/about-me.png"} width={1080} height={1350} />
           </div>
           <div className="col-md-6 content-block text-end aos-init aos-animate" data-aos="fade-right" data-aos-delay="400" data-aos-duration="2000">
             <Image alt='author-image' className='img-fluid border rounded border d-md-none' src={"/images/about-me.png"} width={1080} height={1350} />

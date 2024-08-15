@@ -27,7 +27,7 @@ const CoursesSection = () => {
                      buttonText="مشاهده ی دوره"
                      />
                     </div>
-                    <div className='col-sm d-flex justify-content-center mb-3 mb-lg-0'>
+                    <div className='col-sm d-flex justify-content-center'>
                     <Card
                      slug={`/courses/discussion`}
                      coverPhoto={`/images/courses/discussion/coverphoto.jpg`}

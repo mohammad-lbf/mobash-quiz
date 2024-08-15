@@ -38,7 +38,7 @@ const CustomSlider = () => {
               <div className='image-container'>
                 <Image
                 className="d-block w-100 img-fluid"
-                src={`/images/articles/cefr-scales/coverphoto.jpg`}
+                src={`/images/articles/cefr-scales/coverphoto.png`}
                 alt="CEFR-SCALES-Coverphoto"
                 width={1000} height={400}
                 style={{width:"100%"}}
